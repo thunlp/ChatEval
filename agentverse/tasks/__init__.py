@@ -25,3 +25,5 @@ from .alice_home.output_parser import AliceHomeParser
 from .sde_team.sde_team_3players_nolc.output_parser import SdeTeamParser
 from .sde_team.sde_team_2players_nolc.output_parser import SdeTeamGivenTestsParser
 
+
+from .llm_eval.single_role.pair_comparison.output_parser import LLMEvalParser

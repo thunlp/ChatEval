@@ -5,7 +5,7 @@ test_gt = []
 test_ours = []
 test_origin = []
 
-with open("./test_answer_true.json", encoding="utf-8") as f:
+with open("test_answer_true.json", encoding="utf-8") as f:
     inss = json.load(f)
     for ins in inss[:51]:
         try:
@@ -15,7 +15,7 @@ with open("./test_answer_true.json", encoding="utf-8") as f:
             print(e)
 
 
-with open("./test_llama_origin.txt") as f:
+with open("test_llama_origin.txt") as f:
     inss = f.readlines()
     for ins in inss[:51]:
         test_origin.append(ins)
