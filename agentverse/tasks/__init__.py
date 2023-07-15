@@ -25,5 +25,13 @@ from .alice_home.output_parser import AliceHomeParser
 from .sde_team.sde_team_3players_nolc.output_parser import SdeTeamParser
 from .sde_team.sde_team_2players_nolc.output_parser import SdeTeamGivenTestsParser
 
+from .llm_eval.multi_role.only_static_assign.base_setting.output_parser import LLMEvalMultiParser
+from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.General_Public.output_parser import LLMEvalParser
+from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.Critic.output_parser import LLMEvalParser
+from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.News_Author.output_parser import LLMEvalParser
 
-from .llm_eval.single_role.pair_comparison.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.geval_summeval.coherence.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.geval_summeval.consistency.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.geval_summeval.fluency.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.geval_summeval.relevance.thought.output_parser import LLMEvalParser

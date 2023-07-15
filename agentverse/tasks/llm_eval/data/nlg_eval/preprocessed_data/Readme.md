@@ -1,0 +1,5 @@
+###数据集注意事项
+preprocessed_data里头放的
+human_results.json是重新formulate之后的结果，把model_index放第一个维度，然后把instance_index放第二个维度
+
+test.json则放的是agentverse里头读到的文件所需要的格式，处理成这样

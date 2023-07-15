@@ -10,12 +10,19 @@ from agentverse.message import Message
 from . import agent_registry
 from .base import BaseAgent
 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from agentverse.environments.base import BaseEnvironment
 
 @agent_registry.register("llm_eval")
 class LLMEvalAgent(BaseAgent):
 
+    source_text: str = ""
     reference_text: str = ""
     generated_text: str = ""
+
+    final_prompt: str = ""
 
     def step(self, env_description: str = "") -> Message:
         prompt = self._fill_prompt_template(env_description)
@@ -45,8 +52,26 @@ class LLMEvalAgent(BaseAgent):
         )
         return message
 
-    async def astep(self, env_description: str = "") -> Message:
+    async def astep(self, env: BaseEnvironment = None, env_description: str = "") -> Message:
         """Asynchronous version of step"""
+
+        # TODO modify this line, if it is the final round, add some instruction in the prompt
+        # you must use the following format, first give the rate of the summary of the above 4 aspects then finally give the reasoning on why you give this rate
+        # Relevance:
+        # Consistency:
+        # Fluency:
+        # Coherence:
+        # Thought: (your thought)
+
+        if env.cnt_turn == env.max_turns - 1:
+            self.final_prompt = "Now, please give your final judgement, and you must use the following format, first start with 'This is my final judgement!' and briefly give the thought on why you give this rate, then finally give the rate of the summary of the above 4 aspects." \
+                                "This is my final judgement!\n" \
+                                "Thought: (your thought)\n" \
+                                "Relevance:\n" \
+                                "Consistency:\n" \
+                                "Fluency:\n" \
+                                "Coherence:\n" \
+
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
@@ -87,8 +112,10 @@ class LLMEvalAgent(BaseAgent):
             "agent_name": self.name,
             "env_description": env_description,
             "role_description": self.role_description,
+            "source_text": self.source_text,
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
+            "final_prompt": self.final_prompt,
             "chat_history": self.memory.to_string(add_sender_prefix=True),
         }
         return Template(self.prompt_template).safe_substitute(input_arguments)
