@@ -1,8 +1,0 @@
-[
-    {
-        "metric": "model_fluency",
-        "spearman": 0.21572325556746555,
-        "pearsonr": 0.2456861714509583,
-        "kendalltau": 0.18424229320331234
-    }
-]
