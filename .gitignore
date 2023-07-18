@@ -172,3 +172,5 @@ raw/
 
 # My outputs
 outputs
+*.json
+*.jsonl
