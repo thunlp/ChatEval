@@ -11,3 +11,4 @@ from .reflection_agent import ReflectionAgent
 from .traffic_agent import TrafficAgent
 
 from .llm_eval_agent import LLMEvalAgent
+from .llm_eval_multi_agent import LLMEvalAgent

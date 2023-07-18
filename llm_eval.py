@@ -26,9 +26,23 @@ parser = ArgumentParser()
 # parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
 # parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/nlg_eval/single_role/multi_role_prompt_but1role/base_setting/News_Author/test_gpt3.5_thoughtbefore/")
 
-parser.add_argument("--task", type=str, default="llm_eval/single_role/geval_summeval/coherence/thought")
-parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
+# parser.add_argument("--task", type=str, default="llm_eval/single_role/geval_summeval_separate/coherence/thought")
+# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
+# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
+
+# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/geval_summeval_separate/three_turns_sequential/coherence/thought")
+# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
+# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
+
+# faireval
+# single
+# parser.add_argument("--task", type=str, default="llm_eval/single_role/faireval/direct_pair_comparison")
+# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
+# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
+# multi
+parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
+parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
+parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
 
 
 args = parser.parse_args()
@@ -42,7 +56,7 @@ with open(args.data_path) as f:
 
 agentverse = AgentVerse.from_task(args.task)
 
-if "nlg_eval" in args.data_path or "geval_summeval" in args.data_path:
+if "nlg_eval" in args.data_path or "geval_summeval_separate" in args.data_path:
 
     # there are 16 outputs generated from different models
     gt_sysn_output = []
@@ -70,7 +84,7 @@ if "nlg_eval" in args.data_path or "geval_summeval" in args.data_path:
                                   "evaluation": evaluation})
 
         gt_sysn_output.append(gt_sys_output)
-
+        # I write save func here because I do not have to wait for all models' results to be done, I can save intermediately
         os.makedirs(args.output_dir, exist_ok=True)
         with open(os.path.join(args.output_dir, "gt_sysn_results.json"), "w") as f:
             json.dump(gt_sysn_output, f, indent=4)
@@ -104,5 +118,35 @@ elif "medical_report" in args.data_path:
     os.makedirs(args.output_dir, exist_ok=True)
     with open(os.path.join(args.output_dir, "gt_ours_results.json"), "w") as f:
         json.dump(gt_ours_output, f, indent=4)
+    # with open(os.path.join(args.output_dir, "gt_origin_results.json"), "w") as f:
+    #     json.dump(gt_origin_output, f, indent=4)
+
+elif "faireval" in args.data_path:
+
+    pair_comparison_output = []
+
+    for num, ins in enumerate(data[:80]):
+
+        print(f"================================instance {num}====================================")
+
+        # reassign the text to agents, and set final_prompt to null for debate at first round
+        for agent_id in range(len(agentverse.agents)):
+            agentverse.agents[agent_id].source_text = ins["question"]
+            agentverse.agents[agent_id].compared_text_one = ins["response"]["gpt35"]
+            agentverse.agents[agent_id].compared_text_two = ins["response"]["vicuna"]
+            agentverse.agents[agent_id].final_prompt = ""
+
+        agentverse.run()
+
+        evaluation = get_evaluation(setting="base_setting", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
+
+        pair_comparison_output.append({"question": ins["question"],
+                                       "response": {"gpt35": ins["response"]["gpt35"],
+                                                    "vicuna": ins["response"]["vicuna"]},
+                                       "evaluation": evaluation})
+
+        os.makedirs(args.output_dir, exist_ok=True)
+        with open(os.path.join(args.output_dir, "pair_comparison_results.json"), "w") as f:
+            json.dump(pair_comparison_output, f, indent=4)
     # with open(os.path.join(args.output_dir, "gt_origin_results.json"), "w") as f:
     #     json.dump(gt_origin_output, f, indent=4)

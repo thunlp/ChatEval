@@ -1,0 +1,26 @@
+[
+    {
+        "metric": "model_relevance",
+        "spearman": 0.6111939312170066,
+        "pearsonr": 0.5555115089803441,
+        "kendalltau": 0.5062783244836762
+    },
+    {
+        "metric": "model_consistency",
+        "spearman": 0.4823904025599646,
+        "pearsonr": 0.42915062417913213,
+        "kendalltau": 0.37330340360662057
+    },
+    {
+        "metric": "model_fluency",
+        "spearman": 0.7053120664217803,
+        "pearsonr": 0.6981641345490497,
+        "kendalltau": 0.5619949466280466
+    },
+    {
+        "metric": "model_coherence",
+        "spearman": 0.19367195389182765,
+        "pearsonr": 0.18257808698713823,
+        "kendalltau": 0.16256599009593717
+    }
+]

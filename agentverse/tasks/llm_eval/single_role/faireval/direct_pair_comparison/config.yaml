@@ -1,0 +1,54 @@
+prompts:
+  prompt: &prompt |-
+    [Question]
+    ${source_text}
+    [The Start of Assistant 1’s Answer]
+    ${compared_text_one}
+    [The End of Assistant 1’s Answer]
+    [The Start of Assistant 2’s Answer]
+    ${compared_text_two}
+    [The End of Assistant 2’s Answer]
+    [System]
+    We would like to request your feedback on the performance of two AI assistants in response to the user question displayed above.
+    Please consider the helpfulness, relevance, accuracy, and level of detail of their responses.
+    Please output a single line to tell us which answer is better and the comprehensive explanation of your evaluation, avoiding any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.
+    If you think the answer of Assistant 1 is better than that of Assistant 2, output: Assistant 1
+    If you think the answer of Assistant 1 is worse than that of Assistant 2, output: Assistant 2
+    If you think the two answers are at the same level, output: Same
+
+    Output with the following format strictly:
+    Explaination: [Your explaination]
+    Answer: [Your answer]
+
+environment:
+  env_type: llm_eval
+  max_turns: 1
+  rule:
+    order:
+      type: concurrent
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval
+    name: Annotator
+    role_description: |-
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

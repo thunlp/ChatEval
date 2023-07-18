@@ -19,10 +19,16 @@ if TYPE_CHECKING:
 class LLMEvalAgent(BaseAgent):
 
     source_text: str = ""
+    # for direct score
     reference_text: str = ""
     generated_text: str = ""
 
+    # for pair comparison
+    compared_text_one: str = ""
+    compared_text_two: str = ""
+
     final_prompt: str = ""
+    final_prompt_to_use: str = ""
 
     def step(self, env_description: str = "") -> Message:
         prompt = self._fill_prompt_template(env_description)
@@ -64,13 +70,14 @@ class LLMEvalAgent(BaseAgent):
         # Thought: (your thought)
 
         if env.cnt_turn == env.max_turns - 1:
-            self.final_prompt = "Now, please give your final judgement, and you must use the following format, first start with 'This is my final judgement!' and briefly give the thought on why you give this rate, then finally give the rate of the summary of the above 4 aspects." \
-                                "This is my final judgement!\n" \
-                                "Thought: (your thought)\n" \
-                                "Relevance:\n" \
-                                "Consistency:\n" \
-                                "Fluency:\n" \
-                                "Coherence:\n" \
+            # self.final_prompt = "Now, please give your final judgement, and you must use the following format, first start with 'This is my final judgement!' and briefly give the thought on why you give this rate, then finally give the rate of the summary of the above 4 aspects." \
+            #                     "This is my final judgement!\n" \
+            #                     "Thought: (your thought)\n" \
+            #                     "Relevance:\n" \
+            #                     "Consistency:\n" \
+            #                     "Fluency:\n" \
+            #                     "Coherence:\n" \
+            self.final_prompt = self.final_prompt_to_use
 
         prompt = self._fill_prompt_template(env_description)
 
@@ -115,6 +122,8 @@ class LLMEvalAgent(BaseAgent):
             "source_text": self.source_text,
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
+            "compared_text_one": self.compared_text_one,
+            "compared_text_two": self.compared_text_two,
             "final_prompt": self.final_prompt,
             "chat_history": self.memory.to_string(add_sender_prefix=True),
         }
