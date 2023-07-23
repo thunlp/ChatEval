@@ -1,0 +1,113 @@
+prompts:
+  prompt: &prompt |-
+    You will be given one summary written for a news article.
+
+    Your task is to rate the summary on one metric.
+
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Criteria:
+
+    Fluency (1-5): the quality of the summary in terms of grammar, spelling, punctuation, word choice, and sentence structure.
+
+    - 1: Poor. The summary has many errors that make it hard to understand or sound unnatural.
+    - 2: Near Fair. Better than Poor but somehow worse than Fair.
+    - 3: Fair. The summary has some errors that affect the clarity or smoothness of the text, but the main points are still comprehensible.
+    - 4: Near Good. Better than Fair but somehow worse than Good.
+    - 5: Good. The summary has few or no errors and is easy to read and follow.
+
+
+    Example:
+
+
+    Summary:
+
+    ${generated_text}
+
+    Additionally, There will be another few people given the same task like you, and you are required to discuss with each other, you can share the idea on how you think of the summary.
+
+    Here is your discuss history:
+    ${chat_history}
+
+    ${role_description}
+
+    Now, What is your opinion, ${agent_name} ?
+
+    ${final_prompt}
+
+environment:
+  env_type: llm_eval
+  max_turns: 9
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: Alice
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+
+      - Fluency:
+    role_description: |-
+      Your name is Alice, you are now going to cooperate with Bob and Candy to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: Bob
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+
+      - Fluency:
+    role_description: |-
+      Your name is Bob, you are now going to cooperate with Alice and Candy to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: Candy
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+
+      - Fluency:
+    role_description: |-
+      Your name is Candy, you are now going to cooperate with Alice and Bob to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

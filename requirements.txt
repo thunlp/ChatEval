@@ -1,0 +1,13 @@
+pyyaml
+langchain>=0.0.155
+fastapi
+uvicorn
+py3langid
+iso-639
+openai
+opencv-python
+gradio
+httpx[socks]
+git+https://github.com/OpenBMB/BMTools.git
+icecream
+astunparse

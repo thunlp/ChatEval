@@ -1,0 +1,124 @@
+prompts:
+  prompt: &prompt |-
+    You will be given a conversation between two individuals. You will then be given one potential response for the next turn in the conversation. The response concerns an interesting fact, which will be provided as well.
+    
+    Your task is to rate the responses on one metric.
+    
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Crieteria:
+
+    Engagingness (1-3) Is the response dull/interesting?
+
+    - A score of 1 (dull) means that the response is generic and dull.
+    - A score of 2 (somewhat interesting) means the response is somewhat interesting and could engage you in the conversation (e.g., an opinion, thought)
+    - A score of 3 (interesting) means the response is very interesting or presents an interesting fact
+
+    Evaluation Steps:
+
+    1. Read the conversation, the corresponding fact and the response carefully.
+    2. Rate the response on a scale of 1-3 for engagingness, according to the criteria above.
+    3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
+
+    Example:
+
+
+    Conversation History:
+
+    ${source_text}
+
+    Corresponding Fact:
+
+    ${reference_text}
+
+    Response:
+
+    ${generated_text}
+
+    Additionally, There will be another few people given the same task like you, and you are required to discuss with each other, you can share the idea on how you think of the response.
+
+    Here is your discuss history:
+    ${chat_history}
+
+    ${role_description}
+
+    Now, What is your opinion, ${agent_name} ?
+
+    ${final_prompt}
+
+environment:
+  env_type: llm_eval
+  max_turns: 6
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: Critic
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+      
+      - Engagingness:
+    role_description: |-
+      You are Critic, and you will check fluent writing, clear sentences, and good wording in response. You are now going to cooperate with General Public and News Author to help rate the response. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: General Public
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+
+      - Engagingness:
+    role_description: |-
+      You are General Public, and you are interested in the story and looking for updates on the investigation. You are now going to cooperate with Critic and News Author to help rate the response. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: News Author
+    final_prompt_to_use: |-
+      Evaluation Form (scores ONLY):
+      
+      - Engagingness:
+    role_description: |-
+      You are News Author, and you will check the response for consistency with the original article. You are now going to cooperate with Critic and General Public to help rate the response. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo"
+      llm_type: gpt-3.5-turbo
+      temperature: 0
+      max_tokens: 256
+
+tools: ~
