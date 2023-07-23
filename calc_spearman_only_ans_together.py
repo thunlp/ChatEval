@@ -65,12 +65,11 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
         prediction_scores = []
 
         model_num = len(human_results)
-        # now we just tust the first models' output
-        for model_index in range(model_num)[:16]:
+        # now we just tust the first 16 instance
+        for instance_index in range(len(human_results[0]))[:100]:
+            # now we just tust the first models' output
+            for model_index in range(model_num)[:16]:
 
-            # now we just tust the first 16 instance
-            for instance_index in range(len(human_results[0]))[:100]:
-                
                 try:
                     prediction_scores.append(get_model_results_evaluation(evaluations=model_results[model_index][instance_index]["evaluation"],
                                                                           aspect=human_metric))
@@ -79,10 +78,8 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
                 except BaseException as e:
                     continue
 
-                    
-
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+        if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+            continue
 
         correlations.append([
             spearmanr(target_scores, prediction_scores)[0],
@@ -121,16 +118,16 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
     for metric in auto_metrics:
         correlations = []
 
-        target_scores = []
-        prediction_scores = []
-
         model_num = len(human_results)
-        # TODO now we just tust the first models' output
-        for model_index in range(model_num)[:1]:
 
-            # TODO now we just tust the first 16 instance
-            for instance_index in range(len(human_results[0]))[:16]:
+        # TODO now we just take the first 16 instance
+        for instance_index in range(len(human_results[0]))[:100]:
 
+            target_scores = []
+            prediction_scores = []
+
+            # TODO now we just take the first models' output
+            for model_index in range(model_num)[:16]:
                 try:
                     prediction_scores.append(get_model_results_evaluation(
                         evaluations=model_results[model_index][instance_index]["evaluation"],
@@ -141,14 +138,14 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
 
                     continue
 
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+            if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+                continue
 
-        correlations.append([
-            spearmanr(target_scores, prediction_scores)[0],
-            pearsonr(target_scores, prediction_scores)[0],
-            kendalltau(target_scores, prediction_scores)[0],
-        ])
+            correlations.append([
+                spearmanr(target_scores, prediction_scores)[0],
+                pearsonr(target_scores, prediction_scores)[0],
+                kendalltau(target_scores, prediction_scores)[0],
+            ])
 
         corr_mat = np.array(correlations)
         spearman, pearman, ktau = np.mean(corr_mat[:, 0]), np.mean(corr_mat[:, 1]), np.mean(corr_mat[:, 2])

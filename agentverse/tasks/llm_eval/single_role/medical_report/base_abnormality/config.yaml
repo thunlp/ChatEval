@@ -1,0 +1,74 @@
+prompts:
+  prompt: &prompt |-
+    For the given radiological report, please select sentences that are descriptions of the X-Ray image and classify each sentence for the abnormality type.
+    These sentences indicate abnormal clinical imaging findings,such as ground-glass opacity, consolidation, nodules, masses, effusions, infiltrations,abnormal positioning, abnormal volumes, etc.
+    If no abnormality, output (No abnormality). If no impression in the raw report, don't report extract result for impression.
+
+    Here is an example:
+    ### Input begin
+    FINDINGS:
+
+    There is no focal consolidation, pleural effusion or pneumothorax.  Bilateral
+    nodular opacities that most likely represent nipple shadows. The
+    cardiomediastinal silhouette is normal.  Clips project over the left lung,
+    potentially within the breast. The imaged upper abdomen is unremarkable.
+    Chronic deformity of the posterior left sixth and seventh ribs are noted.
+
+    IMPRESSION:
+
+    No acute cardiopulmonary process.
+    ### Input end
+
+    ### Output begin
+    FINDINGS:
+    - (No Abnormality) There is no focal consolidation, pleural effusion or pneumothorax.
+    - (Opacity) Bilateral nodular opacities that most likely represent nipple shadows.
+    - (No Abnormality) The cardiomediastinal silhouette is normal.
+    - (Support Device) Clips project over the left lung, potentially within the breast.
+    - (No Abnormality) The imaged upper abdomen is unremarkable.
+    - (Chronic Deformity) Chronic deformity of the posterior left sixth and seventh ribs are noted.
+
+    IMPRESSION:
+    - (No Abnormality) No acute cardiopulmonary process.
+    ### Output end
+
+    Here is a new report. Extract abnormalities like the above example, Please response begin with ### Output begin and end with ### Output end:
+
+    ### Input begin
+    ${generated_text}
+    ### Input end
+
+
+
+environment:
+  env_type: llm_eval
+  max_turns: 1
+  rule:
+    order:
+      type: concurrent
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval
+    name: Annotator
+    role_description: |-
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-4"
+      llm_type: gpt-4
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

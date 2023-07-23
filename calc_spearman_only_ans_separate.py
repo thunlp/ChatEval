@@ -69,11 +69,9 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
 
         model_num = len(human_results)
         # now we just use the first models' output
-        for model_index in range(model_num)[:16]:
-
+        for instance_index in range(len(human_results[0]))[:100]:
             # now we just use the first 16 instance
-            for instance_index in range(len(human_results[0]))[:100]:
-
+            for model_index in range(model_num)[:16]:
                 try:
                     prediction_scores.append(get_model_results_evaluation(
                         evaluations=model_results[model_index][instance_index]["evaluation"],
@@ -84,8 +82,8 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
 
                     continue
 
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+        if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+            continue
 
         correlations.append([
             spearmanr(target_scores, prediction_scores)[0],
@@ -124,15 +122,15 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
     for metric in auto_metrics:
         correlations = []
 
-        target_scores = []
-        prediction_scores = []
-
         model_num = len(human_results)
-        # TODO now we just tust the first models' output
-        for model_index in range(model_num)[:16]:
+        # TODO now we just pick the first models' output
+        for instance_index in range(len(human_results[0]))[:100]:
 
-            # TODO now we just tust the first 16 instance
-            for instance_index in range(len(human_results[0]))[:100]:
+            target_scores = []
+            prediction_scores = []
+
+            # TODO now we just pick the first 16 instance
+            for model_index in range(model_num)[:16]:
 
                 try:
                     prediction_scores.append(get_model_results_evaluation(
@@ -144,8 +142,8 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
                     print(e)
                     continue
 
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+            if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+                continue
 
             correlations.append([
                 spearmanr(target_scores, prediction_scores)[0],
@@ -167,28 +165,28 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--human_results_path", default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data"
-                                                        "/human_results.json")
-
-
-    parser.add_argument("--model_results_path", default="./outputs/llm_eval/single_role/geval_summeval_separate")
-    parser.add_argument("--model_results_post_path", default="thought/gpt_3.5")
-
-    # gt_sysn_results.json
-
-    parser.add_argument("--output_path", default="./outputs/llm_eval/single_role/geval_summeval_separate")
-
-
-    #
     # parser.add_argument("--human_results_path", default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data"
     #                                                     "/human_results.json")
     #
-    # parser.add_argument("--model_results_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
+    #
+    # parser.add_argument("--model_results_path", default="./outputs/llm_eval/single_role/geval_summeval_separate")
     # parser.add_argument("--model_results_post_path", default="thought/gpt_3.5")
     #
     # # gt_sysn_results.json
     #
-    # parser.add_argument("--output_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
+    # parser.add_argument("--output_path", default="./outputs/llm_eval/single_role/geval_summeval_separate")
+
+
+
+    parser.add_argument("--human_results_path", default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data"
+                                                        "/human_results.json")
+
+    parser.add_argument("--model_results_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
+    parser.add_argument("--model_results_post_path", default="thought/gpt_3.5")
+
+    # gt_sysn_results.json
+
+    parser.add_argument("--output_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
 
     args = parser.parse_args()
 

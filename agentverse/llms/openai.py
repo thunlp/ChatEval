@@ -81,7 +81,7 @@ class OpenAICompletion(BaseCompletionModel):
             total_tokens=response["usage"]["total_tokens"],
         )
 
-
+@llm_registry.register("gpt-3.5-turbo-0301")
 @llm_registry.register("gpt-3.5-turbo")
 @llm_registry.register("gpt-4")
 class OpenAIChat(BaseChatModel):

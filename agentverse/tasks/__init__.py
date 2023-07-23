@@ -37,8 +37,15 @@ from .llm_eval.single_role.geval_summeval_separate.fluency.thought.output_parser
 from .llm_eval.single_role.geval_summeval_separate.relevance.thought.output_parser import LLMEvalParser
 
 from .llm_eval.single_role.faireval.direct_pair_comparison.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.direct_pair_comparison.output_parser import LLMEvalParser
+from .llm_eval.single_role.faireval.calc_score_comparison.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.direct_pair_comparison.gpt_35_0613.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_35_0613.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.direct_pair_comparison.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
+
+
+
 
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.coherence.thought.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.consistency.thought.output_parser import LLMEvalParser
@@ -47,4 +54,7 @@ from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_s
 
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.coherence.thought.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.fluency.thought.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.medical_report.base_abnormality.output_parser import LLMEvalParser
+
 

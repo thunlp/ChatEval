@@ -6,6 +6,7 @@ from string import Template
 from typing import TYPE_CHECKING, List
 
 from agentverse.message import Message
+from openai.error import RateLimitError
 
 from . import agent_registry
 from .base import BaseAgent
@@ -82,16 +83,33 @@ class LLMEvalAgent(BaseAgent):
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
-        for i in range(self.max_retry):
-            try:
-                response = await self.llm.agenerate_response(prompt)
-                parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
+
+        should_break = False
+        while True:
+
+            for i in range(self.max_retry):
+                try:
+                    response = await self.llm.agenerate_response(prompt)
+                    parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
+                    should_break = True
+                    break
+                except (KeyboardInterrupt, bdb.BdbQuit):
+                    raise
+                except Exception as e:
+                    if isinstance(e, RateLimitError):
+                        logging.error(e)
+                        logging.warning("Retrying Until rate limit error disappear...")
+                        break
+                    else:
+                        logging.error(e)
+                        logging.warning("Retrying...")
+                        continue
+            else:
+                logging.error(f"After {self.max_retry} failed try, end the loop")
                 break
-            except (KeyboardInterrupt, bdb.BdbQuit):
-                raise
-            except Exception as e:
-                logging.error(e)
-                logging.warning("Retrying...")
+            if should_break:
+                break
+            else:
                 continue
 
         if parsed_response is None:
