@@ -64,15 +64,15 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
     for metric in auto_metrics:
         correlations = []
 
-        target_scores = []
-        prediction_scores = []
-
         model_num = len(human_results)
         # now we just use the first models' output
-        for model_index in range(model_num)[:16]:
+        for instance_index in range(len(human_results[0]))[:100]:
+
+            target_scores = []
+            prediction_scores = []
 
             # now we just use the first 16 instance
-            for instance_index in range(len(human_results[0]))[:100]:
+            for model_index in range(model_num)[:16]:
 
                 try:
                     prediction_scores.append(get_model_results_evaluation(
@@ -84,8 +84,8 @@ def dataset_level_correlation_summeval(human_metric, human_results, model_result
 
                     continue
 
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+            if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+                continue
 
         correlations.append([
             spearmanr(target_scores, prediction_scores)[0],
@@ -124,15 +124,15 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
     for metric in auto_metrics:
         correlations = []
 
-        target_scores = []
-        prediction_scores = []
-
         model_num = len(human_results)
         # TODO now we just tust the first models' output
-        for model_index in range(model_num)[:16]:
+        for instance_index in range(len(human_results[0]))[:100]:
+
+            target_scores = []
+            prediction_scores = []
 
             # TODO now we just tust the first 16 instance
-            for instance_index in range(len(human_results[0]))[:100]:
+            for model_index in range(model_num)[:16]:
 
                 try:
                     prediction_scores.append(get_model_results_evaluation(
@@ -144,8 +144,11 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
                     print(e)
                     continue
 
-            # if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
-            #     continue
+            if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+                continue
+
+            if len(prediction_scores) < 2 or len(target_scores) < 2:
+                continue
 
             correlations.append([
                 spearmanr(target_scores, prediction_scores)[0],
@@ -171,24 +174,13 @@ if __name__ == '__main__':
                                                         "/human_results.json")
 
 
-    parser.add_argument("--model_results_path", default="./outputs/llm_eval/test_yjx/mul/two_turns")
-    parser.add_argument("--model_results_post_path", default="thought")
+    parser.add_argument("--model_results_path", default="./outputs/llm_eval/test_yjx/sig")
+    parser.add_argument("--model_results_post_path", default="News_Author")
 
     # gt_sysn_results.json
 
-    parser.add_argument("--output_path", default="./outputs/llm_eval/test_yjx/mul/two_turns")
+    parser.add_argument("--output_path", default="./outputs/llm_eval/test_yjx/sig")
 
-
-    #
-    # parser.add_argument("--human_results_path", default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data"
-    #                                                     "/human_results.json")
-    #
-    # parser.add_argument("--model_results_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
-    # parser.add_argument("--model_results_post_path", default="thought/gpt_3.5")
-    #
-    # # gt_sysn_results.json
-    #
-    # parser.add_argument("--output_path", default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential")
 
     args = parser.parse_args()
 
@@ -215,6 +207,6 @@ if __name__ == '__main__':
 
     print(
         tabulate(final_pd, headers=['metric', 'spearman', 'pearsonr', 'kendalltau'], showindex=False, tablefmt="psql"))
-    with open(os.path.join(args.output_path, "correlation_results.json"), 'w') as f:
+    with open(os.path.join(args.output_path, "NewsAuthor_correlation_results.json"), 'w') as f:
         json.dump(final_pd.to_dict(orient='records'), f, indent=4)
-    final_pd.to_excel(os.path.join(args.output_path, "correlation_results.xlsx"), index=False)
+    final_pd.to_excel(os.path.join(args.output_path, "NewsAuthor_correlation_results.xlsx"), index=False)

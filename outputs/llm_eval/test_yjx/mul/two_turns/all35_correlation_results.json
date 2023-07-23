@@ -1,26 +1,26 @@
 [
     {
         "metric": "model_consistency",
-        "spearman": 0.4375169146127993,
-        "pearsonr": 0.4257776026554733,
-        "kendalltau": 0.3697214824427004
+        "spearman": 0.4010093573401639,
+        "pearsonr": 0.3957006772256033,
+        "kendalltau": 0.35771271784215686
     },
     {
         "metric": "model_fluency",
-        "spearman": 0.36398760655967766,
-        "pearsonr": 0.41144239914602015,
-        "kendalltau": 0.3042053770291618
+        "spearman": 0.31942545529588484,
+        "pearsonr": 0.37224986518003744,
+        "kendalltau": 0.27991321123647683
     },
     {
         "metric": "model_relevance",
-        "spearman": 0.4850526661014054,
-        "pearsonr": 0.49997826032064896,
-        "kendalltau": 0.38776858078033144
+        "spearman": 0.44551293348345666,
+        "pearsonr": 0.47466890633743863,
+        "kendalltau": 0.3719169113008777
     },
     {
         "metric": "model_coherence",
-        "spearman": 0.496753712371676,
-        "pearsonr": 0.49475717500219724,
-        "kendalltau": 0.3958062473824706
+        "spearman": 0.4925124736613733,
+        "pearsonr": 0.49779685676824875,
+        "kendalltau": 0.40935503200233003
     }
 ]

@@ -1,26 +1,26 @@
 [
     {
         "metric": "model_naturalness",
-        "spearman": 0.3441006747714217,
-        "pearsonr": 0.3444046497506417,
-        "kendalltau": 0.29198262868285363
+        "spearman": 0.49402208431644073,
+        "pearsonr": 0.4802503840948975,
+        "kendalltau": 0.44012237232179835
     },
     {
         "metric": "model_coherence",
-        "spearman": 0.280368417885648,
-        "pearsonr": 0.3088861729145201,
-        "kendalltau": 0.23752800367858795
+        "spearman": 0.3269010563195146,
+        "pearsonr": 0.33856337651968754,
+        "kendalltau": 0.29716288701639054
     },
     {
         "metric": "model_engagingness",
-        "spearman": 0.43771760015190525,
-        "pearsonr": 0.46831286657791327,
-        "kendalltau": 0.369356570622329
+        "spearman": 0.6111769161525084,
+        "pearsonr": 0.6054464719814235,
+        "kendalltau": 0.5578628001083531
     },
     {
         "metric": "model_groundedness",
-        "spearman": NaN,
-        "pearsonr": NaN,
-        "kendalltau": NaN
+        "spearman": 0.5533320959479985,
+        "pearsonr": 0.556051981810913,
+        "kendalltau": 0.5390498524628192
     }
 ]

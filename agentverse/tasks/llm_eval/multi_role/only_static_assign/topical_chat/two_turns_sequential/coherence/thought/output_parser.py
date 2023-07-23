@@ -24,7 +24,7 @@ class LLMEvalParser(OutputParser):
 
             if not (len(cleaned_output) == 1
                     and float(cleaned_output[0]) >= 1
-                    and float(cleaned_output[0]) <= 5
+                    and float(cleaned_output[0]) <= 3
             ):
                 raise OutputParserError(text)
 

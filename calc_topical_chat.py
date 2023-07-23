@@ -26,7 +26,7 @@ def get_model_results_evaluation(method="average", evaluations=None, aspect=None
                 print(e)
 
     if len(aspect_results) == 0:
-        raise ValueError("skip this line")
+        raise ValueError(f"skip this line:{aspect}")
 
     if method != "average":
         raise ValueError("check if method is average")
@@ -56,24 +56,28 @@ def correlation_cal(human_metric, human_results, model_results) -> pd.DataFrame:
 
     for metric in auto_metrics:
         correlations = []
-
-        target_scores = []
-        prediction_scores = []
-
         model_num = len(human_results)
-        for model_index in range(model_num)[:6]:
-            for instance_index in range(len(human_results[0]))[:60]:
+        for instance_index in range(len(human_results[0]))[:60]:
+            target_scores = []
+            prediction_scores = []
+            for model_index in range(model_num)[:6]:
                 try:
                     prediction_scores.append(get_model_results_evaluation(
                         evaluations=model_results[model_index][instance_index]["evaluation"],
                         aspect=human_metric))
                     if len(human_results[model_index][instance_index][result_in_file]) == 0:
-                        raise ValueError("skip this line")
+                        raise ValueError(f"skip this line: {human_metric}")
                     target_score = sum(human_results[model_index][instance_index][result_in_file]) / len(human_results[model_index][instance_index][result_in_file])
                     target_scores.append(target_score)
                 except BaseException as e:
                     print(e)
                     continue
+
+            if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
+                continue
+
+            if len(prediction_scores) < 2 or len(target_scores) < 2:
+                continue
 
             correlations.append([
                 spearmanr(target_scores, prediction_scores)[0],
@@ -97,12 +101,12 @@ if __name__ == '__main__':
                                                         "/human_results.json")
 
 
-    parser.add_argument("--model_results_path", default="./outputs/llm_eval/topical_yjx/sig")
-    parser.add_argument("--model_results_post_path", default="News_Author")
+    parser.add_argument("--model_results_path", default="./outputs/llm_eval/topical_yjx/mul/two_turns")
+    parser.add_argument("--model_results_post_path", default="thought")
 
     # gt_sysn_results.json
 
-    parser.add_argument("--output_path", default="./outputs/llm_eval/topical_yjx/sig")
+    parser.add_argument("--output_path", default="./outputs/llm_eval/topical_yjx/mul/two_turns")
 
     args = parser.parse_args()
 
@@ -125,6 +129,6 @@ if __name__ == '__main__':
 
     print(
         tabulate(final_pd, headers=['metric', 'spearman', 'pearsonr', 'kendalltau'], showindex=False, tablefmt="psql"))
-    with open(os.path.join(args.output_path, "News_Author_correlation_results.json"), 'w') as f:
+    with open(os.path.join(args.output_path, "correlation_results.json"), 'w') as f:
         json.dump(final_pd.to_dict(orient='records'), f, indent=4)
-    final_pd.to_excel(os.path.join(args.output_path, "News_Author_correlation_results.xlsx"), index=False)
+    final_pd.to_excel(os.path.join(args.output_path, "correlation_results.xlsx"), index=False)
