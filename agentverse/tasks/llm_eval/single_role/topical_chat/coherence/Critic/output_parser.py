@@ -10,7 +10,7 @@ from agentverse.utils import AgentAction, AgentFinish
 from agentverse.parser import OutputParserError, output_parser_registry
 
 
-@output_parser_registry.register("llm_eval/single_role/geval_summeval_separate/coherence/Critic")
+@output_parser_registry.register("llm_eval/single_role/topical_chat/coherence/Critic")
 class LLMEvalParser(OutputParser):
     def parse(self, output: LLMResult) -> Union[AgentAction, AgentFinish]:
         text = output.content

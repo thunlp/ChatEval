@@ -9,15 +9,15 @@ prompts:
 
     Evaluation Crieteria:
 
-    Groundedness (0-1) Is whether the response is based on the corresponding fact and knowledge.
+    Groundedness (0 or 1) Is whether the response is based on the corresponding fact and knowledge.
 
-    - A score of 0 (ungrounded) means that the response is hardly based on the corresponding fact and knowledge.
+    - A score of 0 (ungrounded) means that the response partly conflicts with the corresponding fact, or the response has little to do with the corresponding fact.
     - A score of 1 (grounded) means the response is well based on the corresponding fact and knowledge.
 
     Evaluation Steps:
 
     1. Read the conversation, the corresponding fact and the response carefully.
-    2. Rate the response on a scale of 0-1 for Groundedness, according to the criteria above.
+    2. Rate the response on a scale of 0 or 1 for Groundedness, according to the criteria above.
     3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
 
     Example:

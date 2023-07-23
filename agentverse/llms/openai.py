@@ -82,6 +82,7 @@ class OpenAICompletion(BaseCompletionModel):
         )
 
 
+@llm_registry.register("gpt-3.5-turbo-0310")
 @llm_registry.register("gpt-3.5-turbo")
 @llm_registry.register("gpt-4")
 class OpenAIChat(BaseChatModel):

@@ -67,3 +67,24 @@ from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.c
 from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.engagingness.thought.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.groundedness.thought.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.naturalness.thought.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.topical_chat.coherence.Critic.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.coherence.General_Public.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.coherence.News_Author.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.topical_chat.engagingness.Critic.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.engagingness.General_Public.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.engagingness.News_Author.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.topical_chat.groundedness.Critic.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.groundedness.General_Public.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.groundedness.News_Author.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.topical_chat.naturalness.Critic.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.naturalness.General_Public.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.naturalness.News_Author.output_parser import LLMEvalParser
+
+from .llm_eval.single_role.topical_chat.coherence.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.engagingness.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.groundedness.thought.output_parser import LLMEvalParser
+from .llm_eval.single_role.topical_chat.naturalness.thought.output_parser import LLMEvalParser

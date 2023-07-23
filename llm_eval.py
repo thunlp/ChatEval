@@ -42,9 +42,9 @@ parser = ArgumentParser()
 # parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
 # parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test_yjx/sig/relevance/News_Author")
 # multi
-parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/topical_chat/two_turns_sequential/engagingness/thought")
+parser.add_argument("--task", type=str, default="llm_eval/single_role/topical_chat/coherence/thought")
 parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/topical_chat/preprocessed_data/test.json")
-parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/topical_yjx/mul/two_turns/engagingness/thought")
+parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/topical_yjx/sig/coherence/thought")
 
 
 

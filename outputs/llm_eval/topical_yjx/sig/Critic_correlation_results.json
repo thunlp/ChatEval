@@ -1,0 +1,26 @@
+[
+    {
+        "metric": "model_naturalness",
+        "spearman": 0.2767574208676066,
+        "pearsonr": 0.28696371647202773,
+        "kendalltau": 0.22810262441345172
+    },
+    {
+        "metric": "model_coherence",
+        "spearman": 0.2455812520037871,
+        "pearsonr": 0.25663150926629685,
+        "kendalltau": 0.21135535880655898
+    },
+    {
+        "metric": "model_engagingness",
+        "spearman": 0.4712226156579189,
+        "pearsonr": 0.4876855600952255,
+        "kendalltau": 0.40646065945479215
+    },
+    {
+        "metric": "model_groundedness",
+        "spearman": NaN,
+        "pearsonr": NaN,
+        "kendalltau": NaN
+    }
+]
