@@ -191,7 +191,7 @@ if __name__ == '__main__':
     parser.add_argument("--output_path",
                         default="./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/calc_score_comparison_reverse")
     parser.add_argument("--ensemble_method", default="average")
-    parser.add_argument("--reverse", type=bool, default=True)
+    parser.add_argument("--reverse", default=False, action="store_true")
 
 
 

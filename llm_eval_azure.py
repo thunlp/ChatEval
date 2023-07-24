@@ -5,6 +5,20 @@ os.environ["http_proxy"] = "http://127.0.0.1:7890"
 os.environ["https_proxy"] = "http://127.0.0.1:7890"
 os.environ["all_proxy"] = "socks5://127.0.0.1:7890"
 
+import openai
+
+# will reset by agentverse code, need to get again in openai.py
+# openai.api_key = os.getenv("AZURE_OPENAI_KEY")
+openai.api_key = "21281145da034df49bdd6744b4a7a6d1"
+openai.api_base = "https://conmmunity-openai-4.openai.azure.com/"
+openai.RPM = 10
+
+openai.api_type = 'azure'
+openai.api_version = '2023-05-15' # this may change in the future
+
+# deployment_name='gpt-4-6'
+
+
 
 import json
 from string import Template
@@ -13,6 +27,8 @@ import types
 
 from agentverse.agentverse import AgentVerse
 from argparse import ArgumentParser
+
+
 
 parser = ArgumentParser()
 
@@ -68,9 +84,9 @@ parser = ArgumentParser()
 # parser.add_argument("--reverse_input", default=False, action="store_true")
 
 
-parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
-parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
+parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential/two_different_role/consistency/thought/gpt_4")
+parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
+parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/geval_summeval_separate/two_turns_sequential/two_different_role/consistency/thought/gpt_4")
 parser.add_argument("--reverse_input", default=False, action="store_true")
 
 

@@ -16,58 +16,6 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser()
 
-# geval_summeval
-# Multi_role setting
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/base_setting")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/nlg_eval/multi_role/only_static_assign/base_setting/test_gpt3.5_thoughtbefore/")
-
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/base_setting")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/nlg_eval/multi_role/only_static_assign/base_setting/test_gpt3.5_thoughtbefore/")
-
-# Single_role setting
-# parser.add_argument("--task", type=str, default="llm_eval/single_role/multi_role_prompt_but1role/base_setting/News_Author")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/nlg_eval/single_role/multi_role_prompt_but1role/base_setting/News_Author/test_gpt3.5_thoughtbefore/")
-
-# parser.add_argument("--task", type=str, default="llm_eval/single_role/geval_summeval_separate/coherence/thought")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
-
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/geval_summeval_separate/three_turns_sequential/coherence/thought")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
-
-# faireval
-# single
-# parser.add_argument("--task", type=str, default="llm_eval/single_role/faireval/calc_score_comparison")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/single_role/faireval/calc_score_comparison_reverse")
-# parser.add_argument("--reverse_input", type=bool, default=True)
-
-# parser.add_argument("--task", type=str, default="llm_eval/single_role/faireval/calc_score_comparison")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/single_role/faireval/calc_score_comparison")
-# parser.add_argument("--reverse_input", type=bool, default=False)
-
-# multi
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
-# parser.add_argument("--reverse_input", type=bool, default=False)
-
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/calc_score_comparison")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/calc_score_comparison")
-# parser.add_argument("--reverse_input", type=bool, default=False)
-
-# parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/calc_score_comparison")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/calc_score_comparison_reverse_test")
-# parser.add_argument("--reverse_input", default=False, action="store_true")
-
-
 parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
 parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
 parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
@@ -84,8 +32,6 @@ parser.add_argument("--reverse_input", default=False, action="store_true")
 # parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
 # parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
 # parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/multi_role/only_static_assign/faireval/three_turns_sequential/direct_pair_comparison")
-
-
 
 args = parser.parse_args()
 
@@ -227,7 +173,7 @@ elif "faireval" in args.data_path:
 
         agentverse.run()
 
-        evaluation = get_evaluation(setting="base_setting", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
+        evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
 
         pair_comparison_output.append({"question": ins["question"],
                                        "response": {"gpt35": ins["response"]["gpt35"],

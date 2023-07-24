@@ -44,13 +44,21 @@ from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.dir
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
 
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_same_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_same_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
 
 
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_concurrent.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.faireval.two_turns_concurrent.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
 
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.coherence.thought.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.consistency.thought.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.fluency.thought.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.relevance.thought.output_parser import LLMEvalParser
+
+# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.coherence.thought.output_parser import LLMEvalParser
+# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.consistency.thought.output_parser import LLMEvalParser
+# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.fluency.thought.output_parser import LLMEvalParser
+# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.relevance.thought.output_parser import LLMEvalParser
+
+from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.two_different_role.consistency.thought.gpt_4.output_parser import LLMEvalParser
+
 
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.coherence.thought.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.fluency.thought.output_parser import LLMEvalParser
