@@ -38,7 +38,7 @@ prompts:
 
     Output with the following format strictly:
     Explaination: [Your explaination]
-    Coherence: [Your answer (scores ONLY)]
+    Naturalness: [Your answer (scores ONLY)]
 
 environment:
   env_type: llm_eval

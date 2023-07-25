@@ -88,3 +88,8 @@ from .llm_eval.single_role.topical_chat.coherence.thought.output_parser import L
 from .llm_eval.single_role.topical_chat.engagingness.thought.output_parser import LLMEvalParser
 from .llm_eval.single_role.topical_chat.groundedness.thought.output_parser import LLMEvalParser
 from .llm_eval.single_role.topical_chat.naturalness.thought.output_parser import LLMEvalParser
+
+from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.coherence.roleless.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.engagingness.roleless.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.groundedness.roleless.output_parser import LLMEvalParser
+from .llm_eval.multi_role.only_static_assign.topical_chat.two_turns_sequential.naturalness.roleless.output_parser import LLMEvalParser

@@ -38,9 +38,9 @@ prompts:
 
     ${role_description}
 
-    Evaluation Form (scores ONLY):
-      
-    - Naturalness:
+    Output with the following format strictly:
+    Explaination: [Your explaination]
+    Naturalness: [Your answer (scores ONLY)]
 
 environment:
   env_type: llm_eval
@@ -69,8 +69,8 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm:
-      model: "gpt-3.5-turbo"
-      llm_type: gpt-3.5-turbo
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
       temperature: 0
       max_tokens: 256
 

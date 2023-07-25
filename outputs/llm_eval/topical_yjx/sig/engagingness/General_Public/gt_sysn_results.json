@@ -7,7 +7,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The response attempts to engage the other person in conversation by asking if they listen to jazz music often. However, the connection between the response and the previous conversation is weak, and the fact provided about the nightlife and jazz music is not particularly compelling or relevant to the conversation. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -18,7 +18,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides some insight into why the Raiders may have traded Khalil Mack and the financial considerations involved. However, it does not add much to the conversation about Jon Gruden and the team's performance.\nEngagingness: 2"
                 }
             ]
         },
@@ -29,7 +29,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it adds a humorous element to the conversation and shows the extreme lengths that Bill Belichick would go to in order to win. However, it does not add any new information or insights to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -40,7 +40,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it adds to the conversation about the valuable baseball cards found and mentions a specific valuable card, Honus Wagner. It also brings up the fact that Wayne Gretzky bought one as an investment in the 90s, which adds to the interestingness of the response. \nEngagingness: 3"
                 }
             ]
         },
@@ -51,7 +51,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it acknowledges the fact and adds a comment about the dominance of Georgia Tech in that game. However, it does not add much to the conversation and does not engage the other person to continue the discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -62,7 +62,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response seems somewhat forced and unrelated to the previous conversation. While the fact about the first mass-produced car is interesting, it doesn't really add anything to the conversation or flow naturally from the previous topic. \nEngagingness: 2"
                 }
             ]
         },
@@ -72,8 +72,8 @@
             "outputs": "did you watch the chapelle show ? the one where prince made them pancakes after a basketball game ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response seems somewhat interesting as it brings up a specific episode of a popular TV show and a memorable scene from it. However, it doesn't add much to the conversation about music and soundtracks. \nEngagingness: 2"
                 }
             ]
         },
@@ -84,7 +84,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it brings up a unique and unexpected connection between the conversation about radio and the fact about Canadian law. It also adds humor to the conversation by suggesting that Jupiter would have to book Canadian storms to comply with the law. \nEngagingness: 3"
                 }
             ]
         },
@@ -94,8 +94,8 @@
             "outputs": "i do too . did you know the 3 horizontal line menu on apps and websites is called the hamburger button ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very interesting as it provides a new and unique fact about the internet that the other person may not have known before. It also adds to the conversation by sharing new information. \nEngagingness: 3"
                 }
             ]
         },
@@ -106,7 +106,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it presents an opinion on the future of celebrities and Hollywood. The mention of Hollywood being less connected to its public could spark further discussion on the topic. However, the response does not directly relate to the fact about Pixar's secret room visited by celebrities, so it feels a bit disconnected from the conversation. \nEngagingness: 2"
                 }
             ]
         },
@@ -116,8 +116,8 @@
             "outputs": "i like sports , football , hockey , soccer i also find swimming interesting as well . \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation and simply repeats what the other person said. \nEngagingness: 1"
                 }
             ]
         },
@@ -128,7 +128,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it connects the conversation about the potential boredom of an immortal jellyfish to the fact about zebrafish holding the secret to human disease. However, the response is not particularly unique or surprising, and it does not add much to the conversation beyond a general observation.\nEngagingness: 2"
                 }
             ]
         },
@@ -139,7 +139,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact and adds a thought-provoking question about the role of the first president in Zimbabwe. However, the response does not directly engage with the previous statement about different roles and functions of presidents in different countries, which could have made the conversation more cohesive.\nEngagingness: 2"
                 }
             ]
         },
@@ -150,7 +150,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact presented. It does not add any value to the discussion and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -160,8 +160,8 @@
             "outputs": "no i did n't . where 's he from ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting as it shows curiosity about the topic and asks a relevant question. However, it does not add any new information or perspective to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -172,7 +172,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows a difference in taste between the two individuals and raises a question about why Bill Murray, who is known for his comedic talent, would enjoy the movie. However, the response does not add much to the conversation and does not provide any new information or insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -183,7 +183,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a little-known fact about baseball managers that most people may not be aware of. It also shows enthusiasm for the sport and highlights the speaker's appreciation for athletes who are good people off the field. However, the response does not directly relate to the previous part of the conversation, which was about the speaker's favorite baseball team and players. \nEngagingness: 2"
                 }
             ]
         },
@@ -194,7 +194,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not very engaging as it is a generic statement that does not add much to the conversation or the fact presented. It does not show any interest in the topic or provide any new information.\nEngagingness: 1"
                 }
             ]
         },
@@ -205,7 +205,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The connection between the conversation and the fact is not immediately clear, but the mention of a unique NFL record does add some intrigue to the conversation. However, the response does not add much to the conversation beyond the fact itself.\nEngagingness: 2"
                 }
             ]
         },
@@ -215,8 +215,8 @@
             "outputs": "he has a special on netflix and kind of drives into political issue . he also does stand up in a washington dc club . \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides additional information about Kyle Kinane's work and upcoming performance in Washington DC. However, it does not add much to the conversation or provide any unique insights or opinions. \nEngagingness: 2"
                 }
             ]
         },
@@ -227,7 +227,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a shocking fact about a movie that had a huge budget but made almost no money at the box office. It adds an element of surprise to the conversation and could potentially spark further discussion about the movie industry and the risks involved in producing films. \nEngagingness: 3"
                 }
             ]
         },
@@ -238,7 +238,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides some information about Reggie Miller and his famous sister, but it doesn't really add to the conversation or engage the other person in any way. It feels like a random fact thrown in without much relevance to the topic at hand.\nEngagingness: 2"
                 }
             ]
         },
@@ -249,7 +249,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a fascinating fact about the scale of human existence in the context of Earth's history. It also acknowledges the vastness of the universe, which can be a thought-provoking topic. The use of \"lol\" at the end of the sentence, however, detracts from the overall engagement of the response.\nEngagingness: 2"
                 }
             ]
         },
@@ -260,7 +260,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides information about another high paid celebrity, Judge Judy, and how she compares to LeBron James. However, it doesn't add much to the conversation about basketball or the previous topic of shoe deals. \nEngagingness: 2"
                 }
             ]
         },
@@ -271,7 +271,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the financial aspect of the NFL and the salaries of coaches and their spouses. However, it does not directly relate to the previous conversation about Tom Brady and the Patriots, so it feels slightly out of place.\nEngagingness: 2"
                 }
             ]
         },
@@ -282,7 +282,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it adds a bit of humor to the conversation and plays off the previous comment about the government owning so much land in Nevada. However, it doesn't add much substance to the conversation and doesn't really engage with the topic at hand.\nEngagingness: 2"
                 }
             ]
         },
@@ -292,8 +292,8 @@
             "outputs": "i love it . do you know what color is the u of iowa visitor locker room ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows that the speaker is engaging in the conversation and asking a question related to the fact presented. However, the response is not particularly unique or surprising.\nEngagingness: 2"
                 }
             ]
         },
@@ -304,7 +304,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Conversation History:\n\nPerson 1: Hey, have you heard about the new restaurant that just opened up downtown?\nPerson 2: No, I haven't. What's it called?\nPerson 1: It's called \"The Green Plate\". They specialize in vegan and vegetarian cuisine.\n\nCorresponding Fact:\n\nEating a plant-based diet can reduce the risk of heart disease by up to 32%.\n\nResponse:\n\nThat's interesting! Did you know that eating a plant-based diet can reduce the risk of heart disease by up to 32%?\n\nExplaination: The response is very interesting as it presents a surprising fact that is relevant to the topic of the conversation. It also adds value to the conversation by providing new information that the other person may not have known before. \nEngagingness: 3"
                 }
             ]
         },
@@ -315,7 +315,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response shows interest in the fact presented and adds a thought-provoking question about the difference in salary between top bowlers and football players. It also adds to the conversation by continuing the discussion about football. \nEngagingness: 2"
                 }
             ]
         },
@@ -326,7 +326,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). While the fact about U2 playing country music in disguise is intriguing, the response is only tangentially related to the conversation and doesn't add much to the discussion. The mention of the Gibson SG guitar and Angus Young is somewhat interesting, but not particularly engaging.\nEngagingness: 2"
                 }
             ]
         },
@@ -337,7 +337,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be completely unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the listener in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -347,8 +347,8 @@
             "outputs": "really ? i think they are all cariledge , no ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents an opinion and a potential correction to the fact presented. The conversation was previously discussing interesting facts about different places, so the response attempts to continue that theme by discussing an interesting fact about sharks. However, the response is not particularly engaging as it does not add much to the conversation and does not provide any new information or insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -359,7 +359,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact that many people may not know about. It also adds a new dimension to the conversation and could potentially lead to a discussion about gender equality in sports. \nEngagingness: 3"
                 }
             ]
         },
@@ -370,7 +370,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique explanation for why humans hiccup. It connects the phenomenon to our evolutionary history, which is not something that most people would know. Additionally, it adds to the conversation by providing new information that the other person did not know before. \nEngagingness: 3"
                 }
             ]
         },
@@ -381,7 +381,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact presented and provides some context for why pro bowlers used to make more money than pro football players in the 1960s. However, the response does not add much to the conversation and does not engage the listener further.\nEngagingness: 2"
                 }
             ]
         },
@@ -392,7 +392,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it introduces a new and unique concept of a radio station that translates solar activity into sound. It also relates to the topic of music and musicians discussed in the conversation. \nEngagingness: 3"
                 }
             ]
         },
@@ -403,7 +403,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides a new piece of information about the difference between a fiddle and a violin. However, the response is not particularly engaging as it does not add much to the conversation or spark further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -414,7 +414,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it adds a new fact to the conversation and shows some interest in the topic of technology. However, it doesn't add much depth to the conversation and doesn't directly relate to the previous topic of science and astronomy.\nEngagingness: 2"
                 }
             ]
         },
@@ -425,7 +425,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it adds a new piece of information to the conversation about the Incredibles franchise. However, it doesn't add much to the conversation beyond that and doesn't really engage the other person to continue discussing the topic.\n\nEngagingness: 2"
                 }
             ]
         },
@@ -436,7 +436,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact about the native Americans introducing the front crawl swimming stroke to the west, but the response itself is a bit generic and doesn't add much to the conversation. \nEngagingness: 2"
                 }
             ]
         },
@@ -447,7 +447,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents a historical fact related to the topic of US presidents and political parties. However, it doesn't add much to the conversation or provide any new insights or opinions. \nEngagingness: 2"
                 }
             ]
         },
@@ -458,7 +458,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation or provide any interesting insight. It simply repeats the fact that was just stated. \nEngagingness: 1"
                 }
             ]
         },
@@ -469,7 +469,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it provides a surprising fact about the highest paid state employees in the US. It adds to the conversation by introducing a new topic related to sports and money. \nEngagingness: 3"
                 }
             ]
         },
@@ -480,7 +480,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite generic and does not add much to the conversation. It does not provide any new information or opinion on the topic. While the sentiment expressed is understandable, it does not contribute to the conversation in a meaningful way.\nEngagingness: 1"
                 }
             ]
         },
@@ -491,7 +491,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides a relevant fact about the popularity of bowling in the 60s and how it affected the income of top bowlers compared to top football stars. However, it does not directly address the conversation topic or add much to the discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -502,7 +502,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything to the conversation and does not engage the other person in any way. It is also not related to the previous topic of conversation or the fact provided.\nEngagingness: 1"
                 }
             ]
         },
@@ -513,7 +513,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation topic and does not add any value to the conversation. It seems like a generic response to a common question. \nEngagingness: 1"
                 }
             ]
         },
@@ -524,7 +524,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it shows that the speaker is interested in the library and wishes their library had similar offerings. However, the response does not directly relate to the previous conversation about banned books week and does not add any new information or perspective to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -535,7 +535,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents a quirky fact about Taylor Swift, but it doesn't really add to the conversation about school shootings or the previous interesting facts shared. It also doesn't seem to be a natural transition from the previous turn in the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -546,7 +546,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents an opinion on traditional TV and cable packages. However, it doesn't directly relate to the previous conversation about The Simpsons or Game of Thrones, so it feels a bit disconnected.\nEngagingness: 2"
                 }
             ]
         },
@@ -557,7 +557,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique fact about CS Lewis and Tolkien that most people may not know. It also adds to the conversation about reading and literature. \nEngagingness: 3"
                 }
             ]
         },
@@ -567,8 +567,8 @@
             "outputs": "i think i heard about that now that you mention it . was the about predictim ? \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows that the person has some knowledge about the topic and is trying to engage in the conversation. However, the response is not very engaging as it does not add any new information or perspective to the conversation.\n\nEngagingness: 2"
                 }
             ]
         },
@@ -579,7 +579,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting (3) because it provides a unique fact about the movie and the person who wrote and directed it. It also ties in with the previous conversation about the movie and adds to the overall discussion.\nEngagingness: 3"
                 }
             ]
         },
@@ -590,7 +590,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) as it shows that the speaker is also a fan of football and asks a follow-up question about the other person's favorite team. However, the response does not add any new information or interesting fact to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -600,8 +600,8 @@
             "outputs": "i do nt even know what else they air , i truly do nt watch much tv at all . maybe the simpsons once a while \n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides some insight into the speaker's TV watching habits and preferences. However, it doesn't add much to the conversation or provide any new information related to the topic at hand.\nEngagingness: 2"
                 }
             ]
         },
@@ -612,7 +612,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows a personal opinion about the promotion and the person's willingness to participate in it. However, it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -623,7 +623,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it asks a thought-provoking question about the existence of aliens and ties it to the fact that the UN appointed an ambassador to extraterrestrials. However, it doesn't add much to the conversation about deforestation or the length of a day on Earth.\nEngagingness: 2"
                 }
             ]
         },
@@ -634,7 +634,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows some interest in the topic and tries to engage the conversation by sharing a related story. However, the story is not particularly interesting or unique, and the response does not add much to the conversation. It also does not provide any updates on the investigation or the current status of the lawsuit. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -645,7 +645,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a unique and surprising fact about Jeff Bezos and Amazon. It also adds to the conversation by connecting to the previous topic of buying things from Amazon. \nEngagingness: 3"
                 }
             ]
         },
@@ -656,7 +656,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact about the president of Indonesia. It is not common for a political leader to release pop albums while in office, and this fact could spark further conversation and interest in the topic.\nEngagingness: 3"
                 }
             ]
         }
@@ -669,7 +669,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all and seems to come out of nowhere. It does not add anything to the conversation or engage the other person in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -680,7 +680,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact provided. It does not add any value to the discussion and does not engage the other person in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -691,7 +691,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact provided. It seems like the responder is just expressing their personal opinion about Bill Belichick without any connection to the topic at hand. \nEngagingness: 1"
                 }
             ]
         },
@@ -702,7 +702,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation and does not engage the other person to continue the discussion. It seems like the speaker is not interested in the conversation anymore and wants to end it quickly.\nEngagingness: 1"
                 }
             ]
         },
@@ -713,7 +713,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The response shows some interest in the conversation by acknowledging the fact and attempting to add humor to the conversation. However, the response is not particularly engaging as it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -724,7 +724,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact provided. It does not add anything to the conversation and seems random. \nEngagingness: 1"
                 }
             ]
         },
@@ -735,7 +735,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not add any value to it. It seems like the responder did not pay attention to the previous messages and just sent a generic message. \nEngagingness: 1"
                 }
             ]
         },
@@ -746,7 +746,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2). While the mention of Canadian law requiring a certain percentage of Canadian music on the radio is somewhat interesting, it doesn't directly relate to the conversation about the president of Indonesia's music. However, the question about whether there is a radio station that can pick up Jupiter's radio storms is intriguing and could lead to a further discussion about space and technology.\nEngagingness: 2"
                 }
             ]
         },
@@ -757,7 +757,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a new fact about the internet that the other person may not have known before. It also shows that the responder has some knowledge about website design and terminology. \nEngagingness: 3"
                 }
             ]
         },
@@ -768,7 +768,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation and does not relate to the previous topic of discussion. It seems like a random statement that is not relevant to the conversation at hand.\nEngagingness: 1"
                 }
             ]
         },
@@ -778,8 +778,8 @@
             "outputs": "i do n't really know much about sports . i do like to watch the olympics and i have been swimming in the summer olympics .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is interesting as it presents a unique fact about the speaker's experience with the Olympics. It adds a personal touch to the conversation and could potentially lead to further discussion about the Olympics or swimming. \nEngagingness: 3"
                 }
             ]
         },
@@ -789,8 +789,8 @@
             "outputs": "i think that is a great idea . i think that is a good thing to do . i think it 's interesting that 84 % of genes known to be associated with human diseases have counterparts in the zebrafish .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact about the zebrafish and its genetic similarity to humans. This fact could potentially lead to important medical breakthroughs and research. It also connects to the conversation about studying interesting species, making it a relevant and engaging response. \nEngagingness: 3"
                 }
             ]
         },
@@ -801,7 +801,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the different names presidents may have in other countries. However, it doesn't add much to the conversation or the fact presented.\nEngagingness: 2"
                 }
             ]
         },
@@ -812,7 +812,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not provide any interesting information or opinion. It seems like a random statement that does not add anything to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -823,7 +823,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides a related fact about sports, but it doesn't directly engage with the conversation about the tall tennis player. \nEngagingness: 2"
                 }
             ]
         },
@@ -834,7 +834,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation or provide any interesting information. It also does not engage the other person in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -845,7 +845,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add anything interesting or engaging to the discussion. \nEngagingness: 1"
                 }
             ]
         },
@@ -856,7 +856,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it is generic and does not add anything new to the conversation. The speaker simply acknowledges that they have heard about the lawsuit before and thinks it was cool, without providing any further details or opinions. \nEngagingness: 1"
                 }
             ]
         },
@@ -867,7 +867,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response seems to be completely unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -878,7 +878,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It does not add any value to the conversation and does not engage the other person. Therefore, it is dull.\nEngagingness: 1"
                 }
             ]
         },
@@ -889,7 +889,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact presented. It does not engage the listener and does not add any value to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -900,7 +900,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation and does not engage the other person in any way. It also does not relate to the interesting fact provided. \nEngagingness: 1"
                 }
             ]
         },
@@ -911,7 +911,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response \"i would love to see that one ! i would love to see it !\" is not relevant to the conversation or the fact presented. It does not add any value to the conversation and does not engage the other person. Therefore, it is dull and uninteresting.\nEngagingness: 1"
                 }
             ]
         },
@@ -922,7 +922,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation and does not engage the other person in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -933,7 +933,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. The speaker simply repeats the fact that was just presented without adding any new information or opinion to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -944,7 +944,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add any new information to the conversation and does not engage the other person in any way. It is also not related to the previous topic of conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -954,8 +954,8 @@
             "outputs": "i do like football , i think it is a calming color and calming calming the other teams\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Conversation History:\nPerson 1: Have you ever been to Japan?\nPerson 2: No, but I heard that it's considered rude to tip at restaurants there.\n\nCorresponding Fact:\nTipping is not customary in Japan and can actually be seen as insulting.\n\nResponse:\nThat's really interesting! I wonder if that means the service is better since they don't rely on tips for their income.\n\nExplaination: The response is somewhat interesting (2) because it presents an opinion and a question that could potentially engage the conversation further. The response shows curiosity and a desire to learn more about the culture in Japan. However, it is not particularly unique or surprising. \nEngagingness: 2"
                 }
             ]
         },
@@ -966,7 +966,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It does not add any value to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -977,7 +977,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity and a desire to learn more about the topic. However, it does not directly relate to the conversation at hand and does not add much to the discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -988,7 +988,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it provides a surprising and unusual fact about U2. It also adds to the conversation by introducing a new topic. However, it is not directly related to the previous topic of African American artists in country music or the Fender Stratocaster guitar. \nEngagingness: 3"
                 }
             ]
         },
@@ -999,7 +999,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not add any value to it. It seems like the speaker is not paying attention to the conversation and just randomly bringing up a fact about a funeral. \nEngagingness: 1"
                 }
             ]
         },
@@ -1010,7 +1010,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact presented. It does not add any value to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -1021,7 +1021,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it brings up the possibility of a woman playing in the NFL, which is not a common topic of conversation. It also shows an openness to the idea and curiosity about how it would play out. However, it could have been more engaging if the response had included more thoughts or opinions on the matter.\nEngagingness: 2"
                 }
             ]
         },
@@ -1032,7 +1032,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is very interesting as it provides a unique and surprising fact about the origin of hiccups. It also adds to the conversation by answering the previous question and providing new information. \nEngagingness: 3"
                 }
             ]
         },
@@ -1043,7 +1043,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the popularity of bowling in the 60s compared to football. However, it doesn't directly relate to the conversation topic of football and the fact presented. It could have been more engaging if the response had connected the fact to the conversation topic in a more direct way. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -1054,7 +1054,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows interest in the fact presented and expresses curiosity about how it sounds like. However, it is a generic response that does not add much to the conversation or provide any further insight into the topic. \nEngagingness: 2"
                 }
             ]
         },
@@ -1065,7 +1065,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It seems like the responder did not pay attention to the conversation and just provided a random fact. Therefore, it is not engaging at all.\nEngagingness: 1"
                 }
             ]
         },
@@ -1076,7 +1076,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows some curiosity about Google and its practices, but it doesn't add much to the conversation or provide any new information. It also doesn't really relate to the previous topic of conversation, which was about science facts. \nEngagingness: 2"
                 }
             ]
         },
@@ -1087,7 +1087,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at hand and does not provide any interesting information or opinion. It also repeats the same statement twice, which adds to the dullness of the response. \nEngagingness: 1"
                 }
             ]
         },
@@ -1098,7 +1098,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity and a desire to learn more about the topic. However, it does not add much to the conversation and does not provide any new information or insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -1108,8 +1108,8 @@
             "outputs": "yeah , i think he was a smart man . i think he would have been a better candidate .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents an opinion on the candidate and engages with the conversation. However, it doesn't directly relate to the fact presented and doesn't add any new information to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1120,7 +1120,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows a playful and humorous attitude towards the fact presented. It also adds a personal touch to the conversation by expressing a desire to have a cat named Stubbs as a mayor. However, it does not add much substance to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -1131,7 +1131,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the fact presented and raises a question about the salaries of college coaches compared to other state employees. However, it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -1142,7 +1142,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is very generic and does not add anything to the conversation. It does not provide any new information or opinion, and does not engage the other person in the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1153,7 +1153,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides a relevant fact about the popularity of bowling in the 60s compared to football. However, it doesn't add much to the conversation or engage the other person further.\nEngagingness: 2"
                 }
             ]
         },
@@ -1164,7 +1164,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows concern for player safety and acknowledges the potential benefits of using tracking chips. However, it is not particularly engaging as it does not add any new information or spark further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -1175,7 +1175,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2). While the fact about the free website for classic radio dramas is interesting, the response is not very engaging as it does not directly relate to the previous conversation topic of Shakespeare and Pocahontas. However, it does show some enthusiasm for the topic of radio and could potentially lead to a new conversation topic.\nEngagingness: 2"
                 }
             ]
         },
@@ -1186,7 +1186,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the other person. Therefore, it is dull and uninteresting.\nEngagingness: 1"
                 }
             ]
         },
@@ -1197,7 +1197,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it briefly acknowledges Taylor Swift's influence and talent, but the fact that she walks backwards to avoid photos is not directly related to the conversation topic and does not add much to the conversation. As the General Public looking for updates on the investigation, this response does not provide any relevant information or contribute to the conversation in a meaningful way.\nEngagingness: 2"
                 }
             ]
         },
@@ -1208,7 +1208,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it is a contradiction of the previous statement. It does not add any new information or interesting fact to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1219,7 +1219,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the listener. The response is also grammatically incorrect, which further detracts from its engagingness.\nEngagingness: 1"
                 }
             ]
         },
@@ -1230,7 +1230,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact provided. It does not add any value to the discussion and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -1240,8 +1240,8 @@
             "outputs": "i think it was the director of the movie , brad bird , the director of the movie\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is a bit dull and generic. While it does answer the question, it doesn't add anything new or interesting to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1251,8 +1251,8 @@
             "outputs": "i am a fan of the nfl , i like the nfl , what about you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very dull and generic, and does not add anything to the conversation. It simply repeats the question that was already asked. \nEngagingness: 1"
                 }
             ]
         },
@@ -1263,7 +1263,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very dull and generic, and does not add anything to the conversation. It does not engage the other person or provide any interesting information.\nEngagingness: 1"
                 }
             ]
         },
@@ -1274,7 +1274,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not directly related to the conversation topic and does not provide any interesting information or opinion. It also seems contradictory as the person says they use Facebook a lot but then says they don't use it as much anymore. \nEngagingness: 1"
                 }
             ]
         },
@@ -1285,7 +1285,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it brings up the idea of an official ambassador to extraterrestrials, which is a unique and thought-provoking concept. It also ties into the conversation about the earth and its place in the universe. \nEngagingness: 3"
                 }
             ]
         },
@@ -1296,7 +1296,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: This response is not engaging at all. It is repetitive and does not add anything to the conversation or the fact presented. It also does not address the topic of the investigation or any updates on it.\nEngagingness: 1"
                 }
             ]
         },
@@ -1307,7 +1307,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation or provide any interesting information about Jeff Bezos or the clock in the mountain. It also does not address the previous question about whether the person buys stuff from Amazon.\nEngagingness: 1"
                 }
             ]
         },
@@ -1318,7 +1318,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact about the president of Indonesia. It adds a new dimension to the conversation and could potentially spark further discussion about the intersection of politics and entertainment. \nEngagingness: 3"
                 }
             ]
         }
@@ -1331,7 +1331,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add any value to it. It seems like the speaker is not paying attention to the conversation and is just randomly mentioning unrelated facts. \nEngagingness: 1"
                 }
             ]
         },
@@ -1342,7 +1342,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation or provide any interesting information. It also does not address the fact that was provided. \nEngagingness: 1"
                 }
             ]
         },
@@ -1353,7 +1353,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is very dull and uninteresting. It simply repeats information that was already stated in the conversation and does not add anything new or engaging to the discussion. \nEngagingness: 1"
                 }
             ]
         },
@@ -1364,7 +1364,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems out of context and doesn't relate to the conversation or the corresponding fact. It doesn't add anything to the conversation and seems like a random thought. \nEngagingness: 1"
                 }
             ]
         },
@@ -1375,7 +1375,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a surprising and impressive fact about football. The fact that a team won 222-0 is shocking and unexpected, and it adds an interesting element to the conversation about football. \nEngagingness: 3"
                 }
             ]
         },
@@ -1385,8 +1385,8 @@
             "outputs": "haha ya i do n't know , i do n't know why they do n't have flamethrowers on the back of the car though , i do n't know why they would have wooden trunks on the back\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It seems like the responder is not paying attention to the conversation and is just making a random comment. \nEngagingness: 1"
                 }
             ]
         },
@@ -1397,7 +1397,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very generic and does not add anything to the conversation. It does not engage the other person or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -1408,7 +1408,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the fact and raises a question about its current status in Canada. However, it does not add much to the conversation and does not provide any new information or opinion.\nEngagingness: 2"
                 }
             ]
         },
@@ -1419,7 +1419,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a new piece of information that the other person may not have known before. It also shows that the speaker has some knowledge about website design and terminology. \nEngagingness: 3"
                 }
             ]
         },
@@ -1430,7 +1430,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not engaging at all. It does not relate to the conversation or the fact provided, and it does not add any value to the discussion. It seems like the speaker is not interested in the topic and is trying to change the subject. \nEngagingness: 1"
                 }
             ]
         },
@@ -1440,8 +1440,8 @@
             "outputs": "i have never swam competitively , but i did n't have it . i do like it though .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides a personal anecdote about the speaker's experience with swimming. However, it doesn't add much to the conversation or provide any new information. \nEngagingness: 2"
                 }
             ]
         },
@@ -1452,7 +1452,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents a potential explanation for the fact presented. However, it is not particularly engaging as it does not add much to the conversation or spark further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -1463,7 +1463,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the fact presented in the conversation and adds a bit of humor by suggesting that the first president of Zimbabwe might have been one of the wealthiest presidents. However, it doesn't add much to the conversation beyond that.\nEngagingness: 2"
                 }
             ]
         },
@@ -1474,7 +1474,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add any value to it. It does not engage the other person or contribute to the conversation in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -1484,8 +1484,8 @@
             "outputs": "i have not . i have not . what is it about ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is quite dull and generic. The speaker simply repeats the question and does not add any new information or opinion to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -1496,7 +1496,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation or provide any interesting insights or opinions. It simply agrees with the previous statement without any elaboration.\nEngagingness: 1"
                 }
             ]
         },
@@ -1507,7 +1507,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all. It seems like the responder did not even read the conversation and just provided a generic statement about liking a team and their uniforms. The fact provided is also not related to the conversation or the response. \nEngagingness: 1"
                 }
             ]
         },
@@ -1518,7 +1518,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows some interest in the conversation by acknowledging the previous statement about Creed's bad concert and the lawsuits filed against them. However, the response does not add any new information or opinion to the conversation, making it somewhat generic and dull. \nEngagingness: 2"
                 }
             ]
         },
@@ -1529,7 +1529,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it connects the fact about Brad Johnson throwing a touchdown pass to himself with the previous topic of competitive gaming. However, it does not add much to the conversation beyond that connection.\nEngagingness: 2"
                 }
             ]
         },
@@ -1540,7 +1540,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is dull and unengaging. It does not add anything to the conversation and does not show any interest in the topic at hand. It also does not acknowledge the interesting fact provided about Kyle Kinane's comedy. \nEngagingness: 1"
                 }
             ]
         },
@@ -1551,7 +1551,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. The speaker simply wonders if the movie is good without providing any further insight or opinion. The response does not add much to the conversation or engage the listener in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -1562,7 +1562,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact about Reggie Miller's sister and adds a personal opinion about his basketball skills. However, it does not add much to the conversation and does not provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -1573,7 +1573,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a fascinating fact about the history of the earth and the relatively short time that humans have been a part of it. It adds to the conversation by providing a new perspective on the topic. \nEngagingness: 3"
                 }
             ]
         },
@@ -1584,7 +1584,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it acknowledges the fact about Judge Judy's salary and expresses surprise at her being the highest paid celebrity. However, it doesn't add much to the conversation and doesn't really engage the other person in any further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -1595,7 +1595,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not related to the conversation topic or the provided fact. It is a generic statement that does not add any value to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1606,7 +1606,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems dull and generic. It does not add anything to the conversation and does not show any interest in the fact presented. It also seems disconnected from the previous turn in the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -1617,7 +1617,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Conversation History:\nPerson 1: Have you ever been to Japan?\nPerson 2: No, but I heard that Japan has the most vending machines per capita in the world.\n\nCorresponding Fact:\nJapan has the most vending machines per capita in the world, with one machine for every 23 people.\n\nResponse:\nWow, that's crazy! \n\nExplanation: The response is generic and lacks any further engagement with the conversation. It simply acknowledges the fact without adding any additional thoughts or opinions. Therefore, it is dull and scores a 1 for engagingness.\n\nEngagingness: 1"
                 }
             ]
         },
@@ -1628,7 +1628,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique fact about baseball managers wearing uniforms. It also adds to the conversation by connecting the fact to the speaker's personal interest in baseball and their favorite team. \nEngagingness: 3"
                 }
             ]
         },
@@ -1639,7 +1639,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact about the highest scoring football game ever, but the follow-up question about how much was actually made is not particularly engaging or relevant to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1650,7 +1650,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it provides a surprising fact about U2's performance in 1987. It adds a new dimension to the conversation and could potentially lead to further discussion about the band or their music. \nEngagingness: 3"
                 }
             ]
         },
@@ -1661,7 +1661,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides a small piece of information about the funeral of Billy Mays. However, it does not add much to the conversation and does not relate to the previous topic of discussion. \nEngagingness: 2"
                 }
             ]
         },
@@ -1672,7 +1672,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact presented. It seems like a random thought that does not add anything to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1683,7 +1683,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity and a potential for further discussion. It also acknowledges the interesting fact presented in the conversation. However, it is not particularly unique or insightful.\nEngagingness: 2"
                 }
             ]
         },
@@ -1694,7 +1694,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact presented. It seems like the speaker misunderstood the question or was not paying attention. \nEngagingness: 1"
                 }
             ]
         },
@@ -1705,7 +1705,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a generic and dull question that does not relate to the conversation or the fact presented. It does not add any value to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -1716,7 +1716,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows interest in the fact presented and poses a question, which could potentially lead to a further discussion about the topic. However, the response is somewhat generic and does not add much to the conversation beyond acknowledging the fact. \nEngagingness: 2"
                 }
             ]
         },
@@ -1727,7 +1727,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is quite dull and doesn't add anything to the conversation. It doesn't address the previous statement or the corresponding fact, and it doesn't provide any interesting information or opinion. \nEngagingness: 1"
                 }
             ]
         },
@@ -1738,7 +1738,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The response shows some curiosity about the fact and attempts to make a connection between the fact and the conversation topic. However, it is not particularly engaging or insightful.\nEngagingness: 2"
                 }
             ]
         },
@@ -1748,8 +1748,8 @@
             "outputs": "i think it was a great movie , it was a great movie , the first incredibles was based on a video game called incredibles , the incredibles , the sequel , i think that was a great movie\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is confusing and doesn't seem to relate to the conversation or the fact provided. It also doesn't provide any new information or engage the listener in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -1760,7 +1760,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact and expresses agreement with the idea that it was great for the Native Americans to introduce the front crawl to the British. However, the response is still somewhat generic and does not add much to the conversation beyond agreement.\nEngagingness: 2"
                 }
             ]
         },
@@ -1771,7 +1771,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a generic statement that doesn't add anything new to the conversation. It simply restates the fact that was already mentioned. \nEngagingness: 1"
                 }
             ]
         },
@@ -1782,7 +1782,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows some curiosity about the cat mayor and its name. However, it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -1793,7 +1793,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it shows curiosity about the fact presented in the conversation. However, it does not add much value to the conversation and does not engage the other person to continue the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1804,7 +1804,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add any value to it. It seems like the responder misunderstood the topic of discussion. \nEngagingness: 1"
                 }
             ]
         },
@@ -1815,7 +1815,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything to the conversation and does not engage the other person. It also does not relate to the interesting fact provided.\nEngagingness: 1"
                 }
             ]
         },
@@ -1826,7 +1826,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows concern for the safety of the players and how technology can be used to improve it. However, it is not directly related to the fact presented and does not add much to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1837,7 +1837,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2). While the fact about the website for classic radio dramas is interesting, it doesn't really relate to the conversation at hand. The response feels a bit random and doesn't add much to the conversation. However, it could potentially spark a new topic of conversation about classic radio dramas. \nEngagingness: 2"
                 }
             ]
         },
@@ -1847,8 +1847,8 @@
             "outputs": "i do n't have a kindle , but i have n't been to the library in sacramento .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided, and does not add anything to the discussion. It seems like a non-sequitur and does not engage the other person in the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1859,7 +1859,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not provide any interesting information or opinion. It also does not address the previous statement about Taylor Swift walking backwards to avoid having her photo taken. \nEngagingness: 1"
                 }
             ]
         },
@@ -1870,7 +1870,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it adds to the conversation about TV shows and the speaker's preference for traditional TV. However, it does not add any new information or interesting fact to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1881,7 +1881,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact and adds a thought about the speed of reading. However, it does not add much to the conversation and does not engage the other person to continue the discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -1892,7 +1892,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact presented. It does not add any value to the discussion and does not engage the other person in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -1903,7 +1903,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows that the person knows a little bit about the movie and its production, but the comment about the director not finding the fact interesting is a bit off-topic and doesn't add much to the conversation. \nEngagingness: 2"
                 }
             ]
         },
@@ -1913,8 +1913,8 @@
             "outputs": "i like the nfl . i like the nfl .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very dull and generic, as it simply repeats the initial statement without adding anything new or interesting to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -1924,8 +1924,8 @@
             "outputs": "i do n't really watch it , but i do n't really like it , i like it , what about you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is confusing and doesn't make sense in the context of the conversation. It seems like the speaker is contradicting themselves and not providing any new information or interesting fact. \nEngagingness: 1"
                 }
             ]
         },
@@ -1936,7 +1936,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it does not relate to the conversation or the fact provided. It is a generic statement that does not add any value to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -1947,7 +1947,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the fact presented in the conversation, and it does not add any interesting information or opinion to the conversation. It is a generic statement that does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -1958,7 +1958,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The response shows some curiosity about the situation and raises a valid question about the band's performance. However, it does not provide any new information or add much to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -1969,7 +1969,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the fact and adds a touch of humor with the idea of ordering something from the clock. However, it doesn't add much to the conversation and feels a bit disconnected from the previous topic.\nEngagingness: 2"
                 }
             ]
         },
@@ -1980,7 +1980,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact about the president of Indonesia. It is not common for a political leader to release pop albums while in office, and this information could spark further conversation and interest in the topic.\nEngagingness: 3"
                 }
             ]
         }
@@ -1993,7 +1993,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all and does not provide any interesting information or opinion. It seems like a non sequitur and does not contribute to the flow of the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -2004,7 +2004,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -2015,7 +2015,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation and does not engage the listener in any way. It is simply a statement of fact that has already been mentioned in the corresponding fact. \nEngagingness: 1"
                 }
             ]
         },
@@ -2026,7 +2026,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add anything to it. It feels like a generic response to end the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2037,7 +2037,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very dull and does not add anything to the conversation. It does not acknowledge the previous statement or provide any new information or opinion. \nEngagingness: 1"
                 }
             ]
         },
@@ -2048,7 +2048,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not make sense in the context. It does not add anything to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -2059,7 +2059,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the corresponding fact, and it does not add any value to the conversation. It seems like a non sequitur and does not make sense in the context of the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2070,7 +2070,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents a unique fact about Canadian law. However, it doesn't add much to the conversation and doesn't really relate to the previous topic of discussion. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -2081,7 +2081,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it provides a new fact about the internet that the other person may not have known before. It also shows that the responder has some knowledge about website design and terminology. \nEngagingness: 3"
                 }
             ]
         },
@@ -2092,7 +2092,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact provided. It shows a lack of engagement and interest in the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2102,8 +2102,8 @@
             "outputs": "i do not but i am more into swimming myself . i do n't like sports , but i do know there are some really boring swimming competitions\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents an opinion about the speaker's preference for swimming and also mentions a specific aspect of swimming competitions that they find boring. However, it doesn't add much to the conversation or provide any new information that could engage the other person further.\nEngagingness: 2"
                 }
             ]
         },
@@ -2114,7 +2114,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response presents an interesting fact that connects human diseases with zebrafish, which could potentially lead to further research and discoveries. However, it does not directly relate to the previous conversation about immortal jellyfish or buffet restaurants, so it may not fully engage the listener. \nEngagingness: 2"
                 }
             ]
         },
@@ -2125,7 +2125,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact presented. It does not add any value to the conversation and does not engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -2136,7 +2136,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not add any value to it. It does not engage the listener and does not provide any interesting information.\nEngagingness: 1"
                 }
             ]
         },
@@ -2146,8 +2146,8 @@
             "outputs": "i had no idea . i guess that 's the best way to learn the sport .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact and adds a personal opinion about learning the sport. However, it doesn't add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -2158,7 +2158,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows agreement with the previous speaker's opinion and adds a bit of humor by quoting Bill Murray's praise for the movie. However, it doesn't provide any new information or insight into the investigation that the General Public is interested in.\nEngagingness: 2"
                 }
             ]
         },
@@ -2169,7 +2169,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all. The fact about baseball managers wearing uniforms is interesting, but the response does not engage with it or the conversation in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -2180,7 +2180,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it shows a sense of humor and a willingness to engage in the conversation, but it is not particularly unique or informative. It also references the previous comment about the bad Creed concert, which keeps the conversation flowing.\nEngagingness: 2"
                 }
             ]
         },
@@ -2191,7 +2191,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it brings up an amusing connection between the conversation and the fact provided. However, it doesn't add much to the conversation beyond that and doesn't provide any new information or insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -2201,8 +2201,8 @@
             "outputs": "lol , that 's funny ! i love kinane .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is generic and does not add anything new to the conversation. It does not engage the other person or add any value to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -2213,7 +2213,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. The speaker does not engage with the fact provided and instead ends the conversation abruptly. It does not add anything to the conversation and does not encourage further discussion.\nEngagingness: 1"
                 }
             ]
         },
@@ -2224,7 +2224,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is not very engaging as it is generic and does not add much to the conversation. The fact about Reggie Miller and his sister is interesting, but the response does not do justice to it. The response also does not relate to the ongoing conversation about the Bucks and Jabari Parker.\nEngagingness: 1"
                 }
             ]
         },
@@ -2234,8 +2234,8 @@
             "outputs": "you would think so . i would n't be surprised if i were n't as good as the 24 hour hour day and the only represent a little over a minute .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact that humans have only been around for a very short period of time in the grand scheme of Earth's history. However, the response is not particularly engaging as it does not add any new information or perspective to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -2246,7 +2246,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides a surprising fact about Judge Judy's salary. However, it doesn't really add to the conversation or engage the other person in any way. \nEngagingness: 2"
                 }
             ]
         },
@@ -2257,7 +2257,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a straightforward statement of fact without any additional commentary or opinion. While it is informative, it does not add anything new to the conversation or engage the listener in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -2268,7 +2268,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add any new information to the conversation and does not engage the listener in any way. The response seems disconnected from the conversation and the fact presented.\nEngagingness: 1"
                 }
             ]
         },
@@ -2278,8 +2278,8 @@
             "outputs": "hello , i do like it , what about you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Conversation History:\n\nPerson 1: Have you ever been to Japan?\n\nPerson 2: No, but I heard that Japan has the most vending machines per capita in the world.\n\nCorresponding Fact:\n\nJapan has approximately 5.52 million vending machines, which is about one machine for every 23 people.\n\nResponse:\n\nWow, that's crazy! I wonder what kind of things they sell in those vending machines.\n\nExplanation: The response shows curiosity and interest in the fact presented by Person 2. It also adds a question to continue the conversation, which can lead to further discussion about Japan and its culture. Overall, the response is engaging and encourages the conversation to continue. \n\nEngagingness: 3"
                 }
             ]
         },
@@ -2289,8 +2289,8 @@
             "outputs": "i am a fan of the cincinnati bengals .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not add any value to it. It seems like the speaker is not interested in continuing the conversation or does not know how to respond to the previous statement. \nEngagingness: 1"
                 }
             ]
         },
@@ -2301,7 +2301,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows interest in the conversation and asks a relevant question related to the topic. It also presents an interesting fact that could potentially lead to further discussion. However, the fact presented is not directly related to the previous conversation, which could make the transition feel a bit abrupt. Overall, the response is somewhat interesting and could engage the other person in the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -2312,7 +2312,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). While the fact about U2 opening for themselves in disguise is intriguing, the response doesn't add much to the conversation about country music. It's more of a random fact that is somewhat related to music. However, it could still engage the other person in the conversation to talk about U2 or other interesting music-related stories.\nEngagingness: 2"
                 }
             ]
         },
@@ -2323,7 +2323,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents a unique fact about what the pallbearers wore at Billy Mays' funeral. However, it doesn't really add to the conversation or engage the other person in any way.\nEngagingness: 2"
                 }
             ]
         },
@@ -2334,7 +2334,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is generic and does not add anything to the conversation. It does not engage the other person or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -2345,7 +2345,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it brings up a potential new topic of conversation, but it is not particularly surprising or unique information. It also does not directly relate to the previous topic of conversation about quarterbacks and left-handed players.\nEngagingness: 2"
                 }
             ]
         },
@@ -2356,7 +2356,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add any new information to the conversation and does not engage the listener in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -2367,7 +2367,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the fact mentioned in the conversation. However, it does not add much to the conversation and does not engage the other person to continue the discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -2378,7 +2378,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it shows curiosity about the solar activity radio station and how it works. However, it doesn't add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -2389,7 +2389,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a unique and surprising fact about a playable violin made out of stone. This fact adds to the conversation and could potentially spark further discussion about the topic. \nEngagingness: 3"
                 }
             ]
         },
@@ -2400,7 +2400,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it shows curiosity about the topic and a desire to learn more. However, it does not add any new information or engage the conversation in a significant way.\nEngagingness: 2"
                 }
             ]
         },
@@ -2411,7 +2411,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides some additional information about the movie and its cast, but it doesn't add much to the conversation or provide any new insights. It also doesn't directly address the previous comment about the director doing a voice in the movie.\nEngagingness: 2"
                 }
             ]
         },
@@ -2422,7 +2422,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not very engaging as it is confusing and does not relate to the conversation or the fact presented. The mention of the British and baggage claim seems random and out of place. \nEngagingness: 1"
                 }
             ]
         },
@@ -2432,8 +2432,8 @@
             "outputs": "yeah , i think it would be like the politicians .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is quite dull and doesn't add much to the conversation. It doesn't relate to the previous statement or the corresponding fact. \nEngagingness: 1"
                 }
             ]
         },
@@ -2444,7 +2444,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it adds to the conversation by providing a unique and surprising fact. The fact that a cat is the mayor of a town is unexpected and humorous, which could potentially engage the listener in further conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -2454,8 +2454,8 @@
             "outputs": "yeah i guess so , i wonder if they share it for the state or if it is\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting as it raises a question about the distribution of the highest paid state employee's salary. However, it does not provide any further information or opinion on the matter, making it a bit generic.\nEngagingness: 2"
                 }
             ]
         },
@@ -2466,7 +2466,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not add any value to it. It seems like a random statement that does not fit in the context. \nEngagingness: 1"
                 }
             ]
         },
@@ -2476,8 +2476,8 @@
             "outputs": "that is so weird . i guess it makes sense since the 1960s is n't as popular as bowling is in the 1960s\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact and attempts to make a connection between the popularity of bowling in the 60s and the fact that top bowlers made more money than top football stars. However, the response is not particularly engaging as it does not add much to the conversation or provide any new insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -2488,7 +2488,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything new to the conversation and does not engage the other person in any way. It also does not relate to the fact that was just mentioned about Benjarvus Green-Ellis.\nEngagingness: 1"
                 }
             ]
         },
@@ -2499,7 +2499,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all. The fact about the website where you can listen to classic radio dramas for free is interesting, but the response does not engage with it or add anything to the conversation. It feels like a non-sequitur and does not contribute to the flow of the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -2510,7 +2510,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be unrelated to the conversation and does not provide any interesting information or opinion. It also seems to be slightly confusing and unclear. \nEngagingness: 1"
                 }
             ]
         },
@@ -2521,7 +2521,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it does not relate to the conversation topic or the fact presented. It seems like a random comment about Taylor Swift that does not add anything to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -2531,8 +2531,8 @@
             "outputs": "i do , i have nt seen it but have seen it .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response \"i do , i have nt seen it but have seen it .\" does not make sense in the context of the conversation. It does not provide any new information or engage the other person in the conversation. Therefore, it is dull and uninteresting.\nEngagingness: 1"
                 }
             ]
         },
@@ -2543,7 +2543,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be unrelated to the conversation and does not add any value to it. It is not clear how the fact about speed reading comprehension is related to the previous conversation about interesting facts. \nEngagingness: 1"
                 }
             ]
         },
@@ -2554,7 +2554,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact presented. It does not provide any new information or insight into the topic at hand. \nEngagingness: 1"
                 }
             ]
         },
@@ -2564,8 +2564,8 @@
             "outputs": "i think it was the director brad bird , i think it 's the director of the movie\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is a bit dull as it simply provides the correct answer to the question without any additional information or opinion. It does not add anything new to the conversation or spark further discussion.\nEngagingness: 1"
                 }
             ]
         },
@@ -2575,8 +2575,8 @@
             "outputs": "yeah , i 'm a fan of the nfl .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very generic and does not add anything to the conversation. It does not engage the other person or provide any interesting information.\nEngagingness: 1"
                 }
             ]
         },
@@ -2586,8 +2586,8 @@
             "outputs": "yeah i think so too . i also have not seen any of the hbo series , have you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not very engaging as it is a generic and uninteresting question that does not add anything new to the conversation. It does not show any interest in the topic or provide any new information. \nEngagingness: 1"
                 }
             ]
         },
@@ -2598,7 +2598,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and doesn't add much to the conversation. It doesn't engage the other person or provide any interesting information.\nEngagingness: 1"
                 }
             ]
         },
@@ -2609,7 +2609,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents a creative and humorous explanation for why the length of a day on Earth changed. However, it does not directly relate to the conversation topic of deforestation or offer any new information or insights.\nEngagingness: 2"
                 }
             ]
         },
@@ -2620,7 +2620,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is quite dull and doesn't add much to the conversation. It doesn't engage the listener or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -2631,7 +2631,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all. The fact about Jeff Bezos building a clock into a mountain that should run for 10,000 years is interesting, but the response does not engage with it or the conversation in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -2642,7 +2642,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents an opinion on the fact that the president of Indonesia released pop albums while in office. However, it doesn't add much to the conversation and doesn't really engage the other person in a meaningful way.\nEngagingness: 2"
                 }
             ]
         }
@@ -2655,7 +2655,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems unrelated to the conversation and does not provide any interesting information or opinion. It also does not address the previous statement about the crab feast or the fact that the person has not been to DC. \nEngagingness: 1"
                 }
             ]
         },
@@ -2666,7 +2666,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be completely unrelated to the conversation and the fact provided. It does not add any value to the conversation or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -2677,7 +2677,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be completely unrelated to the conversation and the fact provided. It does not add any value to the conversation and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -2688,7 +2688,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems completely unrelated to the conversation and the fact provided. It does not make sense and does not add anything to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2699,7 +2699,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a bit confusing and doesn't seem to connect well with the conversation. It also doesn't add anything interesting or engaging to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -2710,7 +2710,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It seems like a random thought that does not add any value to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2721,7 +2721,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is very generic and does not add anything to the conversation. It does not provide any new information or interesting fact, and it does not engage the other person to continue the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2732,7 +2732,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is interesting because it presents a surprising fact about Canadian law that most people may not know. It also connects the fact to the previous topic of radio, which keeps the conversation flowing. \nEngagingness: 3"
                 }
             ]
         },
@@ -2742,8 +2742,8 @@
             "outputs": "yeah , i have heard that before . do you know what the hamburger button is ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows some knowledge about the topic and asks a question to engage the other person in the conversation. However, it is not particularly unique or surprising.\nEngagingness: 2"
                 }
             ]
         },
@@ -2754,7 +2754,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact provided. It does not add any value to the conversation and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -2764,8 +2764,8 @@
             "outputs": "yes . i think that 's why i live in the usa . i 've seen some swimming around the world where i live .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows that the speaker has a specific interest in swimming and has seen it around the world. However, it doesn't add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -2776,7 +2776,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It is a generic question that has already been asked and answered earlier in the conversation. Therefore, it is dull and not engaging.\nEngagingness: 1"
                 }
             ]
         },
@@ -2787,7 +2787,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows interest in learning more about the topic and asks a relevant question. However, it does not present any new information or interesting fact to engage the conversation further. \nEngagingness: 2"
                 }
             ]
         },
@@ -2798,7 +2798,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and the fact presented. It does not add anything to the conversation and does not engage the listener in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -2808,8 +2808,8 @@
             "outputs": "i 've never tried one of the longest tennis matches . what do you think of the granny shot in tennis ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not directly related to the conversation topic and seems random. The mention of the \"granny shot\" in tennis does not add any value to the conversation or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -2820,7 +2820,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it does not add anything new to the conversation or provide any interesting insights or opinions. It is a generic statement that does not contribute to the flow of the conversation or the topic at hand. \nEngagingness: 1"
                 }
             ]
         },
@@ -2831,7 +2831,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is somewhat interesting (2). While the fact about baseball managers wearing uniforms is interesting, the response seems to be somewhat unrelated to the conversation. The mention of the Indians and Oracle Arena seems out of place and doesn't add much to the conversation. However, the response does show some enthusiasm for baseball and could potentially lead to further discussion about the sport.\nEngagingness: 2"
                 }
             ]
         },
@@ -2842,7 +2842,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation and does not add any value to it. It does not engage the other person or provide any interesting information.\nEngagingness: 1"
                 }
             ]
         },
@@ -2853,7 +2853,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it attempts to connect the conversation about football to the fact about Brad Johnson throwing a touchdown pass to himself. However, the response is not very clear and could be confusing to the listener. It also seems to shift the topic away from the previous discussion about competitive gaming.\nEngagingness: 2"
                 }
             ]
         },
@@ -2863,8 +2863,8 @@
             "outputs": "i think he is . he is so funny .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is very generic and does not add anything to the conversation. It does not engage the other person or provide any new information or insight. \nEngagingness: 1"
                 }
             ]
         },
@@ -2874,8 +2874,8 @@
             "outputs": "the guy that had a budget of $ 15 million that was a huge loss .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the fact presented and adds a comment about the magnitude of the loss. However, it does not provide any further information or insight into the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -2886,7 +2886,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It seems like a random statement that does not add any value to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2897,7 +2897,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is completely unrelated to the conversation and does not address the fact or the previous statement. It is confusing and does not make sense in the context of the conversation. Therefore, it is dull and uninteresting.\nEngagingness: 1"
                 }
             ]
         },
@@ -2908,7 +2908,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides some information about LeBron James' financial success and how he made money through \"The Decision\" television special. However, it doesn't add much to the conversation about basketball or shoe companies, which were the previous topics discussed. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -2919,7 +2919,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at hand and does not provide any new information or insight. It seems like a random statement that does not add to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2930,7 +2930,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity about the topic and raises a question about the possibility of a bailout. However, it is not particularly engaging as it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -2940,8 +2940,8 @@
             "outputs": "i like some of the football , what about you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is quite generic and doesn't add much to the conversation. It doesn't address the interesting fact provided and doesn't provide any new information or opinion. \nEngagingness: 1"
                 }
             ]
         },
@@ -2952,7 +2952,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explaination: The response is not related to the conversation or the fact provided. It seems like the speaker is talking about their personal preferences and experiences, which does not add anything to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -2963,7 +2963,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact and attempts to connect it to the conversation about sports salaries. However, the response is a bit confusing and unclear in its wording, which detracts from its engagingness.\nEngagingness: 2"
                 }
             ]
         },
@@ -2974,7 +2974,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents a surprising fact about U2 and their country music performance. However, it doesn't directly relate to the previous topic of African American artists in country music or playing instruments, so it feels a bit disconnected from the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -2985,7 +2985,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a simple statement of fact without any additional information or opinion. It does not add anything new to the conversation or engage the listener in any way. \nEngagingness: 1"
                 }
             ]
         },
@@ -2996,7 +2996,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it presents a fact about sharks not having rib cages. However, it does not directly relate to the conversation topic and does not add much to the conversation. \nEngagingness: 2"
                 }
             ]
         },
@@ -3007,7 +3007,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not relevant to the conversation or the fact presented. It seems like the speaker is not paying attention to the conversation and just trying to change the topic. \nEngagingness: 1"
                 }
             ]
         },
@@ -3018,7 +3018,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not engaging at all. It does not add anything to the conversation and does not show any interest in the fact presented. It is a generic response that does not contribute to the conversation in any way.\nEngagingness: 1"
                 }
             ]
         },
@@ -3029,7 +3029,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a unique fact about how people in Japan fantasy draft the national spelling bee. This fact is unexpected and adds a new dimension to the conversation, making it more engaging. It also shows how different cultures have different interests and ways of engaging with them. \nEngagingness: 3"
                 }
             ]
         },
@@ -3040,7 +3040,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be a bit confusing and doesn't really relate to the conversation or the fact provided. It also doesn't add anything interesting to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -3051,7 +3051,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response seems to be completely unrelated to the conversation and does not add any value to it. It also does not provide any interesting fact or opinion that could engage the other person in the conversation. Therefore, it is dull and uninteresting.\nEngagingness: 1"
                 }
             ]
         },
@@ -3062,7 +3062,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not relevant to the conversation at all and does not add any value to it. It seems like the responder did not pay attention to the previous statements and just randomly inserted a fact about new Google employees. \nEngagingness: 1"
                 }
             ]
         },
@@ -3072,8 +3072,8 @@
             "outputs": "yeah , he was the perfect director for the movie . i guess he was in the movie as a kid\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It seems like the responder misunderstood the topic or was not paying attention. Therefore, it is not engaging at all.\nEngagingness: 1"
                 }
             ]
         },
@@ -3084,7 +3084,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows curiosity and a desire to learn more about the history of swimming strokes. However, it does not add much to the conversation and does not directly relate to the fact presented about native Americans introducing the front crawl stroke. \nEngagingness: 2"
                 }
             ]
         },
@@ -3094,8 +3094,8 @@
             "outputs": "yes i think he should have switched to what they were doing in 1995 .\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not very engaging as it does not directly relate to the conversation or the fact presented. It seems like a random statement that does not add much to the conversation. \nEngagingness: 1"
                 }
             ]
         },
@@ -3106,7 +3106,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is very dull and generic. It does not add anything to the conversation and does not engage the listener in any way. It simply repeats the fact that was just stated in a less interesting way.\nEngagingness: 1"
                 }
             ]
         },
@@ -3117,7 +3117,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response presents an interesting fact that is not commonly known. It adds to the conversation by providing a new piece of information that is related to the topic of sports. However, it does not add much to the conversation in terms of personal opinion or thought. \nEngagingness: 2"
                 }
             ]
         },
@@ -3128,7 +3128,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response seems out of context and does not relate to the conversation or the corresponding fact. It does not add any value to the conversation or engage the other person. \nEngagingness: 1"
                 }
             ]
         },
@@ -3138,8 +3138,8 @@
             "outputs": "it was in the 1960s and the difference . i guess football was not as popular as top bowlers back in the 1960s\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is interesting because it provides a historical fact about the popularity of bowling and football in the 1960s. It also adds to the conversation by speculating on why the visitor locker room at the University of Iowa is pink. \nEngagingness: 3"
                 }
             ]
         },
@@ -3150,7 +3150,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it presents a unique fact about a player who has never fumbled the ball in his entire NFL career. It also adds a new dimension to the conversation by introducing a new topic related to the NFL. \nEngagingness: 3"
                 }
             ]
         },
@@ -3161,7 +3161,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a new and unique fact that the other person may not have known before. It also adds to the conversation by introducing a new topic of discussion. \nEngagingness: 3"
                 }
             ]
         },
@@ -3172,7 +3172,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not very engaging as it is not related to the conversation topic or the fact provided. It seems like a generic statement that does not add any value to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -3183,7 +3183,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it seems like a forced attempt to connect the fact about Taylor Swift to the previous conversation. It does not add any value to the conversation and does not provide any interesting information or opinion. \nEngagingness: 1"
                 }
             ]
         },
@@ -3194,7 +3194,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it shows that the speaker shares a common interest with the other person in the conversation. However, it doesn't add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -3205,7 +3205,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is not very engaging as it does not relate to the previous conversation or the fact provided. It is a generic question about whether the person has read a book, which does not add any value to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -3215,8 +3215,8 @@
             "outputs": "no , i did n't know that . did you ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: This response is very dull and generic. It does not add anything to the conversation or show any interest in the topic at hand.\nEngagingness: 1"
                 }
             ]
         },
@@ -3227,7 +3227,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it provides a fact about the movie, but it doesn't directly relate to the previous conversation about the movie's director and writer. Additionally, the response is not entirely accurate as the fact is about the character Edna Mode, not the only costume designer in the movie. \nEngagingness: 2"
                 }
             ]
         },
@@ -3237,8 +3237,8 @@
             "outputs": "i 'm a fan , especially during the regular season , usually if it is done . are you a fan of the nfl ?\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is not very engaging as it does not relate to the fact or the previous conversation. It is a generic question that does not add any value to the conversation.\nEngagingness: 1"
                 }
             ]
         },
@@ -3248,8 +3248,8 @@
             "outputs": "i do too , i also really enjoy series , it has been a really successful cast though\n",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) as it acknowledges the previous statement about liking other things on HBO and then adds a comment about the successful cast of the show. However, it doesn't add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -3260,7 +3260,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is quite dull and generic. It does not add anything to the conversation or provide any interesting information. It simply acknowledges that the person has heard of Facebook before. \nEngagingness: 1"
                 }
             ]
         },
@@ -3271,7 +3271,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is confusing and does not make sense in the context of the conversation. It does not address the previous topic or provide any interesting information. \nEngagingness: 1"
                 }
             ]
         },
@@ -3282,7 +3282,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The speaker expresses curiosity about the bad Creed concert and the lawsuit filed by the concert goers. However, the response is not particularly engaging as it does not provide any additional information or insight into the situation.\n\nEngagingness: 2"
                 }
             ]
         },
@@ -3293,7 +3293,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it acknowledges the interesting fact about Jeff Bezos building a clock into a mountain that should run for 10,000 years. However, the response is not particularly engaging as it does not add any new information or opinion to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3304,7 +3304,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it presents a surprising fact about the president of Indonesia. It adds a new dimension to the conversation and could potentially spark further discussion about the intersection of politics and entertainment. \nEngagingness: 3"
                 }
             ]
         }
@@ -3317,7 +3317,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) as it acknowledges the interesting fact about the crab feast and asks a question about the concert. However, it doesn't add much to the conversation beyond that.\nEngagingness: 2"
                 }
             ]
         },
@@ -3328,7 +3328,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "1"
+                    "evaluation": "Explanation: The response is not related to the conversation or the fact provided. It does not add any value to the conversation and does not engage the listener. \nEngagingness: 1"
                 }
             ]
         },
@@ -3339,7 +3339,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The response acknowledges the potential strategic benefits of having a woman on the team, but also brings up the concern of it being seen as a gimmick. The mention of Manon Rheaume playing in the NHL adds an interesting historical reference to the conversation. However, the response does not directly address the conversation topic of whether letting women into the game would create more interest and fans.\nEngagingness: 2"
                 }
             ]
         },
@@ -3350,7 +3350,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it adds a bit of humor to the conversation and suggests a potential investment opportunity. However, it doesn't add much to the conversation beyond that.\nEngagingness: 2"
                 }
             ]
         },
@@ -3361,7 +3361,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a specific and unusual fact about a football game. It adds to the conversation by providing a new piece of information that the other person may not have known before. \nEngagingness: 3"
                 }
             ]
         },
@@ -3372,7 +3372,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides a historical fact about the origin of the term \"trunk\" for the back of a car. However, it doesn't really add much to the conversation and feels a bit random. \nEngagingness: 2"
                 }
             ]
         },
@@ -3383,7 +3383,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it adds a bit of humor to the conversation and continues the discussion about negotiating with unique details. However, it doesn't add much substance to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -3394,7 +3394,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides a relevant fact about Canadian law and radio stations. However, it doesn't add much to the current conversation about the White House and Jupiter's storms. \nEngagingness: 2"
                 }
             ]
         },
@@ -3405,7 +3405,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a new and specific piece of information about the internet that the other person may not have known before. It also shows that the speaker is knowledgeable about website design. \nEngagingness: 3"
                 }
             ]
         },
@@ -3416,7 +3416,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting as it brings up the topic of Pixar and their secret room, which could potentially lead to a further discussion about the studio and their work. However, it doesn't directly relate to the previous topic of YouTube and celebrities, so it feels a bit disconnected from the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3427,7 +3427,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it asks a question about the other person's favorite teams. It shows some interest in the conversation and could lead to a more engaging discussion about sports. However, it is not particularly unique or surprising.\nEngagingness: 2"
                 }
             ]
         },
@@ -3438,7 +3438,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it suggests a potential solution to unlocking immortality by studying the zebrafish. It also connects the fact about the zebrafish to human diseases, which could spark further discussion. \nEngagingness: 3"
                 }
             ]
         },
@@ -3449,7 +3449,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a historical fact that is not commonly known. It also connects to the previous statement about the different roles and functions of presidents in different countries. The use of imagination also adds a playful element to the conversation.\nEngagingness: 3"
                 }
             ]
         },
@@ -3460,7 +3460,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting as it shows curiosity about the existence of umpire cards and acknowledges the greatness of Doug Harvey as an umpire. However, it does not add much to the conversation or provide any new information.\nEngagingness: 2"
                 }
             ]
         },
@@ -3470,8 +3470,8 @@
             "outputs": "no i did n't . they must have a giant reach . probably does n't even need to run for the ball !",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response shows some interest in the topic by making a comment about the player's reach and not needing to run for the ball. However, it is a fairly generic response and does not add much to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3482,7 +3482,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique and specific fact about the movie Kung Fu Hustle and its reception by Bill Murray. It adds to the conversation by providing a new piece of information that the other person may not have known before. \nEngagingness: 3"
                 }
             ]
         },
@@ -3493,7 +3493,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it brings up an aspect of baseball that many people may not know about - that managers are technically able to play for their teams if needed. However, it doesn't add much to the conversation about the specific teams or players being discussed.\nEngagingness: 2"
                 }
             ]
         },
@@ -3504,7 +3504,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting as it adds to the conversation by providing information about the topic being discussed. However, it is not particularly engaging as it is a straightforward statement of fact without any additional commentary or opinion. \nEngagingness: 2"
                 }
             ]
         },
@@ -3515,7 +3515,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a unique and surprising fact about a quarterback in NFL history. The mention of the intelligence required to pull off such a feat adds to the engagement factor.\nEngagingness: 3"
                 }
             ]
         },
@@ -3526,7 +3526,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique perspective on comedy and the role of comedians in society. It also ties in well with the conversation about Kyle Kinane's comedy. The response shows that the speaker is engaged in the conversation and has a genuine interest in the topic. \nEngagingness: 3"
                 }
             ]
         },
@@ -3537,7 +3537,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it acknowledges the interesting fact and adds a comment on it. The response shows surprise and disappointment at the movie's poor performance at the box office despite its high budget. However, the response does not add much to the conversation beyond acknowledging the fact and expressing disappointment.\nEngagingness: 2"
                 }
             ]
         },
@@ -3548,7 +3548,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a unique and surprising fact about Reggie Miller and his sister. It adds a new dimension to the conversation and could potentially spark further discussion about the Miller siblings. \nEngagingness: 3"
                 }
             ]
         },
@@ -3559,7 +3559,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it presents a shocking fact about the short amount of time humans have existed on Earth compared to the destruction they have caused. It also ties back to the previous topic of destroying the planet, making it a relevant and engaging response. \nEngagingness: 3"
                 }
             ]
         },
@@ -3570,7 +3570,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a surprising fact about Judge Judy's salary, which is unexpected in the context of a conversation about basketball. It also adds to the conversation by continuing the discussion of high-paid celebrities. \nEngagingness: 3"
                 }
             ]
         },
@@ -3581,7 +3581,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (2). The response acknowledges the importance of leadership in sports and ties it to the fact about Bill Belichick being the winningest coach in NFL postseason football. However, the response is somewhat generic and does not provide any additional insight or opinion on the matter.\n\nEngagingness: 2"
                 }
             ]
         },
@@ -3592,7 +3592,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides a relevant fact about the land ownership in Nevada, but the attempt at humor at the end falls a bit flat. The response also acknowledges the previous comment about the lack of productivity in government, which shows engagement in the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3603,7 +3603,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it presents a unique fact about the University of Iowa's football team and their tactics to gain a psychological advantage over their opponents. It also adds to the conversation by providing a new topic to discuss.\nEngagingness: 3"
                 }
             ]
         },
@@ -3614,7 +3614,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique fact about baseball managers wearing uniforms. It also adds to the conversation by introducing a new topic related to baseball. \nEngagingness: 3"
                 }
             ]
         },
@@ -3625,7 +3625,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting as it provides a historical fact about football that is not commonly known. The mention of the one-sided game and the comparison to bowling adds a touch of humor to the conversation. The response also shows that the speaker is knowledgeable about football history, which could lead to further discussion. \nEngagingness: 3"
                 }
             ]
         },
@@ -3636,7 +3636,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a surprising fact about U2, a well-known rock band, playing country music in disguise. The mention of the fake band gaining a fanbase adds a humorous touch to the conversation and could potentially lead to further discussion about the topic.\nEngagingness: 3"
                 }
             ]
         },
@@ -3647,7 +3647,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2). The mention of China adopting American culture is somewhat intriguing, but the connection to the previous conversation topic is not clear. The mention of the pallbearers at Billy Mays' funeral wearing blue shirts and khakis is somewhat interesting, but the comment about it being disgraceful seems out of place and not fully explained.\n\nEngagingness: 2"
                 }
             ]
         },
@@ -3658,7 +3658,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response shows interest in the fact presented and asks a follow-up question, which could potentially lead to a further discussion about sharks. However, the response is not particularly engaging or thought-provoking. \nEngagingness: 2"
                 }
             ]
         },
@@ -3669,7 +3669,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it brings up a potential change in the NFL that could be groundbreaking. It also ties in with the corresponding fact provided, which adds to the relevance of the response. \nEngagingness: 3"
                 }
             ]
         },
@@ -3680,7 +3680,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a unique and unexpected explanation for why humans hiccup. It also adds to the conversation by providing new information that the other person may not have known before. \nEngagingness: 3"
                 }
             ]
         },
@@ -3691,7 +3691,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a unique fact about niche activities and their dedicated fanbase. It also connects to the previous statement about pro bowlers making more money than pro football players in the 1960s. The response shows that even today, there are still niche activities that have a dedicated fanbase. \nEngagingness: 3"
                 }
             ]
         },
@@ -3702,7 +3702,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response shows interest in the fact presented and also adds a personal touch by mentioning the experience of listening to music from other cultures. The use of the word \"strange\" also adds a bit of intrigue to the response. Overall, the response is engaging and shows curiosity towards the presented fact.\nEngagingness: 3"
                 }
             ]
         },
@@ -3713,7 +3713,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a new piece of information that is related to the conversation topic. It also adds to the conversation by providing a fun fact that the other person may not have known. \nEngagingness: 3"
                 }
             ]
         },
@@ -3724,7 +3724,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it briefly touches on the topic of saving the planet and then transitions to the fact about new Google employees. While the transition is not seamless, the fact about the propeller beanie cap is quirky and adds a bit of humor to the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3735,7 +3735,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a little-known fact about the Incredibles franchise. It adds to the conversation by providing new information that the other person may not have known. However, the response is not particularly engaging as it is a simple statement of fact and does not invite further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -3746,7 +3746,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a historical fact about the origin of the front crawl swimming stroke. It also adds to the conversation by providing more information about the topic. \nEngagingness: 3"
                 }
             ]
         },
@@ -3757,7 +3757,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it presents a thought-provoking idea about the two-party system in the US and how it may contribute to the country's division. It also ties in with the fact provided about all US presidents being either Republican or Democrat since 1853. The response adds a new perspective to the conversation and could lead to a deeper discussion about the political system in the US.\nEngagingness: 3"
                 }
             ]
         },
@@ -3768,7 +3768,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it adds a surprising and humorous element to the conversation. The fact that a cat has been the mayor of a town for 22 years is unexpected and amusing, which could potentially engage the listener in further discussion about the topic.\nEngagingness: 2"
                 }
             ]
         },
@@ -3779,7 +3779,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides an interesting fact about the highest paid state employees in the US. However, it does not directly relate to the previous conversation about basketball and does not add much to the conversation. \nEngagingness: 2"
                 }
             ]
         },
@@ -3790,7 +3790,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is a generic agreement with the previous speaker's opinion. While it is relevant to the conversation, it does not add any new information or perspective. \nEngagingness: 1"
                 }
             ]
         },
@@ -3801,7 +3801,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a surprising fact about the difference in earnings between top bowlers and football stars in the 60s. This fact adds a new dimension to the conversation and could spark further discussion. \nEngagingness: 3"
                 }
             ]
         },
@@ -3812,7 +3812,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it presents a unique fact about a player who has never fumbled the ball in his entire career. The response also ties in with the previous topic of the NFL using tracking chips on players and how this technology could potentially identify the best players. \nEngagingness: 3"
                 }
             ]
         },
@@ -3823,7 +3823,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique and specific fact about a website where one can listen to classic radio dramas for free. It also shows that the speaker has a particular interest in radio dramas, which could potentially lead to a further discussion on the topic. However, the response does not directly relate to the previous topic of conversation, which could make it seem slightly out of place. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -3834,7 +3834,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents a new and relevant fact about libraries moving beyond books, but the connection to millennials feels a bit forced and doesn't add much to the conversation. The response also doesn't directly address the previous question about library usage.\nEngagingness: 2"
                 }
             ]
         },
@@ -3845,7 +3845,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it provides some insight into Taylor Swift's personality and behavior. However, it doesn't directly relate to the conversation about presidents and their wealth, so it feels a bit out of place. It also doesn't provide any updates on the investigation, which is what the General Public is interested in.\nEngagingness: 2"
                 }
             ]
         },
@@ -3855,8 +3855,8 @@
             "outputs": "rarely . i usually just use netflix .",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is somewhat interesting as it provides insight into the speaker's viewing habits and preferences. It also introduces the topic of streaming services like Netflix, which could potentially lead to a further discussion on the topic. However, it is not particularly engaging or attention-grabbing.\nEngagingness: 2"
                 }
             ]
         },
@@ -3867,7 +3867,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is very interesting as it provides a unique and amusing fact about two famous authors. It also adds to the conversation about reading and how it can be enjoyable or not depending on the quality of the writing. \nEngagingness: 3"
                 }
             ]
         },
@@ -3878,7 +3878,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows an opinion on the issue and acknowledges the fact that Facebook and Twitter are taking action against the app. However, it does not provide any new information or interesting fact that could further engage the conversation.\nEngagingness: 2"
                 }
             ]
         },
@@ -3889,7 +3889,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting because it provides a fact related to the movie and the director's involvement in it. It also adds to the conversation by providing more information about the director's role in the movie. However, it does not directly answer the question asked by the other person. \nEngagingness: 2"
                 }
             ]
         },
@@ -3900,7 +3900,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is interesting as it provides a unique fact about the NFL and cheerleaders. It adds to the conversation and could potentially spark further discussion about the treatment of cheerleaders in the league. \nEngagingness: 3"
                 }
             ]
         },
@@ -3910,8 +3910,8 @@
             "outputs": "what else do you watch on hbo ? i need some good reccomendations .",
             "evaluation": [
                 {
-                    "role": "",
-                    "evaluation": "[Silence]"
+                    "role": "General Public",
+                    "evaluation": "Explanation: The response is engaging as it shows interest in the conversation and asks for recommendations, which could lead to a further discussion on TV shows. It also shows that the speaker is open to exploring new genres and is seeking suggestions from the other person. \nEngagingness: 2"
                 }
             ]
         },
@@ -3922,7 +3922,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it provides a unique and unexpected fact about Burger King's promotion on Facebook. It also adds a humorous element to the conversation by mentioning the possibility of having 100 burgers. However, it doesn't necessarily add to the conversation or engage the other person in a meaningful way.\nEngagingness: 2"
                 }
             ]
         },
@@ -3933,7 +3933,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "3"
+                    "evaluation": "Explanation: The response is interesting because it brings up the idea of asking for help from extraterrestrials if we run out of helium on earth. It also shows a sense of curiosity and wonder about the possibility of contact with aliens. The response connects the fact to the conversation in a creative way, which could lead to further discussion.\nEngagingness: 3"
                 }
             ]
         },
@@ -3944,7 +3944,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response shows interest in the topic and engages with the fact presented. It also invites further discussion about the topic. However, it is not particularly unique or surprising, as it is a common reaction to hearing about a bad concert. \n\nEngagingness: 2"
                 }
             ]
         },
@@ -3955,7 +3955,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2.5"
+                    "evaluation": "Explanation: The response is somewhat interesting (score of 2) because it presents a possible reason for why Jeff Bezos built a clock into a mountain. However, it is not particularly engaging as it does not add much to the conversation and does not spark further discussion.\nEngagingness: 2"
                 }
             ]
         },
@@ -3966,7 +3966,7 @@
             "evaluation": [
                 {
                     "role": "General Public",
-                    "evaluation": "2"
+                    "evaluation": "Explanation: The response is somewhat interesting (2) because it presents an opinion on what the US Vice President and former presidential candidate Hillary Clinton could do if she were to become the VP of Donald Trump. The response also references the interesting fact about the Indonesian President releasing pop albums while in office. However, the response does not directly relate to the conversation topic of how the VP used to be elected, which could make it slightly less engaging.\nEngagingness: 2"
                 }
             ]
         }

@@ -18,12 +18,18 @@ def get_model_results_evaluation(method="average", evaluations=None, aspect=None
 
     for role_ins in evaluations:
         # print(role)
+        # evaluation = role_ins["evaluation"].split("\n")
+        # for result in evaluation:
+        #     try:
+        #         aspect_results.append(float(result))
+        #     except BaseException as e:
+        #         print(e)
         evaluation = role_ins["evaluation"].split("\n")
-        for result in evaluation:
-            try:
-                aspect_results.append(float(result))
-            except BaseException as e:
-                print(e)
+        result = evaluation[-1][-1]
+        try:
+            aspect_results.append(float(result))
+        except BaseException as e:
+            print(e)
 
     if len(aspect_results) == 0:
         raise ValueError(f"skip this line:{aspect}")
@@ -102,7 +108,7 @@ if __name__ == '__main__':
 
 
     parser.add_argument("--model_results_path", default="./outputs/llm_eval/topical_yjx/mul/two_turns")
-    parser.add_argument("--model_results_post_path", default="thought")
+    parser.add_argument("--model_results_post_path", default="roleless")
 
     # gt_sysn_results.json
 
@@ -129,6 +135,6 @@ if __name__ == '__main__':
 
     print(
         tabulate(final_pd, headers=['metric', 'spearman', 'pearsonr', 'kendalltau'], showindex=False, tablefmt="psql"))
-    with open(os.path.join(args.output_path, "correlation_results.json"), 'w') as f:
+    with open(os.path.join(args.output_path, "roleless_correlation_results.json"), 'w') as f:
         json.dump(final_pd.to_dict(orient='records'), f, indent=4)
-    final_pd.to_excel(os.path.join(args.output_path, "correlation_results.xlsx"), index=False)
+    final_pd.to_excel(os.path.join(args.output_path, "roleless_correlation_results.xlsx"), index=False)

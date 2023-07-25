@@ -1,0 +1,26 @@
+[
+    {
+        "metric": "model_naturalness",
+        "spearman": 0.445970994487418,
+        "pearsonr": 0.4329243818425225,
+        "kendalltau": 0.3948262903138605
+    },
+    {
+        "metric": "model_coherence",
+        "spearman": 0.556870531333955,
+        "pearsonr": 0.5421285664077866,
+        "kendalltau": 0.5113381985317123
+    },
+    {
+        "metric": "model_engagingness",
+        "spearman": 0.5830040632646484,
+        "pearsonr": 0.5835338225876652,
+        "kendalltau": 0.5338552002240574
+    },
+    {
+        "metric": "model_groundedness",
+        "spearman": 0.5877053387638468,
+        "pearsonr": 0.6069620187246677,
+        "kendalltau": 0.570236466626305
+    }
+]

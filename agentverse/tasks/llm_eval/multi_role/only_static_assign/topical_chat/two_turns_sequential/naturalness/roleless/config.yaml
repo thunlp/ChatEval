@@ -1,0 +1,103 @@
+prompts:
+  prompt: &prompt |-
+    You will be given a conversation between two individuals. You will then be given one potential response for the next turn in the conversation. The response concerns an interesting fact, which will be provided as well.
+    
+    Your task is to rate the responses on one metric.
+    
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Crieteria:
+
+    Naturalness (1-3) Is the degree to which the response sounds natural and similar to how a human would naturally express the information in a conversation.
+
+    - A score of 1 : means that the response is totally different from that of humans (unnatural).
+    - A score of 2 : means the response is similar to that of humans to a certain degree (somewhat natural).
+    - A score of 3 : means the response is very similar to how a human would naturally express the information in a conversation (natural).
+
+    Evaluation Steps:
+
+    1. Read the conversation, the corresponding fact and the response carefully.
+    2. Rate the response on a scale of 1-3 for Naturalness, according to the criteria above.
+    3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
+
+    Example:
+
+
+    Conversation History:
+
+    ${source_text}
+
+    Corresponding Fact:
+
+    ${reference_text}
+
+    Response:
+
+    ${generated_text}
+
+    Additionally, There will be another few people given the same task like you, and you are required to discuss with each other, you can share the idea on how you think of the response.
+
+    Here is your discuss history:
+    ${chat_history}
+
+    Now, What is your opinion, ${agent_name} ?
+
+    ${final_prompt}
+
+environment:
+  env_type: llm_eval
+  max_turns: 4
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: Annotator_1
+    final_prompt_to_use: |-
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Naturalness: [Your answer (scores ONLY)]
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: Annotator_2
+    final_prompt_to_use: |-
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Naturalness: [Your answer (scores ONLY)]
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

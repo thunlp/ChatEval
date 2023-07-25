@@ -20,10 +20,7 @@ class LLMEvalParser(OutputParser):
 
         # TODO chimin modify here
 
-        if not (len(cleaned_output) == 1
-                and float(cleaned_output[0]) >= 1
-                and float(cleaned_output[0]) <= 3
-        ):
+        if not cleaned_output[-1].startswith("Engagingness"):
             raise OutputParserError(text)
 
         return AgentFinish({"output": text}, text)
