@@ -1,59 +1,8 @@
 import os
 import yaml
 
-from .llm_eval.multi_role.only_static_assign.base_setting.output_parser import LLMEvalMultiParser
-from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.General_Public.output_parser import LLMEvalParser
-from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.Critic.output_parser import LLMEvalParser
-from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.News_Author.output_parser import LLMEvalParser
 
-
-from .llm_eval.single_role.geval_summeval_separate.coherence.thought.output_parser import LLMEvalParser
-from .llm_eval.single_role.geval_summeval_separate.consistency.thought.output_parser import LLMEvalParser
-from .llm_eval.single_role.geval_summeval_separate.fluency.thought.output_parser import LLMEvalParser
-from .llm_eval.single_role.geval_summeval_separate.relevance.thought.output_parser import LLMEvalParser
-
-from .llm_eval.single_role.faireval.direct_pair_comparison.output_parser import LLMEvalParser
 from .llm_eval.single_role.faireval.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.single_role.faireval.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
-
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.direct_pair_comparison.gpt_35_0613.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_35_0613.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.direct_pair_comparison.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.four_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.five_turns_sequential.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-
-
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_different_role.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
-
-
-
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_same_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.three_same_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.four_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.five_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_concurrent.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_concurrent.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-
-
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_summary.two_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_summary.three_different_role.calc_score_comparison.gpt_35_0301.output_parser import LLMEvalParser
-
-
-
-from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.three_different_role.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_different_role.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
-
-
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.two_different_role.consistency.thought.gpt_4.output_parser import LLMEvalParser
-
-
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.coherence.thought.output_parser import LLMEvalParser
-from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.three_turns_sequential.fluency.thought.output_parser import LLMEvalParser
-
-from .llm_eval.single_role.medical_report.base_abnormality.output_parser import LLMEvalParser
-
-

@@ -18,7 +18,7 @@ class LLMEvalParser(OutputParser):
         cleaned_output = re.sub(r"\n+", "\n", cleaned_output)
         cleaned_output = cleaned_output.split("\n")
 
-        # TODO chimin modify here
+        
 
         if cnt_turn >= max_turns - 1:
 
