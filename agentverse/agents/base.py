@@ -21,6 +21,7 @@ class BaseAgent(BaseModel):
     max_retry: int = Field(default=3)
     receiver: Set[str] = Field(default=set({"all"}))
     async_mode: bool = Field(default=True)
+    manipulated_memory: str = None
 
     @abstractmethod
     def step(self, env_description: str = "") -> Message:

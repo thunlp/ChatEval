@@ -6,4 +6,5 @@ from .base import BaseMemoryManipulator
 from .basic import BasicMemoryManipulator
 from .generative_agents import GenerativeAgentsReflectionPlan
 from .reflection import Reflection
+from .summary import SummaryMemoryManipulator
 

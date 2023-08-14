@@ -25,7 +25,7 @@ environment:
   max_turns: 1
   rule:
     order:
-      type: concurrent
+      type: sequential
     visibility:
       type: all
     selector:

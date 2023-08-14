@@ -1,6 +1,9 @@
 import os
 import argparse
 import json
+import pandas as pd
+import numpy as np
+
 
 def get_accuracy_calibration(human_results,
                              model_results,
@@ -12,6 +15,8 @@ def get_accuracy_calibration(human_results,
 
     predictions = []
     targets = []
+
+    meta_results = {}
 
     if method == "single":
         for model_result, model_result_reverse in zip(model_results[:example_nums], model_results_reverse[:example_nums]):
@@ -48,7 +53,11 @@ def get_accuracy_calibration(human_results,
         for prediction, target in zip(predictions, targets):
             if prediction == target:
                 correct += 1
-        return correct / len(targets)
+
+        meta_results["targets"] = targets
+        meta_results["predictions"] = predictions
+
+        return correct / len(targets), meta_results
 
     elif method == "majority_vote":
 
@@ -100,7 +109,11 @@ def get_accuracy_calibration(human_results,
         for _, (prediction, target) in enumerate(zip(predictions, targets)):
             if prediction == target:
                 correct += 1
-        return correct / len(targets)
+
+        meta_results["targets"] = targets
+        meta_results["predictions"] = predictions
+
+        return correct / len(targets), meta_results
 
     elif method == "average":
 
@@ -140,7 +153,41 @@ def get_accuracy_calibration(human_results,
         for prediction, target in zip(predictions, targets):
             if prediction == target:
                 correct += 1
-        return correct / len(targets)
+
+        meta_results["targets"] = targets
+        meta_results["predictions"] = predictions
+
+        return correct / len(targets), meta_results
+
+def get_kappa(meta:dict):
+
+    targets = meta["targets"]
+    predictions = meta["predictions"]
+
+    confusion = np.zeros((3, 3))
+
+    name2index = {
+        "gpt35": 0,
+        "vicuna": 1,
+        "tie": 2
+    }
+
+    for predict, target in zip(predictions, targets):
+        confusion[name2index[predict]][name2index[target]] += 1
+
+
+    n = np.sum(confusion)
+    sum_po = 0
+    sum_pe = 0
+    for i in range(len(confusion[0])):
+        sum_po += confusion[i][i]
+        row = np.sum(confusion[i, :])
+        col = np.sum(confusion[:, i])
+        sum_pe += row * col
+    po = sum_po / n
+    pe = sum_pe / (n * n)
+    # print(po, pe)
+    return (po - pe) / (1 - pe)
 
 
 if __name__ == '__main__':
@@ -176,11 +223,14 @@ if __name__ == '__main__':
     with open(os.path.join(args.model_results_reverse_path, "pair_comparison_results.json")) as f:
         model_results_reverse = json.load(f)
 
-    accuracy = get_accuracy_calibration(human_results=human_results,
+    accuracy, meta = get_accuracy_calibration(human_results=human_results,
                             model_results=model_results,
                             model_results_reverse=model_results_reverse,
                             method=args.ensemble_method,
                             example_nums=80,
                             )
 
-    print(accuracy)
+    kappa = get_kappa(meta)
+
+    print(f"accuracy: {accuracy}")
+    print(f"kappa: {kappa}")

@@ -53,7 +53,7 @@ agents:
       The score of Assistant 1: [score only]
       The score of Assistant 2: [score only]
     role_description: |-
-      You are now General Public, one of the referee in this task. You are interested in the story and looking for updates on the investigation. Please think critically by yourself and note that it's your responsibility to choose one of which is the better first.
+      You are now General Public, one of the referees in this task. You are interested in the story and looking for updates on the investigation. Please think critically by yourself and note that it's your responsibility to choose one of which is the better first.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -77,7 +77,7 @@ agents:
       The score of Assistant 1: [score only]
       The score of Assistant 2: [score only]
     role_description: |-
-      You are now Critic, one of the referee in this task. You will check fluent writing, clear sentences, and good wording in summary writing. Your job is to question others judgement to make sure their judgement is well-considered and offer an alternative solution if two responses are at the same level.
+      You are now Critic, one of the referees in this task. You will check fluent writing, clear sentences, and good wording in summary writing. Your job is to question others judgement to make sure their judgement is well-considered and offer an alternative solution if two responses are at the same level.
     memory:
       memory_type: chat_history
     memory_manipulator:

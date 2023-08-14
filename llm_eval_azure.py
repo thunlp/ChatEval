@@ -1,5 +1,6 @@
 import os
-
+os.environ["OPENAI_API_KEY"] = "DUMMY"
+os.environ["AZURE_OPENAI_KEY"] = "21281145da034df49bdd6744b4a7a6d1"
 # always remember to put these lines at the top of your code
 os.environ["http_proxy"] = "http://127.0.0.1:7890"
 os.environ["https_proxy"] = "http://127.0.0.1:7890"
@@ -9,7 +10,7 @@ import openai
 
 # will reset by agentverse code, need to get again in openai.py
 # openai.api_key = os.getenv("AZURE_OPENAI_KEY")
-openai.api_key = "21281145da034df49bdd6744b4a7a6d1"
+# openai.api_key = "21281145da034df49bdd6744b4a7a6d1"
 openai.api_base = "https://conmmunity-openai-4.openai.azure.com/"
 openai.RPM = 10
 
@@ -142,7 +143,7 @@ if "nlg_eval" in args.data_path or "geval_summeval_separate" in args.data_path:
 
             agentverse.run()
 
-            evaluation = get_evaluation(setting="base_setting", messages=agentverse.agents[0].memory.messages)
+            evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
 
             gt_sys_output.append({"src": ins["src"],
                                   "outputs": ins["outputs"][model_index]["sys_summ"],
@@ -243,7 +244,7 @@ elif "faireval" in args.data_path:
 
         agentverse.run()
 
-        evaluation = get_evaluation(setting="base_setting", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
+        evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
 
         pair_comparison_output.append({"question": ins["question"],
                                        "response": {"gpt35": ins["response"]["gpt35"],

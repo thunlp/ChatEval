@@ -31,6 +31,7 @@ class LLMEvalAgent(BaseAgent):
     final_prompt: str = ""
     final_prompt_to_use: str = ""
 
+
     def step(self, env_description: str = "") -> Message:
         prompt = self._fill_prompt_template(env_description)
 
@@ -69,6 +70,8 @@ class LLMEvalAgent(BaseAgent):
         # Fluency:
         # Coherence:
         # Thought: (your thought)
+
+        self.manipulated_memory = self.memory_manipulator.manipulate_memory()
 
         if env.cnt_turn >= env.max_turns - 1:
             self.final_prompt = self.final_prompt_to_use
@@ -147,4 +150,9 @@ class LLMEvalAgent(BaseAgent):
     def reset(self) -> None:
         """Reset the agent"""
         self.memory.reset()
+        self.memory_manipulator.reset()
+
+        if hasattr(self.memory_manipulator, "agent") and hasattr(self.memory_manipulator, "memory"):
+            self.memory_manipulator.agent = self
+            self.memory_manipulator.memory = self.memory
         # TODO: reset receiver

@@ -103,9 +103,15 @@ class OpenAIChat(BaseChatModel):
     def generate_response(self, prompt: str) -> LLMResult:
         messages = self._construct_messages(prompt)
         try:
-            response = openai.ChatCompletion.create(
-                messages=messages, **self.args.dict()
-            )
+            if openai.api_type == "azure":
+                openai.api_key = os.getenv("AZURE_OPENAI_KEY")
+                response = openai.ChatCompletion.create(
+                    engine="gpt-4-6", messages=messages, **self.args.dict()
+                )
+            else:
+                response = openai.ChatCompletion.create(
+                    messages=messages, **self.args.dict()
+                )
         except (OpenAIError, KeyboardInterrupt) as error:
             raise
         return LLMResult(

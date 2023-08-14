@@ -93,13 +93,12 @@ def prepare_task_config(task):
 
     for i, agent_configs in enumerate(task_config["agents"]):
         agent_configs["memory"] = load_memory(agent_configs.get("memory", {}))
+        memory_manipulator = load_memory_manipulator(agent_configs.get("memory_manipulator", {}))
+        agent_configs["memory_manipulator"] = memory_manipulator
         if agent_configs.get("tool_memory", None) is not None:
             agent_configs["tool_memory"] = load_memory(agent_configs["tool_memory"])
         llm = load_llm(agent_configs.get("llm", "text-davinci-003"))
         agent_configs["llm"] = llm
-
-        memory_manipulator = load_memory_manipulator(agent_configs.get("memory_manipulator", {}))
-        agent_configs["memory_manipulator"] = memory_manipulator
 
         agent_configs["tools"] = load_tools(agent_configs.get("tools", []))
 

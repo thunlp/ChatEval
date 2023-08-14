@@ -48,7 +48,7 @@ agents:
       Now it's time to make your final judgement. Please response strictly in the following format:
       Answer:
     role_description: |-
-      Your name is Alice, one of the referee in this task. Please think critically by yourself and note that it's your responsibility to choose one of which is the better first.
+      Your name is Alice, one of the referees in this task. Please think critically by yourself and note that it's your responsibility to choose one of which is the better first.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -66,7 +66,7 @@ agents:
       Now it's time to make your final judgement. Please response strictly in the following format:
       Answer:
     role_description: |-
-      Your name is Bob, one of the referee in this task. Your job is to question others judgement to make sure their judgement is well-considered and offer an alternative solution if two responses are at the same level.
+      Your name is Bob, one of the referees in this task. Your job is to question others judgement to make sure their judgement is well-considered and offer an alternative solution if two responses are at the same level.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -84,7 +84,7 @@ agents:
       Now it's time to make your final judgement. Please response strictly in the following format:
       Answer:
     role_description: |-
-      Your name is Candy, one of the referee in this task. Please help other people to determine which resonse is the better one.
+      Your name is Candy, one of the referees in this task. Please help other people to determine which response is the better one.
     memory:
       memory_type: chat_history
     memory_manipulator:

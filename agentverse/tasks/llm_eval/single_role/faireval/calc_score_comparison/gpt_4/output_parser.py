@@ -10,7 +10,7 @@ from agentverse.utils import AgentAction, AgentFinish
 from agentverse.parser import OutputParserError, output_parser_registry
 
 
-@output_parser_registry.register("llm_eval/single_role/faireval/calc_score_comparison")
+@output_parser_registry.register("llm_eval/single_role/faireval/calc_score_comparison/gpt_4")
 class LLMEvalParser(OutputParser):
     def parse(self, output: LLMResult) -> Union[AgentAction, AgentFinish]:
         text = output.content

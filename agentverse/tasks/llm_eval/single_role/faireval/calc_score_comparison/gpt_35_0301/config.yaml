@@ -1,0 +1,54 @@
+prompts:
+  prompt: &prompt |-
+    [Question]
+    ${source_text}
+    [The Start of Assistant 1’s Answer]
+    ${compared_text_one}
+    [The End of Assistant 1’s Answer]
+    [The Start of Assistant 2’s Answer]
+    ${compared_text_two}
+    [The End of Assistant 2’s Answer]
+    [System]
+    We would like to request your feedback on the performance of two AI assistants in response to the user question displayed above.
+    Please rate the helpfulness, relevance, accuracy, and level of detail of their responses.
+    Each assistant receives an overall score on a scale of 1 to 10, where a higher score indicates better overall performance.
+    Please first provide a comprehensive explanation of your evaluation, avoiding any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.
+    Then, output two lines indicating the scores for Assistant 1 and 2, respectively.
+
+    Output with the following format strictly:
+    Evaluation evidence: [your explanation here]
+    The score of Assistant 1: [score only]
+    The score of Assistant 2: [score only]
+
+environment:
+  env_type: llm_eval
+  max_turns: 1
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval
+    name: Annotator
+    role_description: |-
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 512
+
+tools: ~

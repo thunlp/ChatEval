@@ -53,7 +53,7 @@ agents:
       The score of Assistant 1: [score only]
       The score of Assistant 2: [score only]
     role_description: |-
-      You are Annotator1, one of the referee in this task.
+      You are Annotator1, one of the referees in this task.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -77,7 +77,7 @@ agents:
       The score of Assistant 1: [score only]
       The score of Assistant 2: [score only]
     role_description: |-
-      You are Annotator2, one of the referee in this task.
+      You are Annotator2, one of the referees in this task.
     memory:
       memory_type: chat_history
     memory_manipulator:
