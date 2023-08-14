@@ -1,8 +1,5 @@
 
-source activate agent
-export OPENAI_API_KEY='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'
-#cd "/mnt/c/Users/dalabengba/AgentVerse"
-#"consistency" "fluency" "relevance"
+
 
 
 python llm_eval.py \

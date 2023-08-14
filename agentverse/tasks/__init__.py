@@ -1,30 +1,6 @@
 import os
 import yaml
 
-from .math_problem_2players_tools.output_parser import MathProblem2PlayersToolsParser
-from .nlp_classroom_3players.output_parser import NlpClassroom3PlayersParser
-from .nlp_classroom_9players.output_parser import NlpClassroom9PlayersParser
-from .nlp_classroom_3players_withtool.output_parser import (
-    NlpClassroom3PlayersWithtoolParser,
-)
-from .nlp_classroom_9players_group.output_parser import NlpClassroom9PlayersGroupParser
-from .db_diag.output_parser import DBDiag
-
-from .prisoner_dilema.output_parser import PrisonerDilemaParser
-from .prisoner_dilema.base.output_parser import PrisonerDilemaParser
-from .prisoner_dilema.s1_p_r.output_parser import PrisonerDilemaParser
-from .prisoner_dilema.police.output_parser import PrisonerDilemaParser
-from .prisoner_dilema.s2_p_r.output_parser import PrisonerDilemaParser
-from .prisoner_dilema.no_goal_s1.output_parser import PrisonerDilemaParser
-
-from .traffic_junction.output_parser import TrafficParser
-
-
-from .pokemon.output_parser import PokemonParser
-from .alice_home.output_parser import AliceHomeParser
-from .sde_team.sde_team_3players_nolc.output_parser import SdeTeamParser
-from .sde_team.sde_team_2players_nolc.output_parser import SdeTeamGivenTestsParser
-
 from .llm_eval.multi_role.only_static_assign.base_setting.output_parser import LLMEvalMultiParser
 from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.General_Public.output_parser import LLMEvalParser
 from .llm_eval.single_role.multi_role_prompt_but1role.base_setting.Critic.output_parser import LLMEvalParser
@@ -71,11 +47,6 @@ from .llm_eval.multi_role.only_static_assign.faireval.two_turns_summary.three_di
 from .llm_eval.multi_role.only_static_assign.faireval.three_turns_sequential.three_different_role.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
 from .llm_eval.multi_role.only_static_assign.faireval.two_turns_sequential.two_different_role.calc_score_comparison.gpt_4.output_parser import LLMEvalParser
 
-
-# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.coherence.thought.output_parser import LLMEvalParser
-# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.consistency.thought.output_parser import LLMEvalParser
-# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.fluency.thought.output_parser import LLMEvalParser
-# from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.relevance.thought.output_parser import LLMEvalParser
 
 from .llm_eval.multi_role.only_static_assign.geval_summeval_separate.two_turns_sequential.two_different_role.consistency.thought.gpt_4.output_parser import LLMEvalParser
 

@@ -1,9 +1,4 @@
 
-source activate agent
-export OPENAI_API_KEY='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'
-#cd "/mnt/c/Users/dalabengba/AgentVerse"
-#"consistency" "fluency" "relevance"
-
 
 python llm_eval.py \
 --task "llm_eval/multi_role/only_static_assign/faireval/two_turns_concurrent/two_different_role/calc_score_comparison/gpt_35_0301" \

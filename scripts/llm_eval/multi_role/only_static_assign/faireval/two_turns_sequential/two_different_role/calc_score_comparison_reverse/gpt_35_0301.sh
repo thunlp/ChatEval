@@ -1,6 +1,5 @@
 
-source activate agent
-export OPENAI_API_KEY='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'
+
 #cd "/mnt/c/Users/dalabengba/AgentVerse"
 #"consistency" "fluency" "relevance"
 
