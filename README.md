@@ -1,6 +1,13 @@
 ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate
 ---
-This is the implementation of our Paper [ChatEval](https://arxiv.org/abs/2308.07201).  
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2308.07201">Paper</a> •
+  <a >Demo</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#citation">Citation</a>    
+</p>
+
 Our demo is coming soon!
 
 
@@ -71,4 +78,17 @@ Now, you are good to run the experiments.
 Try out this first.
 ```shell
 bash scripts/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301.sh
+```
+
+## Citation
+If you find this repo helpful, feel free to cite us.
+```bibtex
+@misc{chan2023chateval,
+      title={ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate}, 
+      author={Chi-Min Chan and Weize Chen and Yusheng Su and Jianxuan Yu and Wei Xue and Shanghang Zhang and Jie Fu and Zhiyuan Liu},
+      year={2023},
+      eprint={2308.07201},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
