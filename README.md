@@ -1,6 +1,6 @@
 ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate
 ---
-This is the implementation of our Paper ChatEval.
+This is the implementation of our Paper [ChatEval](https://arxiv.org/abs/2308.07201).  
 Our demo is coming soon!
 
 
