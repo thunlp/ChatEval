@@ -22,10 +22,7 @@ class LLMEvalParser(OutputParser):
 
         if cnt_turn >= max_turns - agent_nums:
 
-            if not (len(cleaned_output) == 1
-                    and float(cleaned_output[0]) >= 1
-                    and float(cleaned_output[0]) <= 5
-            ):
+            if not cleaned_output[-1].startswith("Fluency"):
                 raise OutputParserError(text)
 
         return AgentFinish({"output": text}, text)

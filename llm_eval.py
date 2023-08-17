@@ -4,9 +4,9 @@ import os
 # os.environ["http_proxy"] = "http://127.0.0.1:7890"
 # os.environ["https_proxy"] = "http://127.0.0.1:7890"
 # os.environ["all_proxy"] = "socks5://127.0.0.1:7890"
-os.environ["http_proxy"] = "http://172.20.192.1:7890"
-os.environ["https_proxy"] = "http://172.20.192.1:7890"
-os.environ["all_proxy"] = "socks5://172.20.192.1:7890"
+os.environ["http_proxy"] = "http://172.21.208.1:7890"
+os.environ["https_proxy"] = "http://172.21.208.1:7890"
+os.environ["all_proxy"] = "socks5://172.21.208.1:7890"
 
 import json
 from string import Template
@@ -36,15 +36,16 @@ parser = ArgumentParser()
 # parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
 # parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test")
 
-# faireval
-# single
-# parser.add_argument("--task", type=str, default="llm_eval/single_role/geval_summeval_separate/relevance/General_Public")
-# parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/nlg_eval/preprocessed_data/test.json")
-# parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test_yjx/sig/relevance/General_Public")
-# multi
-parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/topical_chat/two_turns_sequential/naturalness/roleless")
+# single:                           # multiple: 
+    # Critic                            # thought
+    # General_Public                    # roleless
+    # News_Author
+    # thought
+
+#   coherence       engagingness    groundedness    naturalness
+parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/topical_chat/two_turns_sequential/naturalness/thought")
 parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/topical_chat/preprocessed_data/test.json")
-parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/topical_yjx/mul/two_turns/naturalness/roleless")
+parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/gpt4_yjx/topical/three/naturalness/thought")
 
 
 

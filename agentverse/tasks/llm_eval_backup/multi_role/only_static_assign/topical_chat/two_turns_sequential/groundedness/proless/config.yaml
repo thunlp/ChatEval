@@ -1,0 +1,121 @@
+prompts:
+  prompt: &prompt |-
+    You will be given a conversation between two individuals. You will then be given one potential response for the next turn in the conversation. The response concerns an interesting fact, which will be provided as well.
+    
+    Your task is to rate the responses on one metric.
+    
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Crieteria:
+
+    Groundedness (0 or 1) Is whether the response is based on the corresponding fact and knowledge.
+
+    - A score of 0 : means that the response partly conflicts with the corresponding fact, or the response has little to do with the corresponding fact (ungrounded).
+    - A score of 1 : means the response is well based on the corresponding fact and knowledge (grounded).
+
+    Evaluation Steps:
+
+    1. Read the conversation, the corresponding fact and the response carefully.
+    2. Rate the response on a scale of 0 or 1 for Groundedness, according to the criteria above.
+    3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
+
+    Example:
+
+
+    Conversation History:
+
+    ${source_text}
+
+    Corresponding Fact:
+
+    ${reference_text}
+
+    Response:
+
+    ${generated_text}
+
+    Additionally, There will be another few people given the same task like you, and you are required to discuss with each other, you can share the idea on how you think of the response.
+
+    Here is your discuss history:
+    ${chat_history}
+
+    Now, What is your opinion, ${agent_name} ?
+
+    ${final_prompt}
+
+environment:
+  env_type: llm_eval
+  max_turns: 6
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: Annotator_1
+    final_prompt_to_use: |-
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Groundedness: [Your answer (scores ONLY)]
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: Annotator_2
+    final_prompt_to_use: |-
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Groundedness: [Your answer (scores ONLY)]
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+  -
+    agent_type: llm_eval_multi
+    name: Annotator_3
+    final_prompt_to_use: |-
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Groundedness: [Your answer (scores ONLY)]
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

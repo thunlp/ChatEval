@@ -1,0 +1,75 @@
+prompts:
+  prompt: &prompt |-
+    You will be given a conversation between two individuals. You will then be given one potential response for the next turn in the conversation. The response concerns an interesting fact, which will be provided as well.
+    
+    Your task is to rate the responses on one metric.
+    
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Crieteria:
+
+    Naturalness (1-3) Is the degree to which the response sounds natural and similar to how a human would naturally express the information in a conversation.
+
+    - A score of 1 (unnatural) means that the response is totally different from that of humans.
+    - A score of 2 (somewhat natural) means the response is similar to that of humans to a certain degree.
+    - A score of 3 (natural) means the response is very similar to how a human would naturally express the information in a conversation.
+
+    Evaluation Steps:
+
+    1. Read the conversation, the corresponding fact and the response carefully.
+    2. Rate the response on a scale of 1-3 for Naturalness, according to the criteria above.
+    3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
+
+    Example:
+
+
+    Conversation History:
+
+    ${source_text}
+
+    Corresponding Fact:
+
+    ${reference_text}
+
+    Response:
+
+    ${generated_text}
+
+    Output with the following format strictly:
+    Explaination: [Your explaination]
+    Naturalness: [Your answer (scores ONLY)]
+
+environment:
+  env_type: llm_eval
+  max_turns: 1
+  rule:
+    order:
+      type: concurrent
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval
+    name: Annotator
+    role_description: |-
+      
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

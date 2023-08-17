@@ -11,9 +11,9 @@ prompts:
 
     Naturalness (1-3) Is the degree to which the response sounds natural and similar to how a human would naturally express the information in a conversation.
 
-    - A score of 1 (unnatural) means that the response is totally different from that of humans.
-    - A score of 2 (somewhat natural) means the response is similar to that of humans to a certain degree.
-    - A score of 3 (natural) means the response is very similar to how a human would naturally express the information in a conversation.
+    - A score of 1 means that the response is totally different from that of humans (unnatural).
+    - A score of 2 means the response is similar to that of humans to a certain degree (somewhat natural).
+    - A score of 3 means the response is very similar to how a human would naturally express the information in a conversation (natural).
 
     Evaluation Steps:
 
@@ -67,8 +67,8 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm:
-      model: "gpt-3.5-turbo-0301"
-      llm_type: gpt-3.5-turbo-0301
+      model: "gpt-4"
+      llm_type: gpt-4
       temperature: 0
       max_tokens: 256
 

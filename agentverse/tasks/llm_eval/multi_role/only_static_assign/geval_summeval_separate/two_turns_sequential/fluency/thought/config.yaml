@@ -11,11 +11,11 @@ prompts:
 
     Fluency (1-5): the quality of the summary in terms of grammar, spelling, punctuation, word choice, and sentence structure.
 
-    - 1: Poor. The summary has many errors that make it hard to understand or sound unnatural.
-    - 2: Near Fair. Better than Poor but somehow worse than Fair.
-    - 3: Fair. The summary has some errors that affect the clarity or smoothness of the text, but the main points are still comprehensible.
-    - 4: Near Good. Better than Fair but somehow worse than Good.
-    - 5: Good. The summary has few or no errors and is easy to read and follow.
+    - 1: The summary has many errors that make it hard to understand or sound unnatural. (Poor)
+    - 2: Better than Poor but somehow worse than Fair. (Near Fair)
+    - 3: The summary has some errors that affect the clarity or smoothness of the text, but the main points are still comprehensible. (Fair)
+    - 4: Better than Fair but somehow worse than Good. (Near Good)
+    - 5: The summary has few or no errors and is easy to read and follow. (Good)
 
 
     Example:
@@ -30,7 +30,7 @@ prompts:
     Here is your discuss history:
     ${chat_history}
 
-    You should clarify your role (Critic, General Public or News Author) and take it in:
+    You should clarify your role (Critic or General Public) and take it in:
     ${role_description}
 
     Now, What is your opinion, ${agent_name} ?
@@ -57,11 +57,11 @@ agents:
     agent_type: llm_eval_multi
     name: Critic
     final_prompt_to_use: |-
-      Evaluation Form (scores ONLY):
-
-      - Fluency:
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Fluency: [Your answer (scores ONLY: just one number)]
     role_description: |-
-      You are Critic, and you will check fluent writing, clear sentences, and good wording in summary writing. You are now going to cooperate with General Public and News Author to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+      You are Critic, and you will check fluent writing, clear sentences, and good wording in summary writing. You are now going to cooperate with General Public to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -76,11 +76,11 @@ agents:
     agent_type: llm_eval_multi
     name: General Public
     final_prompt_to_use: |-
-      Evaluation Form (scores ONLY):
-
-      - Fluency:
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Fluency: [Your answer (scores ONLY: just one number)]
     role_description: |-
-      You are General Public, and you are interested in the story and looking for updates on the investigation. You are now going to cooperate with Critic and News Author to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+      You are General Public, and you are interested in the story and looking for updates on the investigation. You are now going to cooperate with Critic to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -95,11 +95,11 @@ agents:
     agent_type: llm_eval_multi
     name: News Author
     final_prompt_to_use: |-
-      Evaluation Form (scores ONLY):
-
-      - Fluency:
+      Output with the following format strictly:
+      Explaination: [Your explaination]
+      Fluency: [Your answer (scores ONLY: just one number)]
     role_description: |-
-      You are News Author, and you will check the summary for consistency with the original article. You are now going to cooperate with Critic and General Public to help rate the summary. Please think critically by yourself and note that it's fine to challenge other if you want to stick to your point.
+      You are now News Author, you will check the summary for consistency with the original article.
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -110,5 +110,4 @@ agents:
       llm_type: gpt-4
       temperature: 0
       max_tokens: 256
-
 tools: ~

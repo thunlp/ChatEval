@@ -1,0 +1,76 @@
+prompts:
+  prompt: &prompt |-
+    You will be given a conversation between two individuals. You will then be given one potential response for the next turn in the conversation. The response concerns an interesting fact, which will be provided as well.
+    
+    Your task is to rate the responses on one metric.
+    
+    Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+    Evaluation Crieteria:
+
+    Groundedness (0 or 1) Is whether the response is based on the corresponding fact and knowledge.
+
+    - A score of 0 (ungrounded) means that the response partly conflicts with the corresponding fact, or the response has little to do with the corresponding fact.
+    - A score of 1 (grounded) means the response is well based on the corresponding fact and knowledge.
+
+    Evaluation Steps:
+
+    1. Read the conversation, the corresponding fact and the response carefully.
+    2. Rate the response on a scale of 0 or 1 for Groundedness, according to the criteria above.
+    3. Provide a brief explanation for your rating, referring to specific aspects of the response and the conversation.
+
+    Example:
+
+
+    Conversation History:
+
+    ${source_text}
+
+    Corresponding Fact:
+
+    ${reference_text}
+
+    Response:
+
+    ${generated_text}
+
+    ${role_description}
+
+    Output with the following format strictly:
+    Explaination: [Your explaination]
+    Groundedness: [Your answer (scores ONLY)]
+
+environment:
+  env_type: llm_eval
+  max_turns: 1
+  rule:
+    order:
+      type: concurrent
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval
+    name: General Public
+    role_description: |-
+      You are General Public, and you are interested in the story and looking for updates on the investigation.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-3.5-turbo-0301"
+      llm_type: gpt-3.5-turbo-0301
+      temperature: 0
+      max_tokens: 256
+
+tools: ~

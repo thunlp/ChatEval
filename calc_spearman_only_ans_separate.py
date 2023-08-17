@@ -19,16 +19,21 @@ def get_model_results_evaluation(method="average", evaluations=None, aspect=None
     for role_ins in evaluations:
         # print(role)
         evaluation = role_ins["evaluation"].split("\n")
-        for result in evaluation:
+        # for result in evaluation:
 
-            try:
+        #     try:
 
-                # if result.lower().startswith(aspect):
-                #     pattern = fr"(?i){aspect}:\s*(\d+)"
-                #     aspect_results.append(float(re.search(pattern, result).group(1)))
-                aspect_results.append(float(result))
-            except BaseException as e:
-                print(e)
+        #         # if result.lower().startswith(aspect):
+        #         #     pattern = fr"(?i){aspect}:\s*(\d+)"
+        #         #     aspect_results.append(float(re.search(pattern, result).group(1)))
+        #         aspect_results.append(float(result))
+        #     except BaseException as e:
+        #         print(e)
+        result = evaluation[-1][-1]
+        try:
+            aspect_results.append(float(result))
+        except BaseException as e:
+            print(e)
 
     # if len(aspect_results) != 3:
     #     print("1")
@@ -126,7 +131,7 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
 
         model_num = len(human_results)
         # TODO now we just tust the first models' output
-        for instance_index in range(len(human_results[0]))[:100]:
+        for instance_index in range(len(human_results[0])):
 
             target_scores = []
             prediction_scores = []
@@ -141,7 +146,7 @@ def sample_level_correlation_summeval(human_metric, human_results, model_results
                     target_scores.append(human_results[model_index][instance_index]["evaluation"][human_metric])
 
                 except BaseException as e:
-                    print(e)
+                    print(e, f": {model_index}, {instance_index}")
                     continue
 
             if len(set(prediction_scores)) == 1 or len(set(target_scores)) == 1:
@@ -174,12 +179,12 @@ if __name__ == '__main__':
                                                         "/human_results.json")
 
 
-    parser.add_argument("--model_results_path", default="./outputs/llm_eval/test_yjx/sig")
-    parser.add_argument("--model_results_post_path", default="News_Author")
+    parser.add_argument("--model_results_path", default="./outputs/llm_eval/test_yjx/newmul")
+    parser.add_argument("--model_results_post_path", default="roleless")
 
     # gt_sysn_results.json
 
-    parser.add_argument("--output_path", default="./outputs/llm_eval/test_yjx/sig")
+    parser.add_argument("--output_path", default="./outputs/llm_eval/test_yjx/newmul")
 
 
     args = parser.parse_args()
@@ -189,8 +194,8 @@ if __name__ == '__main__':
 
     final_pd = pd.DataFrame.from_records({})
     # "consistency" "fluency", "relevance" "coherence"
-    for aspect in ["consistency", "fluency", "relevance", "coherence"]:
-    # for aspect in ["consistency"]:
+    # for aspect in ["consistency", "fluency", "relevance", "coherence"]:
+    for aspect in ["fluency"]:
 
         # if aspect == "fluency":
         #     aspect += "_1-5"
@@ -207,6 +212,6 @@ if __name__ == '__main__':
 
     print(
         tabulate(final_pd, headers=['metric', 'spearman', 'pearsonr', 'kendalltau'], showindex=False, tablefmt="psql"))
-    with open(os.path.join(args.output_path, "NewsAuthor_correlation_results.json"), 'w') as f:
+    with open(os.path.join(args.output_path, "roleless_correlation_results.json"), 'w') as f:
         json.dump(final_pd.to_dict(orient='records'), f, indent=4)
-    final_pd.to_excel(os.path.join(args.output_path, "NewsAuthor_correlation_results.xlsx"), index=False)
+    final_pd.to_excel(os.path.join(args.output_path, "roleless_correlation_results.xlsx"), index=False)

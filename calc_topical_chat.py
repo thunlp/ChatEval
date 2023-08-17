@@ -107,12 +107,12 @@ if __name__ == '__main__':
                                                         "/human_results.json")
 
 
-    parser.add_argument("--model_results_path", default="./outputs/llm_eval/topical_yjx/mul/two_turns")
-    parser.add_argument("--model_results_post_path", default="roleless")
+    parser.add_argument("--model_results_path", default="./outputs/llm_eval/gpt4_yjx/topical/sig")
+    parser.add_argument("--model_results_post_path", default="thought")
 
     # gt_sysn_results.json
 
-    parser.add_argument("--output_path", default="./outputs/llm_eval/topical_yjx/mul/two_turns")
+    parser.add_argument("--output_path", default="./outputs/llm_eval/gpt4_yjx/topical/sig")
 
     args = parser.parse_args()
 

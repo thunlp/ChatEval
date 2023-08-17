@@ -20,12 +20,9 @@ class LLMEvalParser(OutputParser):
 
         # TODO chimin modify here
 
-        if cnt_turn >= max_turns - agent_nums:
+        # if cnt_turn >= max_turns - agent_nums:
 
-            if not (len(cleaned_output) == 1
-                    and float(cleaned_output[0]) >= 1
-                    and float(cleaned_output[0]) <= 5
-            ):
-                raise OutputParserError(text)
+        #     if cleaned_output[-1].startswith("Relevance"):
+        #         raise OutputParserError(text)
 
         return AgentFinish({"output": text}, text)
