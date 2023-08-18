@@ -52,6 +52,22 @@ class UI:
         self.tot_solutions = 5
         self.solution_status = [False] * self.tot_solutions
 
+        self.is_mounted = False  # used to monitor whether the example is mounted to agents
+
+
+    def mount_examples(self, user_input:str, response_one: str, response_two: str):
+
+        self.is_mounted = True
+
+        for agent_id in range(len(self.backend.agents)):
+            self.backend.agents[agent_id].source_text = user_input
+            self.backend.agents[agent_id].compared_text_one = response_one
+            self.backend.agents[agent_id].compared_text_two = response_two
+            self.backend.agents[agent_id].final_prompt = ""
+
+
+
+
     def get_avatar(self, idx):
         if idx == -1:
             img = cv2.imread("./imgs/db_diag/-1.png")
@@ -74,8 +90,19 @@ class UI:
             gr.Button.update(interactive=False),
         )
 
-    def start_autoplay(self):
+    def start_autoplay(self, c_chatbot1, c_chatbot2):
         self.autoplay = True
+
+        for agent_id in range(len(self.backend.agents)):
+            self.backend.agents[agent_id].source_text = c_chatbot1[-1][0]
+            self.backend.agents[agent_id].compared_text_one = c_chatbot1[-1][1]
+            self.backend.agents[agent_id].compared_text_two = c_chatbot2[-1][1]
+            self.backend.agents[agent_id].final_prompt = ""
+
+
+        import pdb
+        pdb.set_trace()
+
         yield (
             self.text_now,
             gr.Button.update(interactive=False),
@@ -342,10 +369,11 @@ class UI:
         self.messages.append((-1, f"[User]: {message}"))
         return self.gen_img([{"message": ""}] * len(self.agent_id)), self.gen_message()
 
-    def launch(self):
+    def launch(self, c_chatbots):
         """
         start a frontend
         """
+
         with gr.Box():
             with gr.Row():
                 with gr.Column():
@@ -417,7 +445,7 @@ class UI:
             )
             start_autoplay_btn.click(
                 fn=self.start_autoplay,
-                inputs=None,
+                inputs=[*c_chatbots],
                 outputs=[
                     text_output,
                     next_btn,
@@ -433,5 +461,5 @@ class UI:
                 show_progress=False,
             )
 
-        # demo.queue(concurrency_count=5, max_size=20).launch()
-        # demo.launch()
+    # demo.queue(concurrency_count=5, max_size=20).launch()
+    # demo.launch()

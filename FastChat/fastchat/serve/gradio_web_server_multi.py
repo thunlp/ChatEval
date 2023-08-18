@@ -56,7 +56,7 @@ def load_demo(url_params, request: gr.Request):
     logger.info(f"load_demo. ip: {ip}. params: {url_params}")
     ip_expiration_dict[ip] = time.time() + SESSION_EXPIRATION_TIME
 
-    selected = 0
+    selected = 2
     if "arena" in url_params:
         selected = 1
     elif "compare" in url_params:
@@ -72,7 +72,7 @@ def load_demo(url_params, request: gr.Request):
                 args.controller_url, args.add_chatgpt, args.add_claude, args.add_palm
             )
 
-    single_updates = load_demo_single(models, url_params)
+    # single_updates = load_demo_single(models, url_params)
 
     models_anony = list(models)
     if args.anony_only_for_proprietary_model:
@@ -84,12 +84,12 @@ def load_demo(url_params, request: gr.Request):
         if args.add_palm:
             models_anony += ["palm-2"]
 
-    side_by_side_anony_updates = load_demo_side_by_side_anony(models_anony, url_params)
+    # side_by_side_anony_updates = load_demo_side_by_side_anony(models_anony, url_params)
     side_by_side_named_updates = load_demo_side_by_side_named(models, url_params)
     return (
         (gr.Tabs.update(selected=selected),)
-        + single_updates
-        + side_by_side_anony_updates
+        # + single_updates
+        # + side_by_side_anony_updates
         + side_by_side_named_updates
     )
 
@@ -101,50 +101,49 @@ def build_demo(models, elo_results_file, leaderboard_table_file):
         css=block_css,
     ) as demo:
         with gr.Tabs() as tabs:
-            with gr.Tab("Single Model", id=0):
-                (
-                    a_state,
-                    a_model_selector,
-                    a_chatbot,
-                    a_textbox,
-                    a_send_btn,
-                    a_button_row,
-                    a_parameter_row,
-                ) = build_single_model_ui(models, add_promotion_links=True)
-                a_list = [
-                    a_state,
-                    a_model_selector,
-                    a_chatbot,
-                    a_textbox,
-                    a_send_btn,
-                    a_button_row,
-                    a_parameter_row,
-                ]
-
-            with gr.Tab("Chatbot Arena (battle)", id=1):
-                (
-                    b_states,
-                    b_model_selectors,
-                    b_chatbots,
-                    b_textbox,
-                    b_send_btn,
-                    b_button_row,
-                    b_button_row2,
-                    b_parameter_row,
-                ) = build_side_by_side_ui_anony(models)
-                b_list = (
-                    b_states
-                    + b_model_selectors
-                    + b_chatbots
-                    + [
-                        b_textbox,
-                        b_send_btn,
-                        b_button_row,
-                        b_button_row2,
-                        b_parameter_row,
-                    ]
-                )
-
+            # with gr.Tab("Single Model", id=0):
+            #     (
+            #         a_state,
+            #         a_model_selector,
+            #         a_chatbot,
+            #         a_textbox,
+            #         a_send_btn,
+            #         a_button_row,
+            #         a_parameter_row,
+            #     ) = build_single_model_ui(models, add_promotion_links=True)
+            #     a_list = [
+            #         a_state,
+            #         a_model_selector,
+            #         a_chatbot,
+            #         a_textbox,
+            #         a_send_btn,
+            #         a_button_row,
+            #         a_parameter_row,
+            #     ]
+            #
+            # with gr.Tab("Chatbot Arena (battle)", id=1):
+            #     (
+            #         b_states,
+            #         b_model_selectors,
+            #         b_chatbots,
+            #         b_textbox,
+            #         b_send_btn,
+            #         b_button_row,
+            #         b_button_row2,
+            #         b_parameter_row,
+            #     ) = build_side_by_side_ui_anony(models)
+            #     b_list = (
+            #         b_states
+            #         + b_model_selectors
+            #         + b_chatbots
+            #         + [
+            #             b_textbox,
+            #             b_send_btn,
+            #             b_button_row,
+            #             b_button_row2,
+            #             b_parameter_row,
+            #         ]
+            #     )
             with gr.Tab("Chatbot Arena (side-by-side)", id=2):
                 (
                     c_states,
@@ -169,18 +168,20 @@ def build_demo(models, elo_results_file, leaderboard_table_file):
                     ]
                 )
 
+                # TODO chimin add referee func
+
+                from fastchat.serve.gradio_block_arena_referee import UI
+
+                referee_block = UI()
+
+                referee_block.launch(c_chatbots)
+
+
+
+
             if elo_results_file:
                 with gr.Tab("Leaderboard", id=3):
                     build_leaderboard_tab(elo_results_file, leaderboard_table_file)
-
-
-        # TODO chimin add referee func
-
-        from fastchat.serve.gradio_block_arena_referee import UI
-
-        referee_block = UI()
-        referee_block.launch()
-
 
 
         url_params = gr.JSON(visible=False)
@@ -190,7 +191,10 @@ def build_demo(models, elo_results_file, leaderboard_table_file):
         demo.load(
             load_demo,
             [url_params],
-            [tabs] + a_list + b_list + c_list,
+            [tabs] +
+            # a_list +
+            # b_list +
+            c_list,
             _js=get_window_url_params_js,
         )
 

@@ -33,6 +33,9 @@ from fastchat.utils import (
     violates_moderation,
 )
 
+import sys
+sys.path.append("/data/private/zhanqimin/AgentVerse")
+from agentverse.demo import UI
 
 logger = build_logger("gradio_web_server_multi", "gradio_web_server_multi.log")
 
