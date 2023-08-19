@@ -3,12 +3,22 @@ ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate
 
 <p align="center">
   <a href="https://arxiv.org/abs/2308.07201">Paper</a> •
-  <a >Demo</a> •
+  <a href="#-simple-video-demo">Demo</a> •
   <a href="#-getting-started">Getting Started</a> •
   <a href="#citation">Citation</a>    
 </p>
 
-Our demo is coming soon!
+**ChatEval** is designed to simplify the process of human evaluation on generated text. Understanding its workflow and functionalities is crucial for optimal usage. First check out our video demo to know how it works!
+
+## 🎥 Simple Video Demo
+
+We'd like to extend our heartfelt gratitude to [FastChat](https://github.com/lm-sys/FastChat) for their outstanding framework. Our demo was built upon the foundation they provided.
+
+
+
+https://github.com/chanchimin/ChatEval/assets/75533759/35834dfd-5472-482a-905f-44b92708c90b
+
+
 
 
 ## 🚀 Getting Started
