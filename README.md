@@ -10,7 +10,7 @@ ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate
 
 **ChatEval** is designed to simplify the process of human evaluation on generated text. When given different pieces of text, roles (acted by LLMs) within ChatEval can autonomously debate the nuances and disparities, drawing upon their assigned personas, and subsequently provide their judgments. Understanding its workflow and functionalities is crucial for optimal usage. First, check out our video demo to know how it works!
 
-
+![better_compare](./imgs/better_compare.png)
 
 ## 🎥 Simple Video Demo
 
