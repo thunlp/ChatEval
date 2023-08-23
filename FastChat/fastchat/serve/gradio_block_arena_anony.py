@@ -25,7 +25,6 @@ from fastchat.serve.gradio_web_server import (
     no_change_btn,
     enable_btn,
     disable_btn,
-    learn_more_md,
     ip_expiration_dict,
 )
 from fastchat.utils import (
@@ -454,7 +453,7 @@ Please scroll down and start chatting. The models include both closed-source mod
             label="Max output tokens",
         )
 
-    gr.Markdown(learn_more_md)
+    # gr.Markdown(learn_more_md)
 
     # Register listeners
     btn_list = [

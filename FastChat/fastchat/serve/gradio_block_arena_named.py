@@ -24,7 +24,6 @@ from fastchat.serve.gradio_web_server import (
     no_change_btn,
     enable_btn,
     disable_btn,
-    learn_more_md,
     get_model_description_md,
     ip_expiration_dict,
 )
@@ -71,7 +70,6 @@ def load_demo_side_by_side_named(models, url_params):
         + (
             gr.Textbox.update(visible=True),
             gr.Box.update(visible=True),
-            gr.Row.update(visible=True),
             gr.Row.update(visible=True),
             gr.Accordion.update(visible=True),
         )
@@ -301,18 +299,16 @@ def flash_buttons():
 
 def build_side_by_side_ui_named(models):
     notice_markdown = """
-# ⚔️  Chatbot Arena ⚔️ 
+# ⚔️  ChatEval Arena ⚔️ 
 ### Rules
-- Chat with two models side-by-side and vote for which one is better!
-- You pick the models you want to chat with.
-- You can do multiple rounds of conversations before voting.
+- Chat with two models side-by-side and let ChatEval to judge which is better!
 - Click "Clear history" to start a new round.
-- | [Blog](https://lmsys.org/blog/2023-05-03-arena/) | [GitHub](https://github.com/lm-sys/FastChat) | [Paper](https://arxiv.org/abs/2306.05685) | [Twitter](https://twitter.com/lmsysorg) | [Discord](https://discord.gg/HSWAKCrnFx) |
+- | [GitHub](https://github.com/chanchimin/ChatEval) | [Paper](https://arxiv.org/abs/2308.07201) |
 
 ### Terms of use
-By using this service, users are required to agree to the following terms: The service is a research preview intended for non-commercial use only. It only provides limited safety measures and may generate offensive content. It must not be used for any illegal, harmful, violent, racist, or sexual purposes. **The service collects user dialogue data and reserves the right to distribute it under a Creative Commons Attribution (CC-BY) license.** The demo works better on desktop devices with a wide screen.
+By using this service, users are required to agree to the following terms: The service is a research preview intended for non-commercial use only. It only provides limited safety measures and may generate offensive content. It must not be used for any illegal, harmful, violent, racist, or sexual purposes.
 
-### Choose two models to chat with (view [leaderboard](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard))
+### Choose two models to chat with
 """
 
     states = [gr.State() for _ in range(num_sides)]
@@ -320,8 +316,13 @@ By using this service, users are required to agree to the following terms: The s
     chatbots = [None] * num_sides
 
     model_description_md = get_model_description_md(models)
+
+    # TODO chi-min comment this line
+    # notice = gr.Markdown(
+    #     notice_markdown + model_description_md, elem_id="notice_markdown"
+    # )
     notice = gr.Markdown(
-        notice_markdown + model_description_md, elem_id="notice_markdown"
+        notice_markdown, elem_id="notice_markdown"
     )
 
     with gr.Box(elem_id="share-region-named"):
@@ -344,12 +345,12 @@ By using this service, users are required to agree to the following terms: The s
                         label=label, elem_id=f"chatbot", visible=False, height=550
                     )
 
-        with gr.Box() as button_row:
-            with gr.Row():
-                leftvote_btn = gr.Button(value="👈  A is better", interactive=False)
-                rightvote_btn = gr.Button(value="👉  B is better", interactive=False)
-                tie_btn = gr.Button(value="🤝  Tie", interactive=False)
-                bothbad_btn = gr.Button(value="👎  Both are bad", interactive=False)
+        # with gr.Box(visible=False) as button_row:
+        #     with gr.Row():
+        #         leftvote_btn = gr.Button(value="👈  A is better", interactive=False, visible=False)
+        #         rightvote_btn = gr.Button(value="👉  B is better", interactive=False, visible=False)
+        #         tie_btn = gr.Button(value="🤝  Tie", interactive=False, visible=False)
+        #         bothbad_btn = gr.Button(value="👎  Both are bad", interactive=False, visible=False)
 
     with gr.Row():
         with gr.Column(scale=20):
@@ -393,37 +394,35 @@ By using this service, users are required to agree to the following terms: The s
             label="Max output tokens",
         )
 
-    gr.Markdown(learn_more_md)
-
     # Register listeners
     btn_list = [
-        leftvote_btn,
-        rightvote_btn,
-        tie_btn,
-        bothbad_btn,
+        # leftvote_btn,
+        # rightvote_btn,
+        # tie_btn,
+        # bothbad_btn,
         regenerate_btn,
         clear_btn,
     ]
-    leftvote_btn.click(
-        leftvote_last_response,
-        states + model_selectors,
-        [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
-    )
-    rightvote_btn.click(
-        rightvote_last_response,
-        states + model_selectors,
-        [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
-    )
-    tie_btn.click(
-        tievote_last_response,
-        states + model_selectors,
-        [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
-    )
-    bothbad_btn.click(
-        bothbad_vote_last_response,
-        states + model_selectors,
-        [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
-    )
+    # leftvote_btn.click(
+    #     leftvote_last_response,
+    #     states + model_selectors,
+    #     [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
+    # )
+    # rightvote_btn.click(
+    #     rightvote_last_response,
+    #     states + model_selectors,
+    #     [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
+    # )
+    # tie_btn.click(
+    #     tievote_last_response,
+    #     states + model_selectors,
+    #     [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
+    # )
+    # bothbad_btn.click(
+    #     bothbad_vote_last_response,
+    #     states + model_selectors,
+    #     [textbox, leftvote_btn, rightvote_btn, tie_btn, bothbad_btn],
+    # )
     regenerate_btn.click(
         regenerate, states, states + chatbots + [textbox] + btn_list
     ).then(
@@ -491,7 +490,6 @@ function (a, b, c, d) {
         chatbots,
         textbox,
         send_btn,
-        button_row,
         button_row2,
         parameter_row,
     )

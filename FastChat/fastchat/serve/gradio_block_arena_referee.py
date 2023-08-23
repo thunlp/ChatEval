@@ -11,6 +11,9 @@ sys.path.append("/data/private/zhanqimin/AgentVerse")
 
 from agentverse.agentverse import AgentVerse
 from agentverse.message import Message
+from string import Template
+
+
 
 
 def cover_img(background, img, place: Tuple[int, int]):
@@ -39,7 +42,7 @@ class UI:
         """
         self.messages = []
         self.task = task
-        self.backend = AgentVerse.from_task("llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
+        self.backend = AgentVerse.from_task("demo/science_team")
         self.turns_remain = 0
         self.agent_id = {
             self.backend.agents[idx].name: idx
@@ -53,6 +56,36 @@ class UI:
         self.solution_status = [False] * self.tot_solutions
 
         self.is_mounted = False  # used to monitor whether the example is mounted to agents
+
+        self.role_html_temp = (
+                '<div style="display: flex; align-items: center; margin-bottom: 10px;overflow:auto;">'
+                '<img src="${img_source}" style="width: 5%; height: 5%; border-radius: 25px; margin-right: 10px;">'
+                '<div style="background-color: gray; color: white; padding: 10px; border-radius: 10px;'
+                'max-width: 70%; white-space: pre-wrap">'
+                '${role_description}'
+                '</div></div>'
+        )
+
+    def get_display_role_html(self):
+
+        role_html = ""
+
+        for agent_id in range(len(self.backend.agents)):
+            cur_agent = self.backend.agents[agent_id]
+
+            avatar = self.get_avatar(agent_id)
+            cur_role_description = Template(self.role_html_temp).safe_substitute(
+                {
+                    "img_source": avatar,
+                    "role_description": cur_agent.role_description
+                }
+            )
+
+            role_html += cur_role_description
+
+        role_html = '<div id="divDetail" style="height:600px;overflow:auto;">' + role_html + "</div>"
+
+        return role_html
 
 
     def mount_examples(self, user_input:str, response_one: str, response_two: str):
@@ -87,7 +120,6 @@ class UI:
         return (
             gr.Button.update(interactive=False),
             gr.Button.update(interactive=False),
-            gr.Button.update(interactive=False),
         )
 
     def start_autoplay(self, c_chatbot1, c_chatbot2):
@@ -100,16 +132,11 @@ class UI:
             self.backend.agents[agent_id].final_prompt = ""
 
 
-        import pdb
-        pdb.set_trace()
-
         yield (
             self.text_now,
             gr.Button.update(interactive=False),
             gr.Button.update(interactive=True),
             gr.Button.update(interactive=False),
-            *[gr.Button.update(visible=statu) for statu in self.solution_status],
-            gr.Box.update(visible=any(self.solution_status)),
         )
 
         while self.autoplay and self.turns_remain > 0:
@@ -118,25 +145,16 @@ class UI:
 
             yield (
                 self.text_now,
-                gr.Button.update(interactive=not self.autoplay and self.turns_remain > 0),
                 gr.Button.update(interactive=self.autoplay and self.turns_remain > 0),
                 gr.Button.update(interactive=not self.autoplay and self.turns_remain > 0),
-                *[gr.Button.update(visible=statu) for statu in self.solution_status],
-                gr.Box.update(visible=any(self.solution_status))
             )
 
     def delay_gen_output(self):
-
-        import pdb
-        pdb.set_trace()
-
 
         yield (
             self.text_now,
             gr.Button.update(interactive=False),
             gr.Button.update(interactive=False),
-            *[gr.Button.update(visible=statu) for statu in self.solution_status],
-            gr.Box.update(visible=any(self.solution_status))
         )
 
         outputs = self.gen_output()
@@ -146,25 +164,16 @@ class UI:
             self.text_now,
             gr.Button.update(interactive=self.turns_remain > 0),
             gr.Button.update(interactive=self.turns_remain > 0),
-            *[gr.Button.update(visible=statu) for statu in self.solution_status],
-            gr.Box.update(visible=any(self.solution_status))
         )
 
     def delay_reset(self):
         self.autoplay = False
         self.image_now, self.text_now = self.reset()
 
-        import pdb
-        pdb.set_trace()
-
-
         return (
             self.text_now,
-            gr.Button.update(interactive=True),
             gr.Button.update(interactive=False),
             gr.Button.update(interactive=True),
-            *[gr.Button.update(visible=statu) for statu in self.solution_status],
-            gr.Box.update(visible=any(self.solution_status))
         )
 
     def reset(self, stu_num=0):
@@ -377,44 +386,29 @@ class UI:
         with gr.Box():
             with gr.Row():
                 with gr.Column():
+
+                    notice_markdown = "## Referee team\n" \
+                                      "By specifying different personas, you can utilize **ChatEval** to judge the above two responses."
+
+                    gr.Markdown(notice_markdown)
+
                     with gr.Row():
                         reset_btn = gr.Button("Reset")
-                        # next_btn = gr.Button("Next", variant="primary")
-                        next_btn = gr.Button("Next", interactive=False)
                         stop_autoplay_btn = gr.Button(
-                            "Stop Autoplay", interactive=False
+                            "Stop", interactive=False
                         )
-                        start_autoplay_btn = gr.Button("Start Autoplay", interactive=False)
-                    with gr.Box(visible=False) as solutions:
-                        with gr.Column():
-                            gr.HTML("Optimization Solutions:")
-                            with gr.Row():
-                                rewrite_slow_query_btn = gr.Button("Rewrite Slow Query", visible=False)
-                                add_query_hints_btn = gr.Button("Add Query Hints", visible=False)
-                                update_indexes_btn = gr.Button("Update Indexes", visible=False)
-                                tune_parameters_btn = gr.Button("Tune Parameters", visible=False)
-                                gather_more_info_btn = gr.Button("Gather More Info", visible=False)
+                        start_autoplay_btn = gr.Button("Judge", interactive=False)
+
+                    with gr.Box():
+
+                        role_description = self.get_display_role_html()
+                        _ = gr.HTML(role_description)
+
+
                 # text_output = gr.Textbox()
                 text_output = gr.HTML(self.reset()[1])
 
 
-            # next_btn.click(fn=self.gen_output, inputs=None, outputs=[image_output, text_output], show_progress=False)
-            next_btn.click(
-                fn=self.delay_gen_output,
-                inputs=None,
-                outputs=[
-                    text_output,
-                    next_btn,
-                    start_autoplay_btn,
-                    rewrite_slow_query_btn,
-                    add_query_hints_btn,
-                    update_indexes_btn,
-                    tune_parameters_btn,
-                    gather_more_info_btn,
-                    solutions
-                ],
-                show_progress=False,
-            )
 
             # [To-Do] Add botton: re-start (load different people and env)
             # reset_btn.click(fn=self.reset, inputs=stu_num, outputs=[image_output, text_output], show_progress=False)
@@ -424,15 +418,8 @@ class UI:
                 inputs=None,
                 outputs=[
                     text_output,
-                    next_btn,
                     stop_autoplay_btn,
                     start_autoplay_btn,
-                    rewrite_slow_query_btn,
-                    add_query_hints_btn,
-                    update_indexes_btn,
-                    tune_parameters_btn,
-                    gather_more_info_btn,
-                    solutions
                 ],
                 show_progress=False,
             )
@@ -440,7 +427,7 @@ class UI:
             stop_autoplay_btn.click(
                 fn=self.stop_autoplay,
                 inputs=None,
-                outputs=[next_btn, stop_autoplay_btn, start_autoplay_btn],
+                outputs=[stop_autoplay_btn, start_autoplay_btn],
                 show_progress=False,
             )
             start_autoplay_btn.click(
@@ -448,15 +435,8 @@ class UI:
                 inputs=[*c_chatbots],
                 outputs=[
                     text_output,
-                    next_btn,
                     stop_autoplay_btn,
                     start_autoplay_btn,
-                    rewrite_slow_query_btn,
-                    add_query_hints_btn,
-                    update_indexes_btn,
-                    tune_parameters_btn,
-                    gather_more_info_btn,
-                    solutions
                 ],
                 show_progress=False,
             )
