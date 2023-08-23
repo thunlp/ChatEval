@@ -7,7 +7,7 @@ import cv2
 import gradio as gr
 
 import sys
-sys.path.append("/data/private/zhanqimin/AgentVerse")
+sys.path.append("../../AgentVerse")
 
 from agentverse.agentverse import AgentVerse
 from agentverse.message import Message
