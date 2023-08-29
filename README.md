@@ -18,11 +18,36 @@ Our video demo illustrates how users can utilize ChatEval to compare two differe
 
 1. Use the selection dropdown to pick the two models you wish to compare.
 2. Patiently wait for the models to craft their responses.
-3. It's time for the LLM referees to pick the superior response! Start by clicking the 'Reset' button, followed by the 'Judge' button.
+3. It's time for the **LLM referees** to pick the superior response! Start by clicking the 'Reset' button, followed by the 'Judge' button.
 
 https://github.com/chanchimin/ChatEval/assets/75533759/35834dfd-5472-482a-905f-44b92708c90b
 
 We'd like to extend our heartfelt gratitude to [FastChat](https://github.com/lm-sys/FastChat) for their outstanding framework. Our demo was built upon the foundation they provided.
+
+If you like to run the above arena-style demo, follow these steps:
+
+1. **Navigate to FastChat folder under our project**
+```bash
+cd ChatEval/FastChat
+```
+2. **Launch the controller which is used to coordinate the webserver and model workers**
+```python
+python3 -m fastchat.serve.controller
+```
+3. **Register multiple model workers to a single controller**
+```bash
+# worker 0
+CUDA_VISIBLE_DEVICES=0 python3 -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.3 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000
+# worker 1
+CUDA_VISIBLE_DEVICES=1 python3 -m fastchat.serve.model_worker --model-path lmsys/fastchat-t5-3b-v1.0 --controller http://localhost:21001 --port 31001 --worker http://localhost:31001
+```
+4. **Run the gradio server, which integrates with the chatbots and our referee team**
+```python
+python3 -m fastchat.serve.gradio_web_server_multi
+```
+
+Now, you can open your browser and chat with the models, and then receive a judgment from an autonomous referee team.
+
 
 
 ## 🚀 Getting Started
