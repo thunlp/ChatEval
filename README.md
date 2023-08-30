@@ -24,7 +24,7 @@ https://github.com/chanchimin/ChatEval/assets/75533759/35834dfd-5472-482a-905f-4
 
 We'd like to extend our heartfelt gratitude to [FastChat](https://github.com/lm-sys/FastChat) for their outstanding framework. Our demo was built upon the foundation they provided.
 
-If you like to run the above arena-style demo, follow these steps:
+If you like to run the above arena-style demo, first make sure that you install FastChat correctly as stated in [Installation](#installation) and follow these steps:
 
 1. **Navigate to FastChat folder under our project**
 ```bash
