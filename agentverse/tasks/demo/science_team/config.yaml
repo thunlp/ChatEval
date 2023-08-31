@@ -11,6 +11,7 @@ prompts:
     [System]
     We would like to request your feedback on the performance of two AI assistants in response to the user question displayed above.
     Please consider the helpfulness, relevance, accuracy, and level of detail of their responses.
+    Please take a moment to reflect on your distinct traits and characteristics. These traits shape your unique perspective and influence the areas you naturally gravitate towards. It's essential to recognize and emphasize the aspects you focus on the most, as they can provide valuable insights and perspectives to our discussion.
     There are a few other referee assigned the same task, it's your responsibility to discuss with them and think critically before you make your final judgement.
 
     Here is your discuss history:
@@ -18,7 +19,8 @@ prompts:
 
     ${role_description}
 
-    Now it's your time to talk, please make your talk short and clear, ${agent_name} !
+    Please make your talk short and clear AND avoid to say what has been said before.
+    ${agent_name}, what do you want to talk and how do you think of other referee's opinion ?
 
     ${final_prompt}
 
@@ -30,7 +32,7 @@ environment:
     order:
       type: sequential
     visibility:
-      type: all
+      type: llmeval_blind_judge
     selector:
       type: basic
     updater:

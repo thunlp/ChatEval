@@ -83,7 +83,7 @@ class UI:
 
             role_html += cur_role_description
 
-        role_html = '<div id="divDetail" style="height:600px;overflow:auto;">' + role_html + "</div>"
+        role_html = '<div id="divDetail" style="height:1500px;overflow:auto;">' + role_html + "</div>"
 
         return role_html
 
@@ -365,7 +365,7 @@ class UI:
                 f"{msg}"
                 f"</div></div>" + message
             )
-        message = '<div id="divDetail" style="height:600px;overflow:auto;">' + message + "</div>"
+        message = '<div id="divDetail" style="height:1500px;overflow:auto;">' + message + "</div>"
         return message
 
     def submit(self, message: str):
