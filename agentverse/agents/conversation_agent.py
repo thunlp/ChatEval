@@ -19,7 +19,7 @@ class ConversationAgent(BaseAgent):
         parsed_response = None
         for i in range(self.max_retry):
             try:
-                response = self.llm.generate_response(prompt)
+                response = self.llm.generate_response(prompt, self.memory.messages, self.final_prompt)
                 parsed_response = self.output_parser.parse(response)
                 break
             except KeyboardInterrupt:
@@ -48,7 +48,7 @@ class ConversationAgent(BaseAgent):
         parsed_response = None
         for i in range(self.max_retry):
             try:
-                response = await self.llm.agenerate_response(prompt)
+                response = await self.llm.agenerate_response(prompt, self.memory.messages, self.final_prompt)
                 parsed_response = self.output_parser.parse(response)
                 break
             except (KeyboardInterrupt, bdb.BdbQuit):
@@ -83,7 +83,7 @@ class ConversationAgent(BaseAgent):
             "agent_name": self.name,
             "env_description": env_description,
             "role_description": self.role_description,
-            "chat_history": self.memory.to_string(add_sender_prefix=True),
+            # "chat_history": self.memory.to_string(add_sender_prefix=True),
         }
         return Template(self.prompt_template).safe_substitute(input_arguments)
 

@@ -42,7 +42,11 @@ class AgentVerse:
         env_config["agents"] = agents
         environment = load_environment(env_config)
 
-        return cls(agents, environment)
+        # Set input_path and output_path
+        input_path = task_config["data_path"]
+        output_path = task_config["output_dir"]
+
+        return cls(agents, environment), input_path, output_path
 
     def run(self):
         """Run the environment from scratch until it is done."""

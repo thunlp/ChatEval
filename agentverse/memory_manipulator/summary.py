@@ -59,7 +59,8 @@ class SummaryMemoryManipulator(BaseMemoryManipulator):
 
                 for i in range(3):
                     try:
-                        response = self.llm.generate_response(prompt)
+                        final_prompt = ""
+                        response = self.llm.generate_response(prompt, self.memory.messages, final_prompt)
                         should_break = True
                         break
                     except (KeyboardInterrupt, bdb.BdbQuit):

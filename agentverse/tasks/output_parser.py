@@ -10,7 +10,7 @@ from agentverse.utils import AgentAction, AgentFinish
 from agentverse.parser import OutputParserError, output_parser_registry
 
 
-@output_parser_registry.register("llm_eval/multi_role/only_static_assign/faireval/two_turns_summary/two_different_role/calc_score_comparison/gpt_35_0301")
+@output_parser_registry.register("")
 class LLMEvalParser(OutputParser):
     def parse(self, output: LLMResult, cnt_turn: int, max_turns: int, agent_nums: int) -> Union[AgentAction, AgentFinish]:
         text = output.content
@@ -18,13 +18,9 @@ class LLMEvalParser(OutputParser):
         cleaned_output = re.sub(r"\n+", "\n", cleaned_output)
         cleaned_output = cleaned_output.split("\n")
 
-        
+        # TODO chimin modify here
 
-        if cnt_turn >= max_turns - 1:
-
-            # import pdb
-            # pdb.set_trace()
-
+        if cnt_turn >= max_turns - agent_nums:
             # if not cleaned_output[0].startswith("Answer") :
             if not (cleaned_output[-2].startswith("The score of Assistant 1:") and \
                     cleaned_output[-1].startswith("The score of Assistant 2:")):

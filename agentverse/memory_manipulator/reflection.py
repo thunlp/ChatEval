@@ -114,7 +114,7 @@ class Reflection(BaseMemoryManipulator):
 
     def get_questions(self, texts):
         prompt = "\n".join(texts) + "\n" + QUESTION_PROMPT
-        result = self.agent.llm.generate_response(prompt)
+        result = self.agent.llm.generate_response(prompt, self.agent.memory.messages, self.agent.final_prompt)
         result = result.content
         questions = [q for q in result.split("\n") if len(q.strip()) > 0]
         questions = questions[:3]
@@ -125,7 +125,7 @@ class Reflection(BaseMemoryManipulator):
         for i, st in enumerate(statements):
             prompt += str(i + 1) + ". " + st + "\n"
         prompt += INSIGHT_PROMPT
-        result = self.agent.llm.generate_response(prompt)
+        result = self.agent.llm.generate_response(prompt, self.agent.memory.messages, self.agent.final_prompt)
         result = result.content
         insights = [isg for isg in result.split("\n") if len(isg.strip()) > 0][:5]
         insights = [".".join(i.split(".")[1:]) for i in insights]
@@ -138,7 +138,8 @@ class Reflection(BaseMemoryManipulator):
         Exploit GPT to evaluate the importance of this memory
         """
         prompt = IMPORTANCE_PROMPT.format(content)
-        result = self.memory.llm.generate_response(prompt)
+        final_prompt = ""
+        result = self.memory.llm.generate_response(prompt, self.memory.messages, final_prompt)
 
         try:
             score = int(re.findall(r"\s*(\d+)\s*", result.content)[0])
@@ -154,7 +155,8 @@ class Reflection(BaseMemoryManipulator):
         Exploit GPT to evaluate the immediacy of this memory
         """
         prompt = IMMEDIACY_PROMPT.format(content)
-        result = self.memory.llm.generate_response(prompt)
+        final_prompt = ""
+        result = self.memory.llm.generate_response(prompt, self.memory.messages, final_prompt)
         try:
             score = int(re.findall(r"\s*(\d+)\s*", result.content)[0])
         except Exception as e:

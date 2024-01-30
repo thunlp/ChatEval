@@ -10,6 +10,7 @@ from agentverse.llms.base import LLMResult
 
 from . import llm_registry
 from .base import BaseChatModel, BaseCompletionModel, BaseModelArgs
+from agentverse.message import Message
 
 logger = logging.getLogger(__name__)
 
@@ -63,7 +64,7 @@ class OpenAICompletion(BaseCompletionModel):
             logging.warning(f"Unused arguments: {kwargs}")
         super().__init__(args=args, max_retry=max_retry)
 
-    def generate_response(self, prompt: str) -> LLMResult:
+    def generate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
         response = openai.Completion.create(prompt=prompt, **self.args.dict())
         return LLMResult(
             content=response["choices"][0]["text"],
@@ -72,7 +73,7 @@ class OpenAICompletion(BaseCompletionModel):
             total_tokens=response["usage"]["total_tokens"],
         )
 
-    async def agenerate_response(self, prompt: str) -> LLMResult:
+    async def agenerate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
         response = await openai.Completion.acreate(prompt=prompt, **self.args.dict())
         return LLMResult(
             content=response["choices"][0]["text"],
@@ -97,11 +98,18 @@ class OpenAIChat(BaseChatModel):
             logging.warning(f"Unused arguments: {kwargs}")
         super().__init__(args=args, max_retry=max_retry)
 
-    def _construct_messages(self, prompt: str):
-        return [{"role": "user", "content": prompt}]
+    def _construct_messages(self, prompt: str, chat_memory: List[Message], final_prompt: str):
+        chat_messages = []
+        for item_memory in chat_memory:
+            chat_messages.append(str(item_memory.sender) + ": " + str(item_memory.content))
+        processed_prompt = [{"role": "user", "content": prompt}]
+        for chat_message in chat_messages:
+            processed_prompt.append({"role": "assistant", "content": chat_message})
+        processed_prompt.append({"role": "user", "content": final_prompt})
+        return processed_prompt
 
-    def generate_response(self, prompt: str) -> LLMResult:
-        messages = self._construct_messages(prompt)
+    def generate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
+        messages = self._construct_messages(prompt, chat_memory, final_prompt)
         try:
             if openai.api_type == "azure":
                 openai.api_key = os.getenv("AZURE_OPENAI_KEY")
@@ -121,8 +129,8 @@ class OpenAIChat(BaseChatModel):
             total_tokens=response["usage"]["total_tokens"],
         )
 
-    async def agenerate_response(self, prompt: str) -> LLMResult:
-        messages = self._construct_messages(prompt)
+    async def agenerate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
+        messages = self._construct_messages(prompt, chat_memory, final_prompt)
         try:
             if openai.api_type == "azure":
                 openai.api_key = os.getenv("AZURE_OPENAI_KEY")

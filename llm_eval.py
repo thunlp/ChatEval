@@ -13,31 +13,29 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser()
 
-parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/adversarial/two_turns_sequential/three_different_role/calc_score_comparison/gpt_4")
-parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/adversarial/preprocessed_data/test.json")
-parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test111")
+parser.add_argument("--config", type=str, default="config.yaml")
 parser.add_argument("--reverse_input", default=False, action="store_true")
 
 
 args = parser.parse_args()
 
+agentverse, args_data_path, args_output_dir = AgentVerse.from_task(args.config)
+
 print(args)
 
-os.makedirs(args.output_dir, exist_ok=True)
-with open(os.path.join(args.output_dir, "args.txt"), "w") as f:
+os.makedirs(args_output_dir, exist_ok=True)
+with open(os.path.join(args_output_dir, "args.txt"), "w") as f:
     f.writelines(str(args))
 
 # uncomment this line if you don't want to overwrite your output_dir
-# if os.path.exists(args.output_dir) and len(os.listdir(args.output_dir)) > 1 :
+# if os.path.exists(args_output_dir) and len(os.listdir(args_output_dir)) > 1 :
 #
 #     raise ValueError("the output_dir is not empty, check if is expected.")
 
-with open(args.data_path) as f:
+with open(args_data_path) as f:
     data = json.load(f)
 
-agentverse = AgentVerse.from_task(args.task)
-
-if "faireval" in args.data_path:
+if "faireval" in args_data_path:
     pair_comparison_output = []
 
     for num, ins in enumerate(data[:80]):
@@ -66,13 +64,13 @@ if "faireval" in args.data_path:
                                                     "vicuna": ins["response"]["vicuna"]},
                                        "evaluation": evaluation})
 
-        os.makedirs(args.output_dir, exist_ok=True)
-        with open(os.path.join(args.output_dir, "pair_comparison_results.json"), "w") as f:
+        os.makedirs(args_output_dir, exist_ok=True)
+        with open(os.path.join(args_output_dir, "pair_comparison_results.json"), "w") as f:
             json.dump(pair_comparison_output, f, indent=4)
-    # with open(os.path.join(args.output_dir, "gt_origin_results.json"), "w") as f:
+    # with open(os.path.join(args_output_dir, "gt_origin_results.json"), "w") as f:
     #     json.dump(gt_origin_output, f, indent=4)
 
-elif "adversarial" in args.data_path:
+elif "adversarial" in args_data_path:
 
     pair_comparison_output = []
 
@@ -103,6 +101,6 @@ elif "adversarial" in args.data_path:
                                                     "output_2": ins["response"]["output_2"]},
                                        "evaluation": evaluation})
 
-        os.makedirs(args.output_dir, exist_ok=True)
-        with open(os.path.join(args.output_dir, "pair_comparison_results.json"), "w") as f:
+        os.makedirs(args_output_dir, exist_ok=True)
+        with open(os.path.join(args_output_dir, "pair_comparison_results.json"), "w") as f:
             json.dump(pair_comparison_output, f, indent=4)

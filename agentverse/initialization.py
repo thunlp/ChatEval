@@ -2,7 +2,7 @@ import os
 from typing import Dict, List
 
 import yaml
-from bmtools.agent.singletool import import_all_apis, load_single_tools
+# from bmtools.agent.singletool import import_all_apis, load_single_tools
 from langchain.agents import Agent as langchainAgent
 
 # from langchain.chat_models import ChatOpenAI
@@ -44,9 +44,9 @@ def load_tools(tool_config: List[Dict]):
     if len(tool_config) == 0:
         return []
     all_tools_list = []
-    for tool in tool_config:
-        _, config = load_single_tools(tool["tool_name"], tool["tool_url"])
-        all_tools_list += import_all_apis(config)
+    # for tool in tool_config:
+    #     _, config = load_single_tools(tool["tool_name"], tool["tool_url"])
+    #     all_tools_list += import_all_apis(config)
     return all_tools_list
 
 
@@ -61,8 +61,13 @@ def load_agent(agent_config: Dict) -> langchainAgent:
     return agent
 
 
-def prepare_task_config(task):
+def prepare_task_config(taskwithyaml):
     """Read the yaml config of the given task in `tasks` directory."""
+    if not str(taskwithyaml).endswith("config.yaml"):
+        raise ValueError(
+            "You should include config.yaml in your task config path"
+        )
+    task = str(taskwithyaml).replace("config.yaml", "")
     all_task_dir = os.path.join(os.path.dirname(__file__), "tasks")
     task_path = os.path.join(all_task_dir, task)
     config_path = os.path.join(task_path, "config.yaml")

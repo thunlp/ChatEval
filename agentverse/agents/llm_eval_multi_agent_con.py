@@ -38,7 +38,7 @@ class LLMEvalAgent(BaseAgent):
         parsed_response = None
         for i in range(self.max_retry):
             try:
-                response = self.llm.generate_response(prompt)
+                response = self.llm.generate_response(prompt, self.memory.messages, self.final_prompt)
                 parsed_response = self.output_parser.parse(response)
                 break
             except KeyboardInterrupt:
@@ -85,7 +85,7 @@ class LLMEvalAgent(BaseAgent):
 
             for i in range(self.max_retry):
                 try:
-                    response = await self.llm.agenerate_response(prompt)
+                    response = await self.llm.agenerate_response(prompt, self.memory.messages, self.final_prompt)
                     parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
                     should_break = True
                     break
@@ -140,7 +140,7 @@ class LLMEvalAgent(BaseAgent):
             "compared_text_one": self.compared_text_one,
             "compared_text_two": self.compared_text_two,
             "final_prompt": self.final_prompt,
-            "chat_history": self.memory.to_string(add_sender_prefix=True),
+            # "chat_history": self.memory.to_string(add_sender_prefix=True),
         }
         return Template(self.prompt_template).safe_substitute(input_arguments)
 
