@@ -2,18 +2,18 @@ import json
 import os
 
 import numpy as np
-import openai
+from openai import OpenAI
+
+client = OpenAI()
 import requests
 from scipy.spatial.distance import cosine
 
 
 def get_embedding_from_api(word, model="vicuna-7b-v1.1"):
     if "ada" in model:
-        resp = openai.Embedding.create(
-            model=model,
-            input=word,
-        )
-        embedding = np.array(resp["data"][0]["embedding"])
+        resp = client.embeddings.create(model=model,
+        input=word)
+        embedding = np.array(resp.data[0].embedding)
         return embedding
 
     url = "http://localhost:8000/v1/embeddings"

@@ -172,6 +172,7 @@ raw/
 
 # My outputs
 outputs
+scripts
 *.json
 !agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json
 

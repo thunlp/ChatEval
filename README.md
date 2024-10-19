@@ -109,7 +109,7 @@ The question and responses you provide will be integrated into the **prompt_temp
 ### Configure Custom Debater Agent
 
 You should modify your custom designed agent in `agentverse/tasks` folders.
-Take `agentverse/tasks/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301/config.yaml` as an example, your agent configuration in config.yaml should look like:
+Take `agentverse/tasks/llm_eval/config.yaml` as an example, your agent configuration in config.yaml should look like:
 
 ```yaml
 # config.yaml
@@ -145,13 +145,13 @@ agents:
 Now, you are good to run the experiments.
 Try out the following lines first, it employs **one-by-one communication** and **2 agent roles** for **2 discussion turns** in the paper.
 ```shell
-bash scripts/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301.sh
+python llm_eval.py --config agentverse/tasks/llm_eval/config.yaml
 ```
 
 ### Check the evaluation results
 
 The evaluation results will be saved in 
-```args.output_dir``` specified in ```llm_eval.py```
+```config.output_dir```
 The results will look like
 
 ```json

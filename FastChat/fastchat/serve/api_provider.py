@@ -12,7 +12,9 @@ logger = build_logger("gradio_web_server", "gradio_web_server.log")
 
 
 def openai_api_stream_iter(model_name, messages, temperature, top_p, max_new_tokens):
-    import openai
+    from openai import OpenAI
+    
+    client = OpenAI()
 
     # Make requests
     gen_params = {
@@ -23,12 +25,10 @@ def openai_api_stream_iter(model_name, messages, temperature, top_p, max_new_tok
     }
     logger.info(f"==== request ====\n{gen_params}")
 
-    res = openai.ChatCompletion.create(
-        model=model_name, messages=messages, temperature=temperature, stream=True
-    )
+    res = client.chat.completions.create(model=model_name, messages=messages, temperature=temperature, stream=True)
     text = ""
     for chunk in res:
-        text += chunk["choices"][0]["delta"].get("content", "")
+        text += chunk.choices[0].delta.get("content", "")
         data = {
             "text": text,
             "error_code": 0,

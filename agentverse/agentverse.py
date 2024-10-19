@@ -29,6 +29,7 @@ class AgentVerse:
         Then this method will load the configuration from the yaml file in that directory.
         """
         # Prepare the config of the task
+
         task_config = prepare_task_config(task)
 
         # Build the agents

@@ -1,0 +1,95 @@
+task:
+  llmeval
+data_path:
+  ./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json
+output_dir:
+  ./outputs/llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison_reverse/gpt_35_0301
+prompts:
+  prompt: &prompt |-
+    [Question]
+    ${source_text}
+    [The Start of Assistant 1’s Answer]
+    ${compared_text_one}
+    [The End of Assistant 1’s Answer]
+    [The Start of Assistant 2’s Answer]
+    ${compared_text_two}
+    [The End of Assistant 2’s Answer]
+    [System]
+    We would like to request your feedback on the performance of two AI assistants in response to the user question displayed above.
+    Please consider the helpfulness, relevance, accuracy, and level of detail of their responses.
+    There are a few other referee assigned the same task, it's your responsibility to discuss with them and think critically before you make your final judgement.
+    Each assistant receives an overall score on a scale of 1 to 10, where a higher score indicates better overall performance.
+
+    ${role_description}
+
+    Now it's your time to talk, please make your talk short and clear, ${agent_name} !
+
+    ${final_prompt}
+
+
+environment:
+  env_type: llm_eval
+  max_turns: 4
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: General Public
+    final_prompt_to_use: |-
+      Please first provide a comprehensive explanation of your evaluation, avoiding any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.
+      Then, output two lines indicating the scores for Assistant 1 and 2, respectively.
+
+      Remember that you are not required to output the same value as other referees !
+      Output with the following format strictly:
+      Evaluation evidence: [your explanation here]
+      The score of Assistant 1: [score only]
+      The score of Assistant 2: [score only]
+    role_description: |-
+      You are now General Public, one of the referees in this task. You are interested in the story and looking for updates on the investigation. Please think critically by yourself and note that it's your responsibility to choose one of which is the better first.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-4"
+      llm_type: gpt-4
+      temperature: 0
+      max_tokens: 512
+  -
+    agent_type: llm_eval_multi
+    name: Critic
+    final_prompt_to_use: |-
+      Please first provide a comprehensive explanation of your evaluation, avoiding any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.
+      Then, output two lines indicating the scores for Assistant 1 and 2, respectively.
+
+      Remember that you are not required to output the same value as other referees !
+      Output with the following format strictly:
+      Evaluation evidence: [your explanation here]
+      The score of Assistant 1: [score only]
+      The score of Assistant 2: [score only]
+    role_description: |-
+      You are now Critic, one of the referees in this task. You will check fluent writing, clear sentences, and good wording in summary writing. Your job is to question others judgement to make sure their judgement is well-considered and offer an alternative solution if two responses are at the same level.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "gpt-4"
+      llm_type: gpt-4
+      temperature: 0
+      max_tokens: 512
+
+tools: ~
